@@ -5,10 +5,10 @@ import Layer from '../Layer/Layer';
 const Main = () => {
   return (
     <div className={styles.main}>
-      <Layer position={385}>SOBRE</Layer>
-      <Layer position={265}>PRODUTOS</Layer>
-      <Layer position={145}>ENDEREÇO</Layer>
-      <Layer position={25}>CONTATO</Layer>
+      <Layer position={360}>SOBRE</Layer>
+      <Layer position={240}>PRODUTOS</Layer>
+      <Layer position={120}>ENDEREÇO</Layer>
+      <Layer position={0}>CONTATO</Layer>
     </div>
   )
 }
