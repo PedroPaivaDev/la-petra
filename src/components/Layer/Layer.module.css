@@ -7,13 +7,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    height: 118px;
+    height: 120px;
     width: 316px;
     box-sizing: content-box;
+    overflow: hidden;
 
     opacity: 0;
-    background-color: brown;
     border-radius: 60px;
     margin: 2px 0px;
     animation: layerDown var(--layerTiming) cubic-bezier(.44,.04,.97,.03) forwards;
@@ -23,5 +22,14 @@
     0% {bottom: var(--initialLayerPosition); height: 140px;}
     60% {opacity: 0; height: 80px;}
     90% {opacity: 1; bottom: var(--layerPosition);}
-    100% {opacity: 1; bottom: var(--layerPosition); height: 118px;}
+    100% {opacity: 1; bottom: var(--layerPosition); height: 120px;}
+}
+
+.layer h4 {
+    position: absolute;
+    z-index: 1;
+    font-family: 'Coiny', cursive;
+    font-size: 1.5rem;
+    color: #dedede;
+    text-shadow: 1px 1px 5px black;
 }
