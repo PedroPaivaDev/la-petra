@@ -7,8 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 120px;
-    width: 316px;
+    height: 90px;
+    width: 236px;
     box-sizing: content-box;
     overflow: hidden;
 
@@ -19,16 +19,16 @@
 }
 
 @keyframes layerDown {
-    0% {bottom: var(--initialLayerPosition); height: 140px;}
-    60% {opacity: 0; height: 80px;}
+    60% {opacity: 0; height: 60px;}
     90% {opacity: 1; bottom: var(--layerPosition);}
-    100% {opacity: 1; bottom: var(--layerPosition); height: 120px;}
+    100% {opacity: 1; bottom: var(--layerPosition); height: 90px;}
 }
 
-.layer h4 {
+.layer a {
     position: absolute;
     z-index: 1;
     font-family: 'Coiny', cursive;
+    text-transform: uppercase;
     font-size: 1.5rem;
     color: #dedede;
     text-shadow: 1px 1px 5px black;

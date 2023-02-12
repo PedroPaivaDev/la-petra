@@ -1,4 +1,11 @@
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 100%;
+}
+
+.footer p {
   color: #424242;
   text-shadow: 1px 1px 5px white;
   font-size: 0.625rem;

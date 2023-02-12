@@ -9,10 +9,10 @@ import cream from '../../assets/cream.jpg';
 const Main = () => {
   return (
     <div className={styles.main}>
-      <Layer bg={strawberry} position={360}>SOBRE</Layer>
-      <Layer bg={sprinkles} position={240}>PRODUTOS</Layer>
-      <Layer bg={chocolate} position={120}>ENDEREÇO</Layer>
-      <Layer bg={cream} position={0}>CONTATO</Layer>
+      <Layer bg={strawberry} position={360}>PRODUTOS</Layer>
+      <Layer bg={sprinkles} position={240}>LOCALIZAÇÃO</Layer>
+      <Layer bg={chocolate} position={120}>CONTATO</Layer>
+      <Layer bg={cream} position={0}>SOBRE</Layer>
     </div>
   )
 }
