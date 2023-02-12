@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 90px;
+    height: 70px;
     width: 236px;
     box-sizing: content-box;
     overflow: hidden;
@@ -21,7 +21,7 @@
 @keyframes layerDown {
     60% {opacity: 0; height: 60px;}
     90% {opacity: 1; bottom: var(--layerPosition);}
-    100% {opacity: 1; bottom: var(--layerPosition); height: 90px;}
+    100% {opacity: 1; bottom: var(--layerPosition); height: 70px;}
 }
 
 .layer a {

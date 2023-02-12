@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom';
 const Layer = ({children, bg, position}) => {
   return (
     <div className={styles.layer} style={{
-      "--layerPosition": `${position+5}px`,
+      "--layerPosition": `${position}px`,
       "--layerTiming": `${position+1000}ms`
       }}>
       <Link to={children}>{children}</Link>

@@ -1,8 +1,14 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route} from 'react-router-dom';
+
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
+
+import About from "./pages/About/About";
+import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
+import Location from "./pages/Location/Location";
+import Order from "./pages/Order/Order";
 import Products from "./pages/Products/Products";
 
 function App() {
@@ -13,7 +19,11 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/sobre" element={<About/>}/>
             <Route path="/produtos" element={<Products/>}/>
+            <Route path="/encomendas" element={<Order/>}/>
+            <Route path="/contato" element={<Contact/>}/>
+            <Route path="/local" element={<Location/>}/>
           </Routes>
         </main>
         <Footer/>

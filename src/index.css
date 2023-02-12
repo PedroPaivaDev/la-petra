@@ -86,8 +86,16 @@ main {
   position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
   /* height: 100%; */
-  min-height: 470px;
+  min-height: 390px;
+  margin-top: 30px;
+}
+
+.title {
+    font-family: 'Coiny', cursive;
+    font-size: 1.2rem;
+    color: #424242;
+    text-shadow: 1px 1px 5px white;
 }

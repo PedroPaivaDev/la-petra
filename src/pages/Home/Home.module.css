@@ -5,37 +5,79 @@
   justify-content: flex-end;
   align-items: center;
   width: 250px;
-  height: 500px;
+  height: 420px;
   box-shadow: inset 0 0 40px 0px rgba(66,66,66,0.5);
-  border-radius: 165px 165px 60px 60px;
+  border-radius: 125px 125px 0px 0px;
+  margin-top: -30px;
+
+  opacity: 0;
+  bottom: 300px;
+  animation: cupDown 1.3s cubic-bezier(.44,.04,.97,.03) forwards;
+}
+
+@keyframes cupDown {
+  60% {opacity: 0;}
+  100% {opacity: 1; bottom: 0px;}
+}
+
+.cup::before {
+  position: absolute;
+  bottom: 420px;
+  content: "";
+  height: 20px;
+  width: 40px;
+  box-shadow: inset 0 0 15px 0px rgba(66,66,66,0.5);
+  border-radius: 10px;
 }
 
 .logo {
   position: relative;
-  bottom: 500px;
+  bottom: 130px;
   opacity: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 180px;
-  height: 120px;
   margin: 15px 0 20px 0;
+  animation: logoDown 1.3s cubic-bezier(.44,.04,.97,.03) forwards;
+  cursor: pointer;
+}
 
+@keyframes logoDown {
+  60% {opacity: 0;}
+  100% {opacity: 1; bottom: 30px;}
+}
+
+.shadow {
+  width: 180px;
+  height: 110px;
   background: rgba(255,255,255,0.7);
   box-shadow: 0 0 10px 10px rgba(255,255,255,0.7);
   transition: 0.3s;
   border-radius: 100px 100px 50px 50px;
-  animation: layerDown 1.3s cubic-bezier(.44,.04,.97,.03) forwards;
+  animation: pulse 2s infinite;
 }
 
-@keyframes layerDown {
-  60% {opacity: 0;}
-  100% {opacity: 1; bottom: 350px;}
+@keyframes pulse {
+  0% {
+    width: 180px;
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 0 10px 10px rgba(255,255,255,0.7);
+  }
+  50% {
+    width: 160px;
+    background: rgba(255,255,255,0.6);
+    box-shadow: 0 0 10px 10px rgba(255,255,255,0.6);
+  }
+  100% {
+    width: 180px;
+    background: rgba(255,255,255,0.7);
+    box-shadow: 0 0 10px 10px rgba(255,255,255,0.7);
+  }
 }
 
 .logo img {
   position: absolute;
-  top: -30px;
+  top: -20px;
 }
   
 .layers {
