@@ -1,5 +1,5 @@
 import React from 'react';
-import Cloche from '../../Cloche/Cloche';
+import Cloche from '../../components/Cloche/Cloche';
 import styles from './Home.module.css';
 
 const Home = () => {

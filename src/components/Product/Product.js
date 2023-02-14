@@ -5,9 +5,13 @@ import banofe from '../../assets/products/banofe.jpg';
 
 const Product = () => {
   return (
-    <div className={styles.container} style={{background: `url(${banofe})`,backgroundSize: "contain"}}>
-      <h4>Banofe</h4>
-      <h4>R$11,50</h4>
+    <div className={styles.container}>
+      <div className={styles.image} style={{background: `url(${banofe}) no-repeat`,backgroundSize: "cover"}}/>
+      <div className={styles.description}>
+        <h4>Banofe</h4>
+        <p>Delicioso com banana e chantilly</p>
+        <h4>R$11,20</h4>
+      </div>
     </div>
   )
 }

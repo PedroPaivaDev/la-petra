@@ -49,8 +49,8 @@
 .navLink:hover, .navLink:hover, .activePage {
     color: #dedede;
     text-shadow: 1px 1px 5px black;
-    background: rgba(73,42,21,0.8);
-    box-shadow: 0 0 10px 10px rgba(73,42,21,0.8);
+    background: rgba(127,105,91,0.6);
+    box-shadow: 0 0 10px 10px rgba(127,105,91,0.6);
 }
 
 /* .icon {

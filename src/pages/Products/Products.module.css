@@ -4,7 +4,6 @@
     justify-content: flex-start;
     align-items: center;
     height: 100%;
-    overflow: hidden;
 }
 
 .products {
@@ -14,4 +13,24 @@
     align-items: center;
     gap: 10px;
     flex-wrap: wrap;
+    overflow: auto;
+}
+
+@media (min-width: 40rem) {
+    .products::-webkit-scrollbar {
+        background: transparent;
+        width: 10px;
+    }
+
+    .products::-webkit-scrollbar-track {
+        background: rgba(127,105,91,0.6);
+        border-radius: 10px;
+        padding: 5px;
+        border: 3px solid rgba(127,105,91);
+    }
+
+    .products::-webkit-scrollbar-thumb {
+        background-color: rgba(127,105,91);
+        border-radius: 10px;
+    }
 }

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 
 // import Layer from '../components/Layer/Layer';
 
-import Logotipo from '../assets/Logotipo.png';
+import Logotipo from '../../assets/Logotipo.png';
 // import strawberry from '../assets/strawberry.jpg';
 // import chocolate from '../assets/chocolate-balls.png';
 // import sprinkles from '../assets/sprinkles.png';
