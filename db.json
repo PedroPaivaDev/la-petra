@@ -1,0 +1,59 @@
+{
+    "products": [
+        {
+            "name": "Banofe",
+            "description": "Delicioso com banana e chantilly",
+            "price": 11.50,
+            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/banofe.jpeg",
+            "display": "false"
+        },
+
+        {
+            "name": "Bolo",
+            "description": "Sob encomenda",
+            "price": 100.50,
+            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/bolo.jpeg",
+            "display": "false"
+        },
+
+        {
+            "name": "Brigadeiro",
+            "description": "Com granulado caro",
+            "price": 5.00,
+            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/brigadeiro.jpeg",
+            "display": "false"
+        },
+
+        {
+            "name": "Brownie",
+            "description": "Pode comer sem medo, não tem nenhuma surpresa dentro",
+            "price": 9.00,
+            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/brownie.jpeg",
+            "display": "false"
+        },
+
+        {
+            "name": "Copo",
+            "description": "Para nossa alegria",
+            "price": 19,
+            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/copo.jpeg",
+            "display": "false"
+        },
+
+        {
+            "name": "Prestígio",
+            "description": "Gostinho de infância",
+            "price": 11.5,
+            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/prestigio.jpeg",
+            "display": "false"
+        },
+
+        {
+            "name": "Pudim",
+            "description": "Melhor do que o da vovó",
+            "price": 9.5,
+            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/pudim.jpeg",
+            "display": "false"
+        }
+    ]
+}

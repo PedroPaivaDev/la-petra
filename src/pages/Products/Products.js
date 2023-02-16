@@ -11,6 +11,9 @@ const Products = () => {
         {photos.map((photo,index) => (
           <Product key={index} image={photo}/>
         ))}
+        {photos.map((photo,index) => (
+          <Product key={index} image={photo}/>
+        ))}
       </div>
     </div>
   )
