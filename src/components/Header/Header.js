@@ -20,7 +20,7 @@ const Header = () => {
   // }
 
   return (
-    <div className={styles.header}>
+    <header className={styles.header}>
       <NavLink className={styles.navLink} activeClassName={styles.activePage} to="/produtos">
         {/* <Cake className={styles.icon}/> */}
         Produtos
@@ -34,7 +34,7 @@ const Header = () => {
         {/* <Cart className={styles.icon}/> */}
         Comprar
       </NavLink>
-    </div>
+    </header>
   )
 }
 

@@ -1,11 +1,12 @@
 import React from 'react';
-import Cloche from '../../components/Cloche/Cloche';
 import styles from './Home.module.css';
+
+import Carousel from '../../components/Carousel/Carousel';
 
 const Home = () => {
   return (
     <div className={styles.container}>
-      <Cloche/>
+      <Carousel/>
     </div>
   )
 }

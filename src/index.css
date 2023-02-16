@@ -23,11 +23,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
-  height: 100vh;
-  background: url('/src/assets/bg_bolos_festivos_vertical.jpeg') no-repeat;
-  background-position: center right;
-  background-size: cover;
-  padding: 5px;
 }
 
 code {
@@ -74,20 +69,21 @@ img {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 10px);
-  width: calc(100vw - 20px);
-  max-width: 940px;
 }
 
 main {
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  height: 100%;
-  min-height: 470px;
-  margin-top: 20px;
+
+  background: url('/src/assets/bg_bolos_festivos_vertical.jpeg') no-repeat;
+  background-position: center right;
+  background-size: cover;
+
+  height: calc(100vh - 75px);
+  width: 100vw;
+  overflow: hidden;
 }
 
 .title {

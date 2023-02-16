@@ -1,12 +1,13 @@
 .footer {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
+  background-color: rgba(127,105,91);
+  width: 100vw;
+  height: 15px;
 }
 
 .footer p {
-  color: #424242;
-  text-shadow: 1px 1px 5px white;
-  font-size: 0.625rem;
-  margin-top: 5px;
+  color: #4c3f36;
+  font-size: 0.5rem;
 }
