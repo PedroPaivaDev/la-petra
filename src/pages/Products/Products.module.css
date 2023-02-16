@@ -24,14 +24,13 @@
     }
 
     .products::-webkit-scrollbar-track {
-        background: rgba(127,105,91,0.6);
+        background: rgba(127,105,91,0.4);
         border-radius: 10px;
         padding: 5px;
-        border: 3px solid rgba(127,105,91);
     }
 
     .products::-webkit-scrollbar-thumb {
-        background-color: rgba(127,105,91);
+        background-color: rgba(127,105,91,0.6);
         border-radius: 10px;
     }
 }

@@ -86,7 +86,9 @@ main {
   overflow: hidden;
 }
 
-.title {
-    color: #424242;
-    text-shadow: 1px 1px 5px white;
+h2 {
+  font-size: 1.4rem;
+  color: #424242;
+  text-shadow: 1px 1px 5px white;
+  margin-top: 25px;
 }
