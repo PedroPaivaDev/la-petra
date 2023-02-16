@@ -1,14 +1,14 @@
 import React from 'react';
 import styles from './Product.module.css';
 
-const Product = ({image}) => {
+const Product = ({product}) => {
   return (
     <div className={styles.container}>
-      <div className={styles.image} style={{background: `url(${image}) no-repeat`,backgroundSize: "cover"}}/>
+      <div className={styles.image} style={{background: `url(${product.image}) no-repeat`,backgroundSize: "cover"}}/>
       <div className={styles.description}>
-        <h4>Banofe</h4>
-        <p>Delicioso com banana e chantilly</p>
-        <h4>R$11,20</h4>
+        <h4>{product.name}</h4>
+        <p>{product.description}</p>
+        <h4>R${product.price.toFixed(2)}</h4>
       </div>
     </div>
   )
