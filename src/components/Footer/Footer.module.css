@@ -2,12 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(127,105,91);
+  background-color: rgba(86,63,57);
   width: 100vw;
   height: 15px;
 }
 
-.footer p {
-  color: #4c3f36;
+.footer a {
+  color: #795d62;
+  text-shadow: 1px 1px 5px black;
   font-size: 0.5rem;
 }

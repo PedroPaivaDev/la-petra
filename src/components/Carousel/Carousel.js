@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Carousel.module.css';
-
-import banofe from '../../assets/products/banofe.jpg';
+import photos from '../../services/photos';
+import ImgCarousel from './ImgCarousel';
 
 const Carousel = () => {
   // const [widthApp, setWidthApp] = React.useState(window.screen.width - 20)
@@ -13,7 +13,11 @@ const Carousel = () => {
   // resizeObserver.observe(document.body);
 
   return (
-    <div className={styles.container} style={{background: `url(${banofe}) no-repeat`, backgroundSize: "cover", backgroundPosition: "center"}}></div>
+    <>
+      {photos.map((photo, index) => (
+        <ImgCarousel key={index} img={photo}/>
+      ))}
+    </>
   )
 }
 

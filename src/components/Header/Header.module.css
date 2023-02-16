@@ -6,7 +6,7 @@
     width: 100vw;
     height: 60px;
     padding: 0px 20px;
-    background-color: rgba(127,105,91);
+    background-color: rgba(86,63,57);
 }
 
 .logo {
@@ -23,8 +23,8 @@
     width: 60px;
     height: 60px;
     border-radius: 30px;  
-    background: rgba(255,255,255,0.7);
-    box-shadow: 0 0 10px 10px rgba(255,255,255,0.7);
+    background: rgba(239,225,227,0.7);
+    box-shadow: 0 0 10px 10px rgba(239,225,227,0.7);
 } */
 
 .log img {
@@ -36,17 +36,17 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    color: #dedede;
+    color: #efe1e3;
     text-shadow: 1px 1px 5px black;
     border-radius: 20px;
     transition: 0.3s;
 }
 
 .navLink:hover, .navLink:hover, .activePage {
-    color: #424242;
+    color: #3c2e31;
     text-shadow: 1px 1px 5px white;
-    background: rgba(255,255,255,0.7);
-    box-shadow: 0 0 10px 10px rgba(255,255,255,0.7);
+    background: rgba(239,225,227,0.8);
+    box-shadow: 0 0 10px 10px rgba(239,225,227,0.8);
 }
 
 /* .icon {

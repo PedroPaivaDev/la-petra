@@ -11,6 +11,11 @@
     height: 150px;
 }
 
+.container * {
+    color: #efe1e3;
+    text-shadow: 1px 1px 5px black;
+}
+
 .image {
     width: 130px;
     height: 130px;
@@ -25,8 +30,6 @@
     justify-content: space-between;
     width: 140px;
     height: 130px;
-    color: #dedede;
-    text-shadow: 1px 1px 5px black;
 }
 
 .description p {

@@ -1,8 +1,8 @@
 import React from 'react';
 
-const ImgCarousel = () => {
+const ImgCarousel = ({img}) => {
   return (
-    <div>ImgCarousel</div>
+    <div style={{background: `url(${img}) no-repeat`, backgroundSize: "cover", backgroundPosition: "center", width: `100%`, height: `100%`}}/>
   )
 }
 

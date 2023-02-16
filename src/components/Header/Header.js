@@ -1,10 +1,10 @@
 import React from 'react';
 import styles from './Header.module.css';
-import { NavLink, useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 // import Logotipo from '../../assets/Logotipo.png';
-// import {ReactComponent as Cake} from '../../assets/cake.svg';
-// import {ReactComponent as Cart} from '../../assets/shopping-cart-simple.svg';
+// import {ReactComponent as Cake} from '../../assets/icons/cake.svg';
+// import {ReactComponent as Cart} from '../../assets/icons/shopping-cart-simple.svg';
 
 const Header = () => {
 
