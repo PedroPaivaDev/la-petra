@@ -75,7 +75,7 @@ const Carousel = () => {
       } else {
         setSlide(slide+1)
       }
-    }, 2000)
+    }, 2500)
   })
 
   return (
