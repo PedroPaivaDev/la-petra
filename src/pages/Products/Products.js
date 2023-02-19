@@ -17,7 +17,7 @@ const Products = () => {
   },[])
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} animeLeft`}>
       <div className={styles.products}>
         {products && products.map((product,index) => (
           <Product key={index} product={product}/>

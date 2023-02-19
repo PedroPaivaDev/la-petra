@@ -8,7 +8,7 @@ import instagram from '../../assets/icons/iconInstagram.png';
 
 const Contact = () => {  
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} animeLeft`}>
       <h2>Horários de Funcionamento</h2>
       <p>Terça a Sábado: 12:30h às 18:00h</p>
       <p>Domingo: 11:30h às 14:30h</p>

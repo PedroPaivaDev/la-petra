@@ -103,6 +103,19 @@ h2 {
   margin-top: 25px;
 }
 
+.animeLeft {
+  opacity: 0;
+  transform: translateX(calc(-100vw * 0.2));
+  animation: animeLeft .3s forwards;
+}
+
+@keyframes animeLeft {
+  to{
+      opacity: 1;
+      transform: initial;
+  }
+}
+
 .slick-dots {
   bottom: 20px !important;
   height: auto;

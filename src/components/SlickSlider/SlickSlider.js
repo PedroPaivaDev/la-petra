@@ -1,28 +1,36 @@
 import React from 'react';
 import styles from './SlickSlider.module.css';
-import getProducts from '../../services/api';
+import {PRODUCTS_GET} from '../../services/api';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import useFetch from '../../hooks/useFetch';
+
 const SlickSlider = () => {
   const [products, setProducts] = React.useState();
   const [photos, setPhotos] =  React.useState();
 
+  const {data, loading, error, request} = useFetch();
+
   React.useEffect(() => {
-    const fetchData = async () => {
-      const data = await getProducts();
-      setProducts(data.reduce((total, currentValue) => {
-        return {...total, [currentValue.name]: {
-          name: currentValue.name,
-          image: currentValue.image,
-          display: "flex"
-        }}
-      }, {}));
+    async function fetchProducts() {
+      const {url} = PRODUCTS_GET();
+      const {response, json} = await request(url)
     }
-    fetchData();
-  },[])
+    fetchProducts();
+  },[request])
+
+  React.useEffect(() => {
+    data && setProducts(data.reduce((total, currentValue) => {
+      return {...total, [currentValue.name]: {
+        name: currentValue.name,
+        image: currentValue.image,
+        display: "flex"
+      }}
+    }, {}));
+  }, [])
 
   React.useEffect(() => {
     products && setPhotos(Object.keys(products))
@@ -64,7 +72,9 @@ const SlickSlider = () => {
     ]
   }
 
-  return (
+  if(error) return <p>Erro ao carregar</p>
+  if(loading) return <p>Carregando...</p>
+  if(data) return (
     <div className={styles.container}>
       <Slider {...settings}>
         {photos && photos.map((photo, index) => (
