@@ -25,6 +25,7 @@
     border-radius: 20px;
     transition: 0.3s;
     height: 26px;
+    vertical-align: middle;
 }
 
 .navLink span {
