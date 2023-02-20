@@ -39,10 +39,10 @@ const SlickSlider = () => {
   const settings = {
     dots: true, /* bolinhas */
     infinite: true, /* não para */
-    speed: 1000, /* tempo de troca de slide */
+    speed: 500, /* tempo de troca de slide */
     slidesToShow: 1, /* quantidade de foto mostrada de cada vez */
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 2500,
     responsive: [
       {
         breakpoint: 1024,

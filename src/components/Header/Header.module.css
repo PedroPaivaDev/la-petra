@@ -1,34 +1,20 @@
 .header {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 100vw;
     height: 60px;
-    padding: 0px 20px;
     background-color: rgba(86,63,57);
 }
 
-.logo {
+.container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-top: -10px;
-    cursor: pointer;
-}
-
-/* .shadow {
-    position: absolute;
-    z-index: -1;
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;  
-    background: rgba(239,225,227,0.7);
-    box-shadow: 0 0 10px 10px rgba(239,225,227,0.7);
-} */
-
-.log img {
-    position: absolute;
+    padding: 0px 20px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .navLink {
@@ -36,25 +22,63 @@
     justify-content: center;
     align-items: center;
     gap: 5px;
-    color: #efe1e3;
-    text-shadow: 1px 1px 5px black;
     border-radius: 20px;
     transition: 0.3s;
+    height: 26px;
 }
 
-.navLink:hover, .navLink:hover, .activePage {
-    color: #3c2e31;
-    text-shadow: 1px 1px 5px white;
+.navLink span {
+    color: #efe1e3;
+    text-shadow: 1px 1px 5px black;
+}
+
+.navLink:hover, .activePage {
     background: rgba(239,225,227,0.8);
     box-shadow: 0 0 10px 10px rgba(239,225,227,0.8);
 }
 
-/* .icon {
-    width: 20px;
-    height: 20px;
-    fill: #424242;
+.navLink:hover span, .activePage span, .activePage svg>*, .navLink:hover svg>* {
+    color: #3c2e31;
+    text-shadow: 1px 1px 5px white;
+    stroke: #3c2e31;
 }
 
-.activePage svg {
-    fill: #dedede;
-} */
+.icon {
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+
+.activePage svg, .navLink:hover svg {
+    fill: #3c2e31;
+}
+
+@media (max-width: 23rem) {
+    .icon {display: none}
+}
+
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img {
+    position: absolute;
+}
+
+.shadow {
+    transition: 0.3s;
+}
+
+.logo:hover .shadow {
+    position: absolute;
+    z-index: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;  
+    background: rgba(239,225,227,0.7);
+    box-shadow: 0 0 10px 10px rgba(239,225,227,0.7);
+}
