@@ -1,33 +1,41 @@
 import React from 'react';
 import styles from './Products.module.css';
-import getProducts from '../../services/api';
+import useFetch from '../../hooks/useFetch';
+import {PRODUCTS_GET} from '../../services/api';
 
 import Product from '../../components/Product/Product';
-// import photos from '../../services/photos';
+import Loading from '../../helpers/Loading';
 
 const Products = () => {
+  const {data, error, loading, request} = useFetch();
   const [products, setProducts] = React.useState([]);
 
   React.useEffect(() => {
-    const fetchData = async () => {
-      const data = await getProducts();
-      setProducts(data);
+    async function fetchProducts() {
+      const {url} = PRODUCTS_GET();
+      const {response, json} = await request(url);
     }
-    fetchData();
-  },[])
+    fetchProducts();
+  },[request])
 
-  return (
+  React.useEffect(() => {
+    data && setProducts(data)
+  }, [data])
+
+  if(error) return <p>Não foi possível carregar os produtos. Verifique sua conexão com a internet</p>;
+  if(loading) return <Loading/>;
+  if(products) return (
     <div className={`${styles.container} animeLeft`}>
       <div className={styles.products}>
-        {products && products.map((product,index) => (
+        {products.map((product,index) => (
           <Product key={index} product={product}/>
         ))}
-        {products && products.map((product,index) => (
+        {products.map((product,index) => (
           <Product key={index} product={product}/>
         ))}
       </div>
     </div>
-  )
+  );  
 }
 
 export default Products;

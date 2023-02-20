@@ -7,12 +7,12 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import useFetch from '../../hooks/useFetch';
+import Loading from '../../helpers/Loading';
 
 const SlickSlider = () => {
-  const [products, setProducts] = React.useState();
-  const [photos, setPhotos] =  React.useState();
-
   const {data, loading, error, request} = useFetch();
+  const [products, setProducts] = React.useState(null);
+  const [photos, setPhotos] =  React.useState(null);
 
   React.useEffect(() => {
     async function fetchProducts() {
@@ -30,7 +30,7 @@ const SlickSlider = () => {
         display: "flex"
       }}
     }, {}));
-  }, [])
+  }, [data])
 
   React.useEffect(() => {
     products && setPhotos(Object.keys(products))
@@ -39,9 +39,8 @@ const SlickSlider = () => {
   const settings = {
     dots: true, /* bolinhas */
     infinite: true, /* não para */
-    speed: 500, /* tempo de troca de slide */
+    speed: 1000, /* tempo de troca de slide */
     slidesToShow: 1, /* quantidade de foto mostrada de cada vez */
-    slidesToScroll: 1, /* quantidade de fotos no total */
     autoplay: true,
     autoplaySpeed: 2000,
     responsive: [
@@ -72,12 +71,12 @@ const SlickSlider = () => {
     ]
   }
 
-  if(error) return <p>Erro ao carregar</p>
-  if(loading) return <p>Carregando...</p>
-  if(data) return (
-    <div className={styles.container}>
+  if(error) return <p>Erro ao carregar</p>;
+  if(loading) return <Loading/>;
+  if(photos) return (
+    <div className={`${styles.container} animeLeft`}>
       <Slider {...settings}>
-        {photos && photos.map((photo, index) => (
+        {photos.map((photo, index) => (
           <img key={index} src={products[photo].image} alt={products[photo].name}/>
         ))}
       </Slider>

@@ -6,7 +6,7 @@ import SlickSlider from '../../components/SlickSlider/SlickSlider';
 
 const Home = () => {
   return (
-    <div className={`${styles.container} animeLeft`}>
+    <div className={styles.container}>
       {/* <Carousel/> */}
       <SlickSlider/>
     </div>
