@@ -4,7 +4,12 @@
     align-items: center;
     width: 100vw;
     height: 60px;
-    background-color: rgba(86,63,57);
+    /* background: rgba(127,105,91,0.6);
+    border-top: 2px solid rgba(127,105,91);
+    border-bottom: 2px solid rgba(127,105,91); */
+    background-color: rgba(218,185,191);
+    border-top: 3px solid rgba(86,63,57);
+    border-bottom: 3px solid rgba(86,63,57);
 }
 
 .container {
@@ -39,9 +44,9 @@
 }
 
 .navLink:hover span, .activePage span, .activePage svg>*, .navLink:hover svg>* {
-    color: #3c2e31;
+    color: #4f4245;
     text-shadow: 1px 1px 5px white;
-    stroke: #3c2e31;
+    stroke: #4f4245;
 }
 
 .icon {
@@ -51,7 +56,7 @@
 }
 
 .activePage svg, .navLink:hover svg {
-    fill: #3c2e31;
+    fill: #4f4245;
 }
 
 @media (max-width: 23rem) {

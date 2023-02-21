@@ -15,7 +15,7 @@
   box-sizing: border-box;
   font-family: 'Coiny', cursive;
 	font-size: 16px;
-  color: #3c2e31;
+  color: #513e41;
   text-shadow: 1px 1px 5px white;
 }
 
@@ -95,12 +95,13 @@ main::after {
   left: 0;
   width: 100vw;
   height: 100vh;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 h2 {
   font-size: 1.4rem;
-  margin-top: 25px;
+  margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 .animeLeft {

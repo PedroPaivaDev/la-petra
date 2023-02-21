@@ -6,11 +6,11 @@ import ifood from '../../assets/icons/iconIfood.png';
 import whatsapp from '../../assets/icons/iconWhatsapp.png';
 import instagram from '../../assets/icons/iconInstagram.png';
 
-import Cloche from '../../components/Cloche/Cloche';
+// import Cloche from '../../components/Cloche/Cloche';
 
 const Contact = () => {
 
-  let deviceHeight = window.screen.height;
+  // let deviceHeight = window.screen.height;
 
   return (
     <div className={`${styles.container} animeLeft`}>
@@ -44,7 +44,7 @@ const Contact = () => {
       <p>Número ..., Bairro Novo São José</p>
       <p>Bom Despacho / MG</p>
 
-      {deviceHeight>850 && <Cloche/>}
+      {/* {deviceHeight>850 && <Cloche/>} */}
     </div>
   )
 }

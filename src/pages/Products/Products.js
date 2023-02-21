@@ -30,9 +30,6 @@ const Products = () => {
         {products.map((product,index) => (
           <Product key={index} product={product}/>
         ))}
-        {products.map((product,index) => (
-          <Product key={index} product={product}/>
-        ))}
       </div>
     </div>
   );  
