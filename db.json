@@ -138,7 +138,7 @@
 },
 {
 "id":13,
-"name":"Salada de Frutas com Creme La Petra",
+"name":"Salada de Frutas com Creme",
 "description":"Frutas selecionadas (kiwi, manga, uva e morango) com creme suave",
 "price":16,
 "image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/13-salada.jpeg"
@@ -244,21 +244,21 @@
 {
 "id":46,
 "name":"Pudim",
-"description":"Melhor do que o da vovó",
+"description":"Pudim de leite condensado com calda tradicional",
 "price":10,
 "image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/46-pudim.jpeg"
 },
 {
 "id":47,
 "name":"Banofe",
-"description":"Delicioso com banana e chantilly",
+"description":"Tortinha feita com banana, doce de leite, chantilly e canela",
 "price":11.5,
 "image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/47-banofe.jpeg"
 },
 {
 "id":51,
 "name":"Palha Italiana",
-"description":"Lascas de caramelo",
+"description":"Doce feito com massa de brigadeiro e biscoito",
 "price":7,
 "image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg"
 }

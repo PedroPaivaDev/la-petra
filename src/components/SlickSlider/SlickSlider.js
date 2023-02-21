@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './SlickSlider.module.css';
-import {PRODUCTS_GET} from '../../services/api';
+import {SLIDER_GET} from '../../services/api';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -16,7 +16,7 @@ const SlickSlider = () => {
 
   React.useEffect(() => {
     async function fetchProducts() {
-      const {url} = PRODUCTS_GET();
+      const {url} = SLIDER_GET();
       const {response, json} = await request(url)
     }
     fetchProducts();

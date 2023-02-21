@@ -5,3 +5,9 @@ export function PRODUCTS_GET() {
         url: `${baseURL}/products`
     }
 }
+
+export function SLIDER_GET() {
+    return {
+        url: `${baseURL}/slider`
+    }
+}
