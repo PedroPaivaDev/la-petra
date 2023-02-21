@@ -256,25 +256,11 @@
 "image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/47-banofe.jpeg"
 },
 {
-"id":50,
-"name":"Bark La Petra",
-"description":"Lascas de caramelo",
-"price":32,
-"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/50-barkLaPetra.jpeg"
-},
-{
 "id":51,
 "name":"Palha Italiana",
 "description":"Lascas de caramelo",
 "price":7,
 "image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg"
-},
-{
-"id":71,
-"name":"Cookies Cream",
-"description":"Pedaços de cookie red velvet e creme branco",
-"price":17,
-"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
 }
 ]
 }
