@@ -1,329 +1,280 @@
 {
-    "slider": [
-        {
-            "id": 1,
-            "name": "petra",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/1-petra.jpg"
-        },
-
-        {
-            "id": 2,
-            "name": "brigadeiro",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/2-brigadeiro.jpg"
-        },
-
-        {
-            "id": 3,
-            "name": "fatia",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/3-fatiaChocolate.jpg"
-        },
-
-        {
-            "id": 4,
-            "name": "lis",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/4-lis.jpg"
-        },
-
-        {
-            "id": 5,
-            "name": "ovo",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/5-ovo.jpg"
-        },
-
-        {
-            "id": 6,
-            "name": "doces",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/6-doces.jpg"
-        },
-
-        {
-            "id": 7,
-            "name": "casamento",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/7-casamento.jpg"
-        },
-
-        {
-            "id": 8,
-            "name": "cesta",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/8-cesta.jpg"
-        },
-
-        {
-            "id": 9,
-            "name": "tabua",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/9-tabua.jpg"
-        },
-
-        {
-            "id": 10,
-            "name": "panetone",
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/10-panetone.jpg"
-        }
-    ],
-
-    "products": [
-        {
-            "id": 1,
-            "name": "Bombomzão de Morango com Coco",
-            "description": "Morango envolto na massa de brigadeiro branco com coco, banhado no chocolate meio amargo",
-            "price": 7.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/1-bombomMorangoCoco.jpeg"
-        },
-
-        {
-            "id": 2,
-            "name": "Bombomzão de Morango Tradicional",
-            "description": "Morango envolto na massa de brigadeiro branco com ninho, banhado no chocolate meio amargo",
-            "price": 7.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/2-bombomMorangoTradicional.jpeg"
-        },
-
-        {
-            "id": 3,
-            "name": "Bombom La Petra",
-            "description": "Palha italiana recheada com caramelo salgado e coberto de chocolate meio amargo",
-            "price": 7.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/3-bombomLaPetra.jpeg"
-        },
-
-        {
-            "id": 4,
-            "name": "Bombom de Frutas Vermelhas",
-            "description": "Geleia de frutas vermelhas e creme branco, envolto em chocolate meio amargo",
-            "price": 7.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/4-bombomFrutasVermelhas.jpeg"
-        },
-
-        {
-            "id": 5,
-            "name": "Coxinha de Nutela",
-            "description": "Morango coberto com massa de leite ninho e nutela",
-            "price": 9.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/5-coxinhaMorango.jpeg"
-        },
-
-        {
-            "id":6,
-            "name": "Bombom Ferrero",
-            "description": "Ferrero rocher envolto com brigadeiro goumert, castanha de caju e Nutella",
-            "price": 9.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/6-bombomFerrero.jpeg"
-        },
-
-        {
-            "id": 7,
-            "name": "Brigadeiro Gourmet",
-            "description": "Brigadeiro feito com chocolate nobre, envolto no chocolate granule callebaut",
-            "price": 5.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/7-brigadeiroGourmet.jpeg"
-        },
-
-        {
-            "id": 8,
-            "name": "Delícia Crocante",
-            "description": "Palha italiana de biscoito preto, recheado de Nutella crocante",
-            "price": 9.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/8-deliciaCrocante.jpeg"
-        },
-
-        {
-            "id": 9,
-            "name": "Brownie Nuts na Marmita",
-            "description": "Brownie úmido recheado com nutela e coberto por castanhas",
-            "price": 10.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/9-marmitaBrownie.jpeg"
-        },
-
-        {
-            "id": 10,
-            "name": "Cookie Gourmet com Nutela",
-            "description": "Biscoito feito com gotas de chocolate nobre e recheado com Nutella",
-            "price": 8.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/10-cookieChocolate.jpeg"
-        },
-
-        {
-            "id": 11,
-            "name": "Folhata",
-            "description": "Creme 4 leites, massa folhada doce crocante, morangos e cobertura especial",
-            "price": 18.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/11-folhata.jpeg"
-        },
-
-        {
-            "id": 12,
-            "name": "Bombom de Morango no Pote",
-            "description": "Creme chocolate branco, chocolate ao leite e morangos frescos",
-            "price": 15.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/12-bombomAberto.jpeg"
-        },
-
-        {
-            "id": 13,
-            "name": "Salada de Frutas com Creme La Petra",
-            "description": "Frutas selecionadas (kiwi, manga, uva e morango) com creme suave",
-            "price": 16.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/13-salada.jpeg"
-        },
-
-        {
-            "id": 14,
-            "name": "Caseirinho",
-            "description": "Bolo de cenoura com cobertura de chocolate",
-            "price": 20.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/14-caseirinho.jpeg"
-        },
-
-        {
-            "id": 16,
-            "name": "Bolo Alpino",
-            "description": "Perfeição divina!",
-            "price": 13.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/16-boloAlpino.jpeg"
-        },
-
-        {
-            "id": 17,
-            "name": "Fatia Laka",
-            "description": "Gostinho de infância",
-            "price": 14.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/17-fatiaFrutasVermelhas.jpeg"
-        },
-
-        {
-            "id": 18,
-            "name": "Fatia Prestígio",
-            "description": "Gostinho de infância",
-            "price": 14.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/18-fatiaPrestigio.jpeg"
-        },
-
-        {
-            "id": 19,
-            "name": "Fatia Ouro Branco",
-            "description": "Gostinho de infância",
-            "price": 14.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/19-fatiaOuroBranco.jpeg"
-        },
-
-        {
-            "id": 20,
-            "name": "Cheesecake de Limão Siciliano",
-            "description": "Fatia de cheesecake sabor limão siciliano",
-            "price": 17.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/20-cheeseCakeLimao.jpeg"
-        },
-
-        {
-            "id": 21,
-            "name": "Chocolate Cremoso",
-            "description": "Chocolate cremoso, feito a base de chocolate nobre",
-            "price": 20.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/21-chocolateCremoso.jpeg"
-        },
-
-        {
-            "id": 22,
-            "name": "Brownie com Sorvete",
-            "description": "Brownie servido sobre nutela, com fatias de morango e sorvete de creme",
-            "price": 15.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/22-brownieSorvete.jpeg"
-        },
-
-        {
-            "id": 23,
-            "name": "Surpresa de Ouro Branco",
-            "description": "Mousse de chocolate, creme 4 leites e bombons Ouro Branco",
-            "price": 20.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/23-copoOuroBranco.jpeg"
-        },
-
-        {
-            "id": 24,
-            "name": "Copo da Felicidade",
-            "description": "Creme suaves, mousse 4 leites, morangos frescos e chantininho",
-            "price": 19.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/24-copoMorango.jpeg"
-        },
-
-        {
-            "id": 36,
-            "name": "Cookie Red Velvet",
-            "description": "Biscoito feito com gotas de chocolate branco e recheado com cream-cheese",
-            "price": 9.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/36-cookieRedVelvet.jpeg"
-        },
-
-        {
-            "id": 37,
-            "name": "Copo Chocolate Cremoso",
-            "description": "Biscoito feito com gotas de chocolate branco e recheado com cream-cheese",
-            "price": 8.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/37-copoChocolateCremoso.jpeg"
-        },
-
-        {
-            "id": 38,
-            "name": "Cupcake",
-            "description": "Bolinho recheado de creme chocolate branco e chantininho por cima",
-            "price": 8.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/38-cupCake.jpeg"
-        },
-
-        {
-            "id": 40,
-            "name": "Torta Holandesa",
-            "description": "Cream cheese com chocolate nobre",
-            "price": 18.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/40-tortaHolandesa.jpeg"
-        },
-
-        {
-            "id": 46,
-            "name": "Pudim",
-            "description": "Melhor do que o da vovó",
-            "price": 10.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/46-pudim.jpeg"
-        },
-
-        {
-            "id": 47,
-            "name": "Banofe",
-            "description": "Delicioso com banana e chantilly",
-            "price": 11.50,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/47-banofe.jpeg"
-        },
-
-        {
-            "id": 50,
-            "name": "Bark La Petra",
-            "description": "Lascas de caramelo",
-            "price": 32.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/50-barkLaPetra.jpeg"
-        },
-
-        {
-            "id": 51,
-            "name": "Palha Italiana",
-            "description": "Lascas de caramelo",
-            "price": 7.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg"
-        },
-
-        {
-            "id": 53,
-            "name": "Bolo Chantininho",
-            "description": "Serve 15 pessoas",
-            "price": 135.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/53-bolo.jpeg"
-        },
-
-        {
-            "id": 71,
-            "name": "Cookies Cream",
-            "description": "Pedaços de cookie red velvet e creme branco",
-            "price": 17.00,
-            "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
-        }
-    ]
+"slider":[
+{
+"id":1,
+"name":"petra",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/1-petra.jpg"
+},
+{
+"id":2,
+"name":"brigadeiro",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/2-brigadeiro.jpg"
+},
+{
+"id":3,
+"name":"fatia",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/3-fatiaChocolate.jpg"
+},
+{
+"id":4,
+"name":"lis",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/4-lis.jpg"
+},
+{
+"id":5,
+"name":"ovo",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/5-ovo.jpg"
+},
+{
+"id":6,
+"name":"doces",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/6-doces.jpg"
+},
+{
+"id":7,
+"name":"casamento",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/7-casamento.jpg"
+},
+{
+"id":8,
+"name":"cesta",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/8-cesta.jpg"
+},
+{
+"id":9,
+"name":"tabua",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/9-tabua.jpg"
+},
+{
+"id":10,
+"name":"panetone",
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/10-panetone.jpg"
+}
+],
+"products": [
+{
+"id":1,
+"name":"Bombomzão de Morango com Coco",
+"description":"Morango envolto na massa de brigadeiro branco com coco, banhado no chocolate meio amargo",
+"price":7,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/1-bombomMorangoCoco.jpeg"
+},
+{
+"id":2,
+"name":"Bombomzão de Morango Tradicional",
+"description":"Morango envolto na massa de brigadeiro branco com ninho, banhado no chocolate meio amargo",
+"price":7,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/2-bombomMorangoTradicional.jpeg"
+},
+{
+"id":3,
+"name":"Bombom La Petra",
+"description":"Palha italiana recheada com caramelo salgado e coberto de chocolate meio amargo",
+"price":7.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/3-bombomLaPetra.jpeg"
+},
+{
+"id":4,
+"name":"Bombom de Frutas Vermelhas",
+"description":"Geleia de frutas vermelhas e creme branco, envolto em chocolate meio amargo",
+"price":7.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/4-bombomFrutasVermelhas.jpeg"
+},
+{
+"id":5,
+"name":"Coxinha de Nutela",
+"description":"Morango coberto com massa de leite ninho e nutela",
+"price":9,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/5-coxinhaMorango.jpeg"
+},
+{
+"id":6,
+"name":"Bombom Ferrero",
+"description":"Ferrero rocher envolto com brigadeiro goumert, castanha de caju e Nutella",
+"price":9,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/6-bombomFerrero.jpeg"
+},
+{
+"id":7,
+"name":"Brigadeiro Gourmet",
+"description":"Brigadeiro feito com chocolate nobre, envolto no chocolate granule callebaut",
+"price":5.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/7-brigadeiroGourmet.jpeg"
+},
+{
+"id":8,
+"name":"Delícia Crocante",
+"description":"Palha italiana de biscoito preto, recheado de Nutella crocante",
+"price":9,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/8-deliciaCrocante.jpeg"
+},
+{
+"id":9,
+"name":"Brownie Nuts na Marmita",
+"description":"Brownie úmido recheado com nutela e coberto por castanhas",
+"price":10,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/9-marmitaBrownie.jpeg"
+},
+{
+"id":10,
+"name":"Cookie Gourmet com Nutela",
+"description":"Biscoito feito com gotas de chocolate nobre e recheado com Nutella",
+"price":8.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/10-cookieChocolate.jpeg"
+},
+{
+"id":11,
+"name":"Folhata",
+"description":"Creme 4 leites, massa folhada doce crocante, morangos e cobertura especial",
+"price":18,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/11-folhata.jpeg"
+},
+{
+"id":12,
+"name":"Bombom de Morango no Pote",
+"description":"Creme chocolate branco, chocolate ao leite e morangos frescos",
+"price":15,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/12-bombomAberto.jpeg"
+},
+{
+"id":13,
+"name":"Salada de Frutas com Creme La Petra",
+"description":"Frutas selecionadas (kiwi, manga, uva e morango) com creme suave",
+"price":16,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/13-salada.jpeg"
+},
+{
+"id":14,
+"name":"Caseirinho",
+"description":"Bolo de cenoura com cobertura de chocolate",
+"price":20,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/14-caseirinho.jpeg"
+},
+{
+"id":16,
+"name":"Bolo Alpino",
+"description":"Perfeição divina!",
+"price":13.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/16-boloAlpino.jpeg"
+},
+{
+"id":17,
+"name":"Fatia Laka",
+"description":"Gostinho de infância",
+"price":14,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/17-fatiaFrutasVermelhas.jpeg"
+},
+{
+"id":18,
+"name":"Fatia Prestígio",
+"description":"Gostinho de infância",
+"price":14,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/18-fatiaPrestigio.jpeg"
+},
+{
+"id":19,
+"name":"Fatia Ouro Branco",
+"description":"Gostinho de infância",
+"price":14,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/19-fatiaOuroBranco.jpeg"
+},
+{
+"id":20,
+"name":"Cheesecake de Limão Siciliano",
+"description":"Fatia de cheesecake sabor limão siciliano",
+"price":17,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/20-cheeseCakeLimao.jpeg"
+},
+{
+"id":21,
+"name":"Chocolate Cremoso",
+"description":"Chocolate cremoso, feito a base de chocolate nobre",
+"price":20,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/21-chocolateCremoso.jpeg"
+},
+{
+"id":22,
+"name":"Brownie com Sorvete",
+"description":"Brownie servido sobre nutela, com fatias de morango e sorvete de creme",
+"price":15,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/22-brownieSorvete.jpeg"
+},
+{
+"id":23,
+"name":"Surpresa de Ouro Branco",
+"description":"Mousse de chocolate, creme 4 leites e bombons Ouro Branco",
+"price":20,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/23-copoOuroBranco.jpeg"
+},
+{
+"id":24,
+"name":"Copo da Felicidade",
+"description":"Creme suaves, mousse 4 leites, morangos frescos e chantininho",
+"price":19,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/24-copoMorango.jpeg"
+},
+{
+"id":36,
+"name":"Cookie Red Velvet",
+"description":"Biscoito feito com gotas de chocolate branco e recheado com cream-cheese",
+"price":9.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/36-cookieRedVelvet.jpeg"
+},
+{
+"id":37,
+"name":"Copo Chocolate Cremoso",
+"description":"Biscoito feito com gotas de chocolate branco e recheado com cream-cheese",
+"price":8.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/37-copoChocolateCremoso.jpeg"
+},
+{
+"id":38,
+"name":"Cupcake",
+"description":"Bolinho recheado de creme chocolate branco e chantininho por cima",
+"price":8.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/38-cupCake.jpeg"
+},
+{
+"id":40,
+"name":"Torta Holandesa",
+"description":"Cream cheese com chocolate nobre",
+"price":18,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/40-tortaHolandesa.jpeg"
+},
+{
+"id":46,
+"name":"Pudim",
+"description":"Melhor do que o da vovó",
+"price":10,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/46-pudim.jpeg"
+},
+{
+"id":47,
+"name":"Banofe",
+"description":"Delicioso com banana e chantilly",
+"price":11.5,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/47-banofe.jpeg"
+},
+{
+"id":50,
+"name":"Bark La Petra",
+"description":"Lascas de caramelo",
+"price":32,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/50-barkLaPetra.jpeg"
+},
+{
+"id":51,
+"name":"Palha Italiana",
+"description":"Lascas de caramelo",
+"price":7,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg"
+},
+{
+"id":71,
+"name":"Cookies Cream",
+"description":"Pedaços de cookie red velvet e creme branco",
+"price":17,
+"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
+}
+]
 }
