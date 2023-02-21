@@ -21,19 +21,19 @@ const Contact = () => {
       
       <div className={styles.contact}>
         <h2>Clique para Pedir</h2>
-        <a href='https://l-petra.goomer.app/' target="_blank" rel="noreferrer">
+        <a href='https://l-petra.goomer.app/'>
           <img src={goomer} alt="goomer"/>
           Peça mais barato aqui
         </a>
-        <a href='https://www.ifood.com.br/delivery/bom-despacho-mg/la-petra-novo-sao-jose/ffb8ee69-9fd7-46bb-81d1-7a3a290d80db?utm_medium=share' target="_blank" rel="noreferrer">
+        <a href='https://www.ifood.com.br/delivery/bom-despacho-mg/la-petra-novo-sao-jose/ffb8ee69-9fd7-46bb-81d1-7a3a290d80db?utm_medium=share'>
           <img src={ifood} alt="ifood"/>          
           Peça pelo Ifood
         </a>
-        <a href='https://api.whatsapp.com/send/?phone=5537988031002&text&type=phone_number&app_absent=0' target="_blank" rel="noreferrer">
+        <a href='https://api.whatsapp.com/send/?phone=5537988031002&text&type=phone_number&app_absent=0'>
           <img src={whatsapp} alt="whatsapp"/>
           Encomende bolos personalizados
         </a>
-        <a href='https://www.instagram.com/lapetradoceria/' target="_blank" rel="noreferrer">
+        <a href='https://www.instagram.com/lapetradoceria/'>
           <img src={instagram} alt="instagram"/>
           Instagram
         </a>
