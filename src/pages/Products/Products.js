@@ -50,7 +50,7 @@ const Products = () => {
       }
       <div className={styles.products}>
         {idsArray.map((id) => (
-          <Product key={products[id].id} product={products[id]} setModalProduct={setModalProduct}/>
+          <Product key={products[id].id} product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
         ))}
       </div>
     </div>

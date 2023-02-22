@@ -4,6 +4,7 @@
     justify-content: flex-start;
     align-items: center;
     height: 100%;
+    width: 100%;
 }
 
 .products {
@@ -25,13 +26,13 @@
     }
 
     .products::-webkit-scrollbar-track {
-        background: rgba(127,105,91,0.4);
+        background: rgba(127,105,91,0.2);
         border-radius: 10px;
         padding: 5px;
     }
 
     .products::-webkit-scrollbar-thumb {
-        background-color: rgba(127,105,91,0.6);
+        background-color: rgba(127,105,91,0.4);
         border-radius: 10px;
     }
 }
