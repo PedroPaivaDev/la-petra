@@ -87,17 +87,16 @@ main {
   z-index: 0;
 }
 
-main::after {
+main::before {
+  position: absolute;
+  content: ' ';
+  top: 0; 
+  left: 0;
   background: url('/src/assets/backgrounds/bg_bolos_festivos_vertical.jpeg') no-repeat;
   background-position: center right;
   background-size: cover;
-  content: ' ';
-  display: block;
-  position: absolute;
-  top: 0; 
-  left: 0;
   width: 100%;
-  height: 100%;
+  height: calc(100% - 15px);
   opacity: 0.4;
   z-index: -2;
 }
@@ -108,8 +107,7 @@ main::after {
 
 h2 {
   font-size: 1.4rem;
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin: 5px 0;
 }
 
 .animeLeft {
