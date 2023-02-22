@@ -96,18 +96,19 @@ main::before {
   background-position: center right;
   background-size: cover;
   width: 100%;
-  height: calc(100% - 15px);
+  height: calc(100% - 20px);
   opacity: 0.4;
   z-index: -2;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 58rem) {
   main {height: calc(100vh - 75px - 75px);}
 }
 
 h2 {
   font-size: 1.4rem;
   margin: 5px 0;
+  text-align: center;
 }
 
 .animeLeft {
