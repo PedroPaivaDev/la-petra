@@ -1,20 +1,23 @@
 import React from 'react';
 import styles from './Carousel.module.css';
-import getProducts from '../../services/api';
+import {SLIDER_GET} from '../../services/api';
+
+import useFetch from '../../hooks/useFetch';
+import Loading from '../../helpers/Loading';
 
 const Carousel = () => {
-  const [data, setData] = React.useState()
+  const {data, loading, error, request} = useFetch();
   const [products, setProducts] = React.useState();
   const [photos, setPhotos] =  React.useState();
   const [slide, setSlide] = React.useState(0);
 
   React.useEffect(() => {
-    const fetchData = async () => {
-      const dataProducts = await getProducts();
-      setData(dataProducts);
+    async function fetchProducts() {
+      const {url} = SLIDER_GET();
+      const {response, json} = await request(url)
     }
-    fetchData();
-  },[]);
+    fetchProducts();
+  },[request])
 
   React.useEffect(() => {
     data && setProducts(data.reduce((total, currentValue) => {
@@ -24,11 +27,11 @@ const Carousel = () => {
         display: "none"
       }}
     }, {}));
-  }, [data]);
+  }, [data])
 
   React.useEffect(() => {
     products && setPhotos(Object.keys(products))
-  },[data]);
+  },[data])
 
   React.useEffect(() => {
     photos && setProducts({
@@ -78,10 +81,12 @@ const Carousel = () => {
     }, 2500)
   })
 
-  return (
+  if(error) return <p>Erro ao carregar</p>;
+  if(loading) return <Loading/>;
+  if(photos) return (
     <div className={styles.container}>
       {photos && photos.map((photo, index) => (
-        <div key={index} style={{background: `url(${products[photo].image}) no-repeat`, backgroundSize: "cover", backgroundPosition: "center", width: `100%`, height: `100%`, display:`${products[photo].display}`}}/>
+        <div className={styles.photo} key={index} style={{background: `url(${products[photo].image}) no-repeat`, backgroundSize: "cover", backgroundPosition: "center", display:`${products[photo].display}`}}/>
       ))}
     </div>
   )

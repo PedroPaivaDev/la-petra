@@ -4,12 +4,9 @@
     align-items: center;
     width: 100vw;
     height: 60px;
-    /* background: rgba(127,105,91,0.6);
-    border-top: 2px solid rgba(127,105,91);
-    border-bottom: 2px solid rgba(127,105,91); */
-    background-color: rgba(218,185,191);
-    border-top: 3px solid rgba(86,63,57);
-    border-bottom: 3px solid rgba(86,63,57);
+    background-color: var(--mediumPink);
+    border-top: 3px solid var(--darkBrown);
+    border-bottom: 3px solid var(--darkBrown);
     z-index: 1;
 }
 
@@ -35,19 +32,19 @@
 }
 
 .navLink span {
-    color: #efe1e3;
+    color: var(--lightPink);
     text-shadow: 1px 1px 5px black;
 }
 
 .navLink:hover, .activePage {
-    background: rgba(239,225,227,0.8);
-    box-shadow: 0 0 10px 10px rgba(239,225,227,0.8);
+    background: var(--lightPink);
+    box-shadow: 0 0 10px 10px var(--lightPink);
 }
 
 .navLink:hover span, .activePage span, .activePage svg>*, .navLink:hover svg>* {
-    color: #4f4245;
+    color: var(--darkBrown);
     text-shadow: 1px 1px 5px white;
-    stroke: #4f4245;
+    stroke: var(--darkBrown);
 }
 
 .icon {
@@ -57,7 +54,7 @@
 }
 
 .activePage svg, .navLink:hover svg {
-    fill: #4f4245;
+    fill: var(--darkBrown);
 }
 
 @media (max-width: 23rem) {
@@ -86,6 +83,6 @@
     width: 60px;
     height: 60px;
     border-radius: 30px;  
-    background: rgba(239,225,227,0.7);
-    box-shadow: 0 0 10px 10px rgba(239,225,227,0.7);
+    background: var(--lightPink);
+    box-shadow: 0 0 10px 10px var(--lightPink);
 }

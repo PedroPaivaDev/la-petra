@@ -15,17 +15,28 @@
   box-sizing: border-box;
   font-family: 'Coiny', cursive;
 	font-size: 16px;
-  color: #513e41;
+  vertical-align: middle;
+  color: var(--darkBrown);
   text-shadow: 1px 1px 5px white;
 }
 
 body {
+  --mainHeight: calc(100vh - 75px - 80px);
+  --mainWidth: 100vw;
+
+  --darkBrown: rgba(86,63,57);
+  --lightBrown: rgba(127,105,91);
+  --darkPink: #f14670;
+  --mediumPink: rgba(218,185,191);
+  --lightPink: rgba(239,225,227);
+  --darkCyan: #4fbcaf;
+
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: flex;
   justify-content: center;
-  background-color: rgba(86,63,57);
+  background-color: var(--darkBrown);
 }
 
 code {
@@ -69,9 +80,7 @@ img {
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  background-color: white;
   z-index: -1;
 }
 
@@ -80,34 +89,18 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background-color: rgba(203,156,164, 0.3);
-  height: calc(100vh - 75px);
-  width: 100vw;
+  background: url('/src/assets/backgrounds/bg-main-bolos-rosa.png') no-repeat;
+  background-position: center right;
+  background-size: cover;
+  height: var(--mainHeight);
+  width: var(--mainWidth);
   overflow: hidden;
   z-index: 0;
 }
 
-main::before {
-  position: absolute;
-  content: ' ';
-  top: 0; 
-  left: 0;
-  background: url('/src/assets/backgrounds/bg_bolos_festivos_vertical.jpeg') no-repeat;
-  background-position: center right;
-  background-size: cover;
-  width: 100%;
-  height: calc(100% - 20px);
-  opacity: 0.4;
-  z-index: -2;
-}
-
-@media (max-width: 58rem) {
-  main {height: calc(100vh - 75px - 75px);}
-}
-
 h2 {
   font-size: 1.4rem;
-  margin: 5px 0;
+  margin: 10px 0px 5px 0px;
   text-align: center;
 }
 

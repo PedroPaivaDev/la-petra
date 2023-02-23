@@ -1,6 +1,18 @@
 .container {
-    display: flex;
-    justify-content: center;
+    width: 100%;
+    height: var(--mainHeight);
+    background-color: var(--darkBrown);
+}
+
+.photo {
     width: 100%;
     height: 100%;
+    opacity: 0;
+    animation: showNextImage 0.8s forwards;
+}
+
+@keyframes showNextImage {
+    to {
+        opacity: 1;
+    }
 }
