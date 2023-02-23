@@ -100,7 +100,7 @@ main {
   z-index: 0;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 58rem) {
   main {height: var(--mainHeightMobile);}
 }
 

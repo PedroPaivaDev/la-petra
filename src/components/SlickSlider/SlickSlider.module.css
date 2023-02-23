@@ -5,7 +5,7 @@
     overflow: hidden;
 }
 
-@media (max-width: 40rem) {
+@media (max-width: 58rem) {
     .container, .container img {
         height: var(--mainHeightMobile);
     }
