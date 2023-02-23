@@ -1,6 +1,6 @@
 .container {
     width: 100%;
-    height: var(--mainHeight);
+    height: var(--mainHeightWeb);
     background-color: var(--darkBrown);
 }
 
@@ -14,5 +14,11 @@
 @keyframes showNextImage {
     to {
         opacity: 1;
+    }
+}
+
+@media (max-width: 40rem) {
+    .container {
+        height: var(--mainHeightMobile);
     }
 }

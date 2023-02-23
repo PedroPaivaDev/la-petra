@@ -1,6 +1,12 @@
 .container, .container img {
     width: 100%;
-    height: var(--mainHeight);
+    height: var(--mainHeightWeb);
     object-fit: cover;
     overflow: hidden;
+}
+
+@media (max-width: 40rem) {
+    .container, .container img {
+        height: var(--mainHeightMobile);
+    }
 }

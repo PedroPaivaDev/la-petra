@@ -7,12 +7,16 @@ Site da doceria La Petra, desenvolvido com a biblioteca React.
 ## Descrição
 O projeto é uma *Single-Page Application* feita com componentes **React** e estilizados com CSS puro.
 
-Foi utilizada a biblioteca react-router-dom, para permitir a nevagação entre as telas.
+Foi utilizada a biblioteca [react-router-dom](https://reactrouter.com/en/main/start/tutorial) para permitir a nevagação entre as telas e a biblioteca [react-slick](https://react-slick.neostack.com/docs/get-started) para fazer o carrossel de imagens da *home*.
 
 <img src="./src/assets/animation.gif" alt="gif"/>
 
 ## Instruções
-A tela inicial apresenta um menu de seleção...
+A tela inicial (*home*) é um carrossel apresentando imagens de produtos da doceria, assim como as produções sazonais destinadas a eventos como páscoa, dia dos namorados e natal. Ainda na tela incial, clicando no ícone da logomarca, o cliente será direcionado para a rota *about*, onde é descrita a história de como surgiu a *La Petra*. O cabecalho da página é fixo e permite a navegação entre as rotas Produtos e Comprar.
+
+A rota **Produtos** mostra uma página com os doces produzidos diariamente e quando o cliente clica em um dos produtos, surge um modal com a imagem ampliada e a descrição dos ingredientes.
+
+A rota **Comprar** mostra uma página com o horário de funcionamento da doceria, a localização e os links para acessar os canais de compra: Goomer (que não cobra taxas adicionais) e o IFood. Para fazer encomendas de bolos o cliente deve usar o whatsapp, descrevendo com mais detalhes o que deseja para o bolo.
 
 > Caso você seja um desenvolvedor, use as instruções abaixo para instalar as dependências e sugerir alterações para a aplicação.
 
@@ -35,6 +39,7 @@ Clique nas versões abaixo, para observar a evolução do projeto ao longo do te
 | Versão | Update |
 | ------ | ------ |
 | [versão_0.1](https://la-petra-git-v01-pedropaivadev.vercel.app/) | Primeira versão do projeto. |
+| [versão_0.2](https://la-petra-git-v02-pedropaivadev.vercel.app/) | Em construção... |
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 

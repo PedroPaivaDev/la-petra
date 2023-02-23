@@ -21,8 +21,10 @@
 }
 
 body {
-  --mainHeight: calc(100vh - 75px - 80px);
-  --mainWidth: 100vw;
+  --mainHeightWeb: calc(100vh - 75px);
+  --mainWidthWeb: 100vw;
+  --mainHeightMobile: calc(100vh - 75px - 85px);
+  --mainWidthWeb: 100vw;
 
   --darkBrown: rgba(86,63,57);
   --lightBrown: rgba(127,105,91);
@@ -92,10 +94,14 @@ main {
   background: url('/src/assets/backgrounds/bg-main-bolos-rosa.png') no-repeat;
   background-position: center right;
   background-size: cover;
-  height: var(--mainHeight);
-  width: var(--mainWidth);
+  height: var(--mainHeightWeb);
+  width: var(--mainWidthWeb);
   overflow: hidden;
   z-index: 0;
+}
+
+@media (max-width: 40rem) {
+  main {height: var(--mainHeightMobile);}
 }
 
 h2 {
