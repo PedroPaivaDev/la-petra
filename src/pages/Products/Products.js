@@ -1,5 +1,7 @@
 import React from 'react';
 import styles from './Products.module.css';
+// import styles from './GridProducts.module.css';
+
 import useFetch from '../../hooks/useFetch';
 import {PRODUCTS_GET} from '../../services/api';
 

@@ -172,13 +172,6 @@
 "image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/18-fatiaPrestigio.jpeg"
 },
 {
-"id":19,
-"name":"Fatia Ouro Branco",
-"description":"Gostinho de infância",
-"price":14,
-"image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/19-fatiaOuroBranco.jpeg"
-},
-{
 "id":20,
 "name":"Cheesecake de Limão Siciliano",
 "description":"Fatia de cheesecake sabor limão siciliano",
@@ -261,6 +254,13 @@
 "description":"Doce feito com massa de brigadeiro e biscoito",
 "price":7,
 "image":"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg"
+},
+{
+"id": 71,
+"name": "Cookies Cream",
+"description": "Pedaços de cookie red velvet e creme branco",
+"price": 17.00,
+"image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
 }
 ]
 }
