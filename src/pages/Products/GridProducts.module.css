@@ -9,14 +9,26 @@
 
 .products {
     display: grid;
-    flex-direction: row;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     justify-content: center;
     align-items: center;
+    width: 100%;
     gap: 10px;
-    flex-wrap: wrap;
     overflow: auto;
-    padding: 10px 0;
-    max-width: 1250px;
+    padding: 10px 20px;
+    max-width: 1200px;
+}
+
+@media (max-width: 1120px) {
+    .products {grid-template-columns: 1fr 1fr 1fr;}
+}
+
+@media (max-width: 860px) {
+    .products {grid-template-columns: 1fr 1fr;}
+}
+
+@media (max-width: 600px) {
+    .products {grid-template-columns: 1fr;}
 }
 
 @media (min-width: 40rem) {
