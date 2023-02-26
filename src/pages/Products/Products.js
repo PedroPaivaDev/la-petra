@@ -8,6 +8,7 @@ import {PRODUCTS_GET} from '../../services/api';
 import Product from '../../components/Product/Product';
 import Loading from '../../helpers/Loading';
 import ModalProduct from '../../components/Product/ModalProduct';
+import Grid from '../../components/Grid/Grid';
 
 const Products = () => {
   const {data, error, loading, request} = useFetch();
@@ -18,7 +19,7 @@ const Products = () => {
   React.useEffect(() => {
     async function fetchProducts() {
       const {url} = PRODUCTS_GET();
-      const {response, json} = await request(url);
+      await request(url);
     }
     fetchProducts();
   },[request])
@@ -50,9 +51,16 @@ const Products = () => {
           setModalProduct={setModalProduct}
         />
       }
-      <div className={styles.products}>
+      {/* <div className={styles.products}>
         {idsArray.map((id) => (
           <Product key={products[id].id} product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
+        ))}
+      </div> */}
+      <div className='row'>
+        {idsArray.map((id) => (
+          <Grid xs={12} sm={6} md={4} lg={3}>
+            <Product key={products[id].id} product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
+          </Grid>
         ))}
       </div>
     </div>

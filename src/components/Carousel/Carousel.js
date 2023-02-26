@@ -14,7 +14,7 @@ const Carousel = () => {
   React.useEffect(() => {
     async function fetchProducts() {
       const {url} = SLIDER_GET();
-      const {response, json} = await request(url)
+      await request(url)
     }
     fetchProducts();
   },[request])
