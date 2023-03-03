@@ -9,6 +9,8 @@ O projeto é uma *Single-Page Application* feita com componentes **React** e est
 
 Foi utilizada a biblioteca [react-router-dom](https://reactrouter.com/en/main/start/tutorial) para permitir a nevagação entre as telas e a biblioteca [react-slick](https://react-slick.neostack.com/docs/get-started) para fazer o carrossel de imagens da *home*.
 
+Na página de produtos foi feito um componente Grid, para que o tamanho dos cartões dos produtos fosse definido como uma propriedade do componenete. O valor dessas propriedades fica responsável por definir uma classe pré-definida no CSS, que só será ativada quando a tela estiver em determinado tamanho. Esse componente foi feito com base na lógica e padrões de classe do framework **Bootsrap**.
+
 <img src="./src/assets/animation.gif" alt="gif"/>
 
 ## Instruções
@@ -39,7 +41,6 @@ Clique nas versões abaixo, para observar a evolução do projeto ao longo do te
 | Versão | Update |
 | ------ | ------ |
 | [versão_0.1](https://la-petra-git-v01-pedropaivadev.vercel.app/) | Primeira versão do projeto. |
-| [versão_0.2](https://la-petra-git-v02-pedropaivadev.vercel.app/) | Em construção... |
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 

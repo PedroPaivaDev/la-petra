@@ -1,6 +1,6 @@
 import React from 'react';
-// import styles from './Products.module.css';
-import styles from './GridProducts.module.css';
+import styles from './Products.module.css';
+// import styles from './GridProducts.module.css';
 
 import useFetch from '../../hooks/useFetch';
 import {PRODUCTS_GET} from '../../services/api';
@@ -56,10 +56,10 @@ const Products = () => {
           <Product key={products[id].id} product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
         ))}
       </div> */}
-      <div className='row'>
+      <div className={styles.products}>
         {idsArray.map((id) => (
-          <Grid xs={12} sm={6} md={4} lg={3}>
-            <Product key={products[id].id} product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
+          <Grid key={products[id].id} xs={10} sm={6} md={5} lg={4} xl={3}>
+            <Product product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
           </Grid>
         ))}
       </div>

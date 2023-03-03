@@ -136,18 +136,3 @@ h2 {
   left: 10px !important;
   z-index: 10;
 }
-
-.container {
-  padding: 0 15px;
-  margin: 0 auto;
-  max-width: 1200px;
-  width: 100%;
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  width: 100%;
-  overflow: auto;
-  padding: 10px 20px;
-}
