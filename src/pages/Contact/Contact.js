@@ -1,10 +1,12 @@
 import React from 'react';
 import styles from './Contact.module.css';
+import { Link } from 'react-router-dom';
 
 import goomer from '../../assets/icons/iconGoomer.png';
 import ifood from '../../assets/icons/iconIfood.png';
 import whatsapp from '../../assets/icons/iconWhatsapp.png';
 import instagram from '../../assets/icons/iconInstagram.png';
+import pascoa from '../../assets/icons/iconPascoa.png';
 
 // import Cloche from '../../components/Cloche/Cloche';
 
@@ -37,6 +39,10 @@ const Contact = () => {
           <img src={instagram} alt="instagram"/>
           Instagram
         </a>
+        <Link to='/sazonal'>
+          <img src={pascoa} alt="pascoa"/>
+          Faça aqui o seu pedido de Páscoa
+        </Link>
       </div>
 
       <h2>Localização</h2>

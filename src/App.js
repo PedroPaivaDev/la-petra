@@ -8,6 +8,7 @@ import About from "./pages/About/About";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Products from "./pages/Products/Products";
+import Seasonal from "./pages/Seasonal/Seasonal";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/sobre" element={<About/>}/>
             <Route path="/produtos" element={<Products/>}/>
             <Route path="/contato" element={<Contact/>}/>
+            <Route path="/sazonal" element={<Seasonal/>}/>
           </Routes>
         </main>
         <Footer/>
