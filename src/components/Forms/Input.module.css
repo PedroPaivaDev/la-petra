@@ -9,9 +9,10 @@
   border: 1px solid var(--mediumPink);
   font-size: 1rem;
   padding: 2px 5px;
-  border-radius: 0.4rem;
+  border-radius: 5px;
   background: var(--lightPink);
   transition: 0.2s;
+  width: 200px;
 }
 
 .input:focus, input:hover {

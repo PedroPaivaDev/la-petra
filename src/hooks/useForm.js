@@ -36,10 +36,10 @@ const useForm = (type) => {
     if (error) validate(target.value);
     if (type==="contact") {
       currentTarget.maxlength = 11;
-      let value = currentTarget.value;
-      value = value.replace(/\D/g, "");
-      value = value.replace(/^(\d{2})(\d{1})(\d{4})(\d)/, "($1) $2 $3-$4");
-      setValue(value);
+      let valueMasked = currentTarget.value;
+      valueMasked = valueMasked.replace(/\D/g, "");
+      valueMasked = valueMasked.replace(/^(\d{2})(\d{1})(\d{4})(\d)/, "($1) $2 $3-$4");
+      setValue(valueMasked);
     } else {
       setValue(target.value);
     }

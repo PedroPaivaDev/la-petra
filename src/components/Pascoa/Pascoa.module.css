@@ -17,18 +17,7 @@
   align-items: center;
   gap: 10px;
   max-width: 80%;
-}
-
-.button {
-  background-color: var(--darkCyan);
-  padding: 5px 20px;
-  border-radius: 20px;
-  transition: 0.3s;
-  box-shadow: 1px 1px 2px 0px var(--darkBrown);
-}
-
-.button:hover {
-  background-color: var(--lightCyan);
+  margin-bottom: 20px;
 }
 
 .form {

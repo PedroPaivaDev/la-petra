@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+}
+
+.button {
+  background-color: var(--darkCyan);
+  padding: 5px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  box-shadow: 1px 1px 2px 0px var(--darkBrown);
+}
+
+.button:hover {
+  background-color: var(--lightCyan);
+}
+
+.error {
+  position: relative;
+  align-self: center;
+  color: #f31;
+  font-size: 0.8rem;
+}
