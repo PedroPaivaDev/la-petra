@@ -3,9 +3,11 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 10px;
   width: 100%;
   height: 100%;
   text-align: center;
+  overflow: auto;
 }
 
 .product {
@@ -13,17 +15,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   max-width: 80%;
 }
 
-button {
-  margin-top: 20px;
+.button {
   background-color: var(--darkCyan);
   padding: 5px 20px;
   border-radius: 20px;
   transition: 0.3s;
+  box-shadow: 1px 1px 2px 0px var(--darkBrown);
 }
 
-button:hover {
-  background-color: var(--mediumPink);
+.button:hover {
+  background-color: var(--lightCyan);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }

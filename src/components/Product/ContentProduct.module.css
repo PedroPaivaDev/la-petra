@@ -44,7 +44,7 @@
 
 .container * {
   color: var(--lightPink);
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px white;
 }
 
 .description h4 {
@@ -57,6 +57,7 @@
   font-size: 1rem;
   text-align: justify;
   letter-spacing: 1px;
+  text-shadow: 1px 1px 5px black;
 }
 
 .container .price {

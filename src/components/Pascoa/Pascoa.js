@@ -1,34 +1,31 @@
 import React from 'react';
 import styles from './Pascoa.module.css';
 
-// import mobileCheck from '../../services/mobileCheck';
+import useMediaQuery from '../../hooks/useMediaQuery';
+import useForm from '../../hooks/useForm';
+import Input from '../Forms/Input';
 
 const Pascoa = () => {
+  const client = useForm();
+  const contact = useForm('contact');
+  const width = useMediaQuery();
   // texto = window.encodeURIComponent(texto);
   // window.open(urlApi + "?phone=" + celular + "&text=" + texto, "_blank");
   
   function handleSubmit(event) {
     event.preventDefault();
     const numberContact = 553799237253;
-    let urlApi = 'http://api.whatsapp.com/send';
+    let urlApi = 'http://web.whatsapp.com/send';
 
-    // if(mobileCheck()){
-    //   urlApi = "https://api.whatsapp.com/send";
-    // }
-
-    const name = 'Pedro';
-    const pedido = 'quero muitos ovos';
-    const acres = 'blabla';
-    
+    if(width[0]<914){
+      urlApi = "https://api.whatsapp.com/send";
+    }    
 
     window.location = `
-      ${urlApi}?phone=${numberContact}&text= 
-      Cliente: ${name}%0a
-      Pedido: ${pedido}%0a
-      Acréscimos: ${acres}
-      `;
+      ${urlApi}?phone=${numberContact}&text=Cliente: ${client.value}%0aContato: ${contact.value}%0a
+    `;
   }
-
+  
   return (
     <div className={styles.container}>
       <h2>Cardápio de Páscoa</h2>
@@ -38,8 +35,10 @@ const Pascoa = () => {
         <p>Até o dia 06/04, você poderá escolher sua casca: blend, ao leite, meio amargo, branca ou branca crocante de biscoito.</p>
         <p>Peso aproximado do ovo com casca de 250g: 350g a 450g</p>
         <p>Peso aproximado do ovo com casca de 350g: 450g a 500g</p>
-        <form onSubmit={handleSubmit}>
-          <button>Enviar Pedido</button>
+        <form onSubmit={handleSubmit} className={styles.form}>
+          <Input label="Cliente:" type="text" name="client" {...client} />
+          <Input label="Contato:" type="text" name="contact" {...contact} />
+          <button className={styles.button}>Enviar Pedido</button>
         </form>
       </div>
     </div>

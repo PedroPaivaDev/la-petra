@@ -13,11 +13,6 @@
     padding: 10px;
 }
 
-.container * {
-    color: var(--lightPink);
-    text-shadow: 1px 1px 5px black;
-}
-
 .image {
     width: 50%;
     height: 130px;
@@ -34,17 +29,20 @@
 }
 
 .description h4 {
+    /* color: var(--lightPink); */
+    color: white;
     font-size: 1.2rem;
+    text-shadow: 1px 1px 5px black;
     transition: 0.3s;
 }
 
 .description h4:hover {
     color: var(--darkPink);
+    text-shadow: 1px 1px 5px white;
     cursor: pointer;
 }
 
 .description h3 {
     font-size: 1.2rem;
     color: var(--darkCyan);
-    text-shadow: 1px 1px 5px black;
 }
