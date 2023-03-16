@@ -9,8 +9,6 @@ const Pascoa = () => {
   const client = useForm();
   const contact = useForm('contact');
   const width = useMediaQuery();
-  // texto = window.encodeURIComponent(texto);
-  // window.open(urlApi + "?phone=" + celular + "&text=" + texto, "_blank");
   
   function handleSubmit(event) {
     event.preventDefault();
