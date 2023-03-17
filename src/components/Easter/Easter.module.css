@@ -8,20 +8,14 @@
   height: 100%;
   text-align: center;
   overflow: auto;
+  padding: 0 10px;
 }
 
-.product {
+.products {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 10px;
-  max-width: 80%;
-  margin-bottom: 20px;
-}
-
-.form {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+  width: 100%;
 }

@@ -4,7 +4,8 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 import Logotipo from '../../assets/Logotipo.png';
 import {ReactComponent as Cake} from '../../assets/icons/cake.svg';
-import {ReactComponent as Cart} from '../../assets/icons/shopping-cart-simple.svg';
+// import {ReactComponent as Cart} from '../../assets/icons/shopping-cart-simple.svg';
+import {ReactComponent as Bag} from '../../assets/icons/bag.svg';
 
 const Header = () => {
 
@@ -37,7 +38,8 @@ const Header = () => {
         </div>
 
         <NavLink className={styles.navLink} activeClassName={styles.activePage} to="/contato">
-          <Cart className={styles.icon}/>
+          {/* <Cart className={styles.icon}/> */}
+          <Bag className={styles.icon}/>
           <span>Comprar</span>
         </NavLink>
       </div>

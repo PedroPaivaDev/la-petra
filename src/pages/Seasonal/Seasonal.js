@@ -1,12 +1,12 @@
 import React from 'react';
 import styles from './Seasonal.module.css';
 
-import Pascoa from '../../components/Pascoa/Pascoa';
+import Easter from '../../components/Easter/Easter';
 
 const Seasonal = () => {
   return (
     <div className={`${styles.container} animeLeft`}>
-      <Pascoa/>
+      <Easter/>
     </div>
   )
 }
