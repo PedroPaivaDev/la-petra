@@ -1,6 +1,7 @@
 import React from 'react';
-import ContentProduct from './ContentProduct';
 import styles from './ModalProduct.module.css';
+
+import ContentProduct from './ContentProduct';
 
 const ModalProduct = ({products, modalProduct, setModalProduct}) => {
   
