@@ -9,10 +9,21 @@ import eggs from '../../services/eggs';
 
 import ModalEasterProduct from './ModalEasterProduct';
 import Grid from '../Grid/Grid';
+import { addProduct } from '../../services/firebase';
 
 const Easter = () => {
   const [modalProduct, setModalProduct] = React.useState();
   const navigate = useNavigate();
+
+  function handleClick() {
+    // navigate("/order");
+    const id = 70
+    const name = 'Fatia coco'
+    const description = 'Fatia coco com doce de leite'
+    const price = 13
+    const image = "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-1.jpg"
+    addProduct(id, name, description, price, image)
+  }
 
   const products = eggs.reduce((total, currentValue) => {
     return {...total, [currentValue.id]: {
@@ -52,7 +63,7 @@ const Easter = () => {
         ))}
       </div>
 
-      <Button onClick={() => navigate("/order")}>Finalizar Pedido</Button>
+      <Button onClick={handleClick}>Finalizar Pedido</Button>
     </div>
   )
 }
