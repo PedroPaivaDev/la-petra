@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Import Admin SDK
-import { getDatabase, ref, set, child, push } from "firebase/database";
+import { getDatabase, ref, set, child, push, onValue } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -41,8 +41,8 @@ export function createNewProduct(id, name, description, price, image) {
 }
 
 //Para registrar pedidos de clientes
-export function registerProductOrder(id, name, description, price, image) {
-  const productsRef = ref(db, 'products');
+export function registerProductsOrder(id, name, description, price, image) {
+  const ordersRef = ref(db, 'productsOrders');
   const product = {
     id: id,
     name: name,
@@ -50,5 +50,17 @@ export function registerProductOrder(id, name, description, price, image) {
     price: price,
     image: image
   };
-  push(productsRef, product)
+  push(ordersRef, product)
+}
+
+export function getProducts(setState) {
+  const productsRef = ref(db, 'products');
+  let products = [];
+  onValue(productsRef, (snapshot) => {
+    snapshot.forEach(product => {
+      products = [...products, product.val()]
+    })
+    setState(products)
+    console.log(products)
+  }, {onlyOnce: true})
 }
