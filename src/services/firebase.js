@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Import Admin SDK
-import { getDatabase, ref, set, child, push, onValue } from "firebase/database";
+import { getDatabase, ref, set, child, push, onValue, remove } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -53,6 +53,7 @@ export function registerProductsOrder(id, name, description, price, image) {
   push(ordersRef, product)
 }
 
+//Para buscar os produtos no DB
 export function getProducts(setState) {
   const productsRef = ref(db, 'products');
   let products = [];
@@ -63,4 +64,15 @@ export function getProducts(setState) {
     setState(products)
     console.log(products)
   }, {onlyOnce: true})
+}
+
+//Para remover produtos
+export function removeProduct(id) {
+  const productsRef = ref(db, 'products/' + id);
+  remove(productsRef).then(() => {
+    console.log(`excluído o item ${id}`)
+  });
+  // set(productsRef, null).then(() => {
+  //   console.log(`excluído o item ${id}`)
+  // });
 }

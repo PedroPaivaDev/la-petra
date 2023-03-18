@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Admin.module.css';
-import { registerProductsOrder, createNewProduct, getProducts } from '../../services/firebase';
+import { registerProductsOrder, createNewProduct, getProducts, removeProduct } from '../../services/firebase';
 
 import Button from '../../components/Forms/Button';
 import useForm from '../../hooks/useForm';
@@ -39,6 +39,10 @@ const Admin = () => {
     getProducts(setProducts);
   }
 
+  function remove(idProduct) {
+    removeProduct(idProduct)
+  }
+
   React.useEffect(() => {
     setTimeout(() => {
       setSubmitError(false);
@@ -56,6 +60,8 @@ const Admin = () => {
       <Button onClick={create} submitError={submitError}>Adicionar produto</Button>
       <Button onClick={order} submitError={submitError}>Registrar Pedido</Button>
       <Button onClick={showProducts} submitError={submitError}>Ver Produtos</Button>
+      <Button onClick={() => remove(id.value)} submitError={submitError}>Remover Produto</Button>
+      
     </div>
   )
 }
