@@ -5,6 +5,7 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
 import About from "./pages/About/About";
+import Admin from "./pages/Admin/Admin";
 import Contact from "./pages/Contact/Contact";
 import Home from "./pages/Home/Home";
 import Order from "./pages/Order/Order";
@@ -24,6 +25,7 @@ function App() {
             <Route path="/contato" element={<Contact/>}/>
             <Route path="/sazonal" element={<Seasonal/>}/>
             <Route path="/order" element={<Order/>}/>
+            <Route path="/admin" element={<Admin/>}/>
           </Routes>
         </main>
         <Footer/>

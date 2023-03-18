@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Import Admin SDK
-import { getDatabase, ref, set } from "firebase/database";
+import { getDatabase, ref, set, child, push } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -27,20 +27,28 @@ const db = getDatabase(app);
 
 //MÉTODOS CRIADOS:
 
-export function addProduct(id, name, description, price, image) {
-
-  let product = {
+//Para criar novos produtos
+export function createNewProduct(id, name, description, price, image) {
+  const productsRef = ref(db, 'products');
+  const product = {
     id: id,
     name: name,
     description: description,
     price: price,
     image: image
   };
+  set(child(productsRef,`${id}`), product)
+}
 
-  //firebase: objeto global
-  //database(): método para acesso ao DB criado
-  //ref(): url em string para referencia do caminho do banco
-  //set(): método que cria dados na url passada
-
-  set(ref(db, "products/"), product);
+//Para registrar pedidos de clientes
+export function registerProductOrder(id, name, description, price, image) {
+  const productsRef = ref(db, 'products');
+  const product = {
+    id: id,
+    name: name,
+    description: description,
+    price: price,
+    image: image
+  };
+  push(productsRef, product)
 }
