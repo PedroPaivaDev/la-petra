@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Admin.module.css';
-import { registerProductsOrder, createNewProduct, getProducts, removeProduct } from '../../services/firebase';
+import { registerProductsOrder, createNewProduct, getProducts, removeProduct, changeProductPrice } from '../../services/firebase';
 
 import Button from '../../components/Forms/Button';
 import useForm from '../../hooks/useForm';
@@ -39,8 +39,12 @@ const Admin = () => {
     getProducts(setProducts);
   }
 
-  function remove(idProduct) {
-    removeProduct(idProduct)
+  function remove() {
+    removeProduct(id.value)
+  }
+
+  function change() {
+    changeProductPrice(id.value, price.value)
   }
 
   React.useEffect(() => {
@@ -60,7 +64,8 @@ const Admin = () => {
       <Button onClick={create} submitError={submitError}>Adicionar produto</Button>
       <Button onClick={order} submitError={submitError}>Registrar Pedido</Button>
       <Button onClick={showProducts} submitError={submitError}>Ver Produtos</Button>
-      <Button onClick={() => remove(id.value)} submitError={submitError}>Remover Produto</Button>
+      <Button onClick={remove} submitError={submitError}>Remover Produto</Button>
+      <Button onClick={change} submitError={submitError}>Alterar Preço</Button>
       
     </div>
   )

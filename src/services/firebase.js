@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Import Admin SDK
-import { getDatabase, ref, set, child, push, onValue, remove } from "firebase/database";
+import { getDatabase, ref, set, child, push, onValue, remove, update } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -41,10 +41,9 @@ export function createNewProduct(id, name, description, price, image) {
 }
 
 //Para registrar pedidos de clientes
-export function registerProductsOrder(id, name, description, price, image) {
+export function registerProductsOrder(name, description, price, image) {
   const ordersRef = ref(db, 'productsOrders');
   const product = {
-    id: id,
     name: name,
     description: description,
     price: price,
@@ -75,4 +74,12 @@ export function removeProduct(id) {
   // set(productsRef, null).then(() => {
   //   console.log(`excluído o item ${id}`)
   // });
+}
+
+//Para atualizar produtos
+export function changeProductPrice(id, newPrice) {
+  const productsRef = ref(db, 'products/' + id);
+  update(productsRef, {price: newPrice}).then(() => {
+    console.log(`o preço do produto de id: ${id}, foi alterado para ${newPrice}`)
+  });
 }
