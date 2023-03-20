@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Import Admin SDK
-import { getDatabase, ref, set, child, push, onValue, remove, update } from "firebase/database";
+import { getDatabase, ref, set, child, push, onValue, remove, update, orderByChild, query } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -67,9 +67,12 @@ export function getProducts(setState) {
 
 //Para remover produtos
 export function removeProduct(id) {
-  const productsRef = ref(db, 'products/' + id);
-  remove(productsRef).then(() => {
+  const productRef = ref(db, 'products/' + id);
+  remove(productRef).then(() => {
     console.log(`excluído o item ${id}`)
+  }).catch((error) => { // não está funcionando o catch
+    alert(`Não foi encontrado o item${id} para ser excluído.`);
+    console.log(error);
   });
   // set(productsRef, null).then(() => {
   //   console.log(`excluído o item ${id}`)
@@ -78,8 +81,15 @@ export function removeProduct(id) {
 
 //Para atualizar produtos
 export function changeProductPrice(id, newPrice) {
-  const productsRef = ref(db, 'products/' + id);
-  update(productsRef, {price: newPrice}).then(() => {
+  const productRef = ref(db, 'products/' + id);
+  update(productRef, {price: newPrice}).then(() => {
     console.log(`o preço do produto de id: ${id}, foi alterado para ${newPrice}`)
   });
+}
+
+//Para ordenar produtos pelo nome (ainda não funciona)
+export function ordainBy() {
+  const productsRef = ref(db, 'products');
+  const orderlyProducts = query(productsRef, orderByChild('name'));
+  console.log(orderlyProducts);
 }

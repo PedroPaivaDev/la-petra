@@ -9,7 +9,6 @@ import eggs from '../../services/eggs';
 
 import ModalEasterProduct from './ModalEasterProduct';
 import Grid from '../Grid/Grid';
-import { addProduct } from '../../services/firebase';
 
 const Easter = () => {
   const [modalProduct, setModalProduct] = React.useState();

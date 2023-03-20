@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Admin.module.css';
-import { registerProductsOrder, createNewProduct, getProducts, removeProduct, changeProductPrice } from '../../services/firebase';
+import { registerProductsOrder, createNewProduct, getProducts, removeProduct, changeProductPrice, ordainBy } from '../../services/firebase';
 
 import Button from '../../components/Forms/Button';
 import useForm from '../../hooks/useForm';
@@ -47,6 +47,10 @@ const Admin = () => {
     changeProductPrice(id.value, price.value)
   }
 
+  function ordain() {
+    ordainBy();
+  }
+
   React.useEffect(() => {
     setTimeout(() => {
       setSubmitError(false);
@@ -66,7 +70,7 @@ const Admin = () => {
       <Button onClick={showProducts} submitError={submitError}>Ver Produtos</Button>
       <Button onClick={remove} submitError={submitError}>Remover Produto</Button>
       <Button onClick={change} submitError={submitError}>Alterar Preço</Button>
-      
+      <Button onClick={ordain} submitError={submitError}>Ordenar por Nome</Button>
     </div>
   )
 }
