@@ -4,7 +4,7 @@ import { initializeApp } from "firebase/app";
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Import Admin SDK
-import { getDatabase, ref, set, child, push, onValue, remove, update, orderByChild, query } from "firebase/database";
+import { getDatabase, ref, set, child, push, onValue, remove, update, orderByChild, query, onChildAdded } from "firebase/database";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
@@ -88,8 +88,10 @@ export function changeProductPrice(id, newPrice) {
 }
 
 //Para ordenar produtos pelo nome (ainda não funciona)
-export function ordainBy() {
-  const productsRef = ref(db, 'products');
-  const orderlyProducts = query(productsRef, orderByChild('name'));
-  console.log(orderlyProducts);
+export function ordainByName() {
+  const eggsRef = ref(db, 'eggs');
+  const orderlyEggs = query(eggsRef, orderByChild('name'));
+  onChildAdded(orderlyEggs, (snapshot) => {
+    console.log(snapshot.val())
+  })
 }

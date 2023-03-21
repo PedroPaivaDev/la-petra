@@ -263,8 +263,8 @@
 "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
 }
 ],
-"eggs":[
-{
+"eggs":{
+"a": {
 "id": 1,
 "name":"Ninho com Nutella",
 "description":"Casca de chocolate Blend, recheio cremoso de leite ninho e nutella pura, decorado com brigadeiros de ninho c/ nutella por cima.",
@@ -277,7 +277,7 @@
 "pricesm":95,
 "pricelg":105
 },
-{
+"b":{
 "id": 2,
 "name":"Delícia Crocante",
 "description":"Casca de chocolate branco crocante de biscoito oreo, recheio trufado com biscoito e nutella pura com ovomaltine, decorado com biscoito oreo e pedaços de laka oreo.",
@@ -290,5 +290,5 @@
 "pricesm":90,
 "pricelg":100
 }
-]
+}
 }
