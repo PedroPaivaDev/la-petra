@@ -5,32 +5,27 @@ import Button from '../Forms/Button';
 import EasterProduct from './EasterProduct';
 import { useNavigate } from 'react-router-dom';
 
-import eggs from '../../services/eggs';
-
 import ModalEasterProduct from './ModalEasterProduct';
 import Grid from '../Grid/Grid';
+import { getEggs } from '../../services/firebase';
 
 const Easter = () => {
-  const [modalProduct, setModalProduct] = React.useState();
+  const [products, setProducts] = React.useState();
+  const [idsArray, setIdsArray] = React.useState();
+  const [modalProduct, setModalProduct] = React.useState(null);
   const navigate = useNavigate();
 
   function handleClick() {
     navigate("/order");
   }
 
-  const products = eggs.reduce((total, currentValue) => {
-    return {...total, [currentValue.id]: {
-      id: currentValue.id,
-      name: currentValue.name,
-      description: currentValue.description,
-      weightsm: currentValue.weightsm,
-      weightlg: currentValue.weightlg,
-      pricesm: currentValue.pricesm,
-      pricelg: currentValue.pricelg,
-      image: currentValue.image
-    }}
-  }, {})
-  const idsArray = Object.keys(products);
+  React.useEffect(() => {
+    getEggs(setProducts);
+  },[])
+
+  React.useEffect(() => {
+    products && setIdsArray(Object.keys(products));
+  },[products])
   
   return (
     <div className={styles.container}>
@@ -49,9 +44,9 @@ const Easter = () => {
       }
 
       <div className={styles.products}>
-        {idsArray.map((id) => (
+        {idsArray && idsArray.map((id) => (
           <Grid key={products[id].id} xs={10} sm={6} md={5} lg={4} xl={3}>
-            <EasterProduct product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
+            <EasterProduct product={products[id]} setModalProduct={setModalProduct}/>
           </Grid>
         ))}
       </div>

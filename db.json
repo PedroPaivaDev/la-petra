@@ -264,31 +264,83 @@
 }
 ],
 "eggs":{
-"a": {
-"id": 1,
+"e1": {
+"id": "e1",
 "name":"Ninho com Nutella",
 "description":"Casca de chocolate Blend, recheio cremoso de leite ninho e nutella pura, decorado com brigadeiros de ninho c/ nutella por cima.",
 "image":[
-  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/easter/ovoNinhoNutella-1.jpg",
-  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/easter/ovoNinhoNutella-2.jpg"
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoNinhoNutella-1.jpg",
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoNinhoNutella-2.jpg"
 ],
 "weightsm":400,
 "weightlg":500,
 "pricesm":95,
 "pricelg":105
 },
-"b":{
-"id": 2,
+"e2":{
+"id": "e2",
 "name":"Delícia Crocante",
 "description":"Casca de chocolate branco crocante de biscoito oreo, recheio trufado com biscoito e nutella pura com ovomaltine, decorado com biscoito oreo e pedaços de laka oreo.",
 "image":[
-  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/easter/ovoDeliciaCrocante-1.jpg",
-  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/easter/ovoDeliciaCrocante-2.jpg"
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-1.jpg",
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-2.jpg"
 ],
 "weightsm":380,
 "weightlg":450,
 "pricesm":90,
 "pricelg":100
+},
+"e3":{
+"id": "e3",
+"name":"Bombom de Morango",
+"description":"Casca de chocolate blend, recheio 4 leites e recheio de chocolate ao leite com morangos, decorado com brigadeiros enrolados em confeito belga e morangos.",
+"image":[
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoBombomMorango-1.jpg",
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoBombomMorango-2.jpg"
+],
+"weightsm":400,
+"weightlg":500,
+"pricesm":90,
+"pricelg":105
+},
+"e4":{
+"id": "e4",
+"name":"Explosão Kinder",
+"description":"Casca de chocolate blend, recheio cremoso de chocolate branco e chocolate ao leite, decorado com kinder Bueno.",
+"image":[
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoExplosaoKinder-1.jpg",
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoExplosaoKinder-2.jpg"
+],
+"weightsm":400,
+"weightlg":500,
+"pricesm":90,
+"pricelg":100
+},
+"e5":{
+"id": "e5",
+"name":"Delírio de Pudim",
+"description":"Casca de chocolate branca, recheio cremoso brûlée, mousse de ninho e 1 mini pudim por cima.",
+"image":[
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDelirioPudim-1.jpg",
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDelirioPudim-2.jpg"
+],
+"weightsm":400,
+"weightlg":500,
+"pricesm":90,
+"pricelg":100
+},
+"e6":{
+"id": "e6",
+"name":"Ferrero Rocher",
+"description":"Casca de chocolate blend, recheio de brigadeiro goumert, castanhas, nutella, brownie, mousse chocolate, decorado com brigadeiro goumert, nutella, amendoim torrado e ferrero Rocher.",
+"image":[
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoFerreroRocher-1.jpg",
+  "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoFerreroRocher-2.jpg"
+],
+"weightsm":380,
+"weightlg":490,
+"pricesm":95,
+"pricelg":105
 }
 }
 }

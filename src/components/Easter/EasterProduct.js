@@ -1,25 +1,16 @@
 import React from 'react';
 import styles from './EasterProduct.module.css';
 
-const EasterProduct = ({product, modalProduct, setModalProduct}) => {
+const EasterProduct = ({product, setModalProduct}) => {
 
   function handleClick() {
-    setModalProduct(product.id)
-  }
-
-  function vanishProduct() {
-    if(modalProduct===product.id) {
-      return 0
-    } else {
-      return 1
-    }
+    setModalProduct(product)
   }
 
   return (
     <div
       className={styles.container}
       onClick={handleClick}
-      style={{opacity: vanishProduct()}}
     >
       <h4 className={styles.name}>{product.name}</h4>
       <div

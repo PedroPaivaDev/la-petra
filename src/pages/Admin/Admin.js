@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Admin.module.css';
-import { registerProductsOrder, createNewProduct, getProducts, removeProduct, changeProductPrice, ordainByName } from '../../services/firebase';
+import { registerProductsOrder, createNewProduct, getProducts, removeProduct, changeProductPrice, ordainByName, filterByPrice } from '../../services/firebase';
 
 import Button from '../../components/Forms/Button';
 import useForm from '../../hooks/useForm';
