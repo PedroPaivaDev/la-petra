@@ -3,7 +3,7 @@ import './Grid.css';
 
 const Grid = ({children, xs=12, sm, md, lg, xl}) => {
   return (
-    <div className={`
+    <div className={`rowGrid
       ${xs && `col-xs-${xs}`}
       ${sm && `col-sm-${sm}`}
       ${md && `col-md-${md}`}

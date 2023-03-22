@@ -58,7 +58,7 @@ const Products = () => {
       </div> */}
       <div className={styles.products}>
         {idsArray.map((id) => (
-          <Grid key={products[id].id} xs={10} sm={6} md={5} lg={4} xl={3}>
+          <Grid key={products[id].id} xs={11} sm={6} md={4} lg={4} xl={3}>
             <Product product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
           </Grid>
         ))}

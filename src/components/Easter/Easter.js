@@ -45,7 +45,7 @@ const Easter = () => {
 
       <div className={styles.products}>
         {idsArray && idsArray.map((id) => (
-          <Grid key={products[id].id} xs={10} sm={6} md={5} lg={4} xl={3}>
+          <Grid key={products[id].id} xs={12} sm={6} md={4} lg={4} xl={3}>
             <EasterProduct product={products[id]} setModalProduct={setModalProduct}/>
           </Grid>
         ))}
