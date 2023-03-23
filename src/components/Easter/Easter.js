@@ -8,10 +8,8 @@ import { useNavigate } from 'react-router-dom';
 import ModalEasterProduct from './ModalEasterProduct';
 import Grid from '../Grid/Grid';
 import { getProducts } from '../../services/firebase';
-import useLocalStorage from '../../hooks/useLocalStorage';
 
 const Easter = () => {
-  const [bag, setBag] = useLocalStorage('bag', []);
   const [eggs, setEggs] = React.useState();
   const [truffles, setTruffles] = React.useState();
   const [kids, setKids] = React.useState();
@@ -37,8 +35,6 @@ const Easter = () => {
           eggs={eggs}
           modalProduct={modalProduct}
           setModalProduct={setModalProduct}
-          bag={bag}
-          setBag={setBag}
         />
       }
 

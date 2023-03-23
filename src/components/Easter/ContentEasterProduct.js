@@ -1,8 +1,12 @@
 import React from 'react';
+import { BagContext } from '../../contexts/BagContext';
 import Button from '../Forms/Button';
 import styles from './ContentEasterProduct.module.css';
 
-const ContentEasterProduct = ({modalProduct, bag, setBag}) => {
+const ContentEasterProduct = ({modalProduct}) => {
+  
+  const [bag, setBag] = React.useContext(BagContext);
+
   function handleCLick() {
     setBag([...bag, modalProduct])
   }

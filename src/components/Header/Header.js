@@ -5,15 +5,15 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import Logotipo from '../../assets/Logotipo.png';
 import {ReactComponent as Cake} from '../../assets/icons/cake.svg';
 import {ReactComponent as Bag} from '../../assets/icons/bag.svg';
+import { BagContext } from '../../contexts/BagContext';
 
 const Header = () => {
+  const [bag, setBag] = React.useContext(BagContext);
   const [handleOrder, setHandleOrder] = React.useState();
+
   const {pathname} = useLocation();
   const navigate = useNavigate();
-
-  const local = window.localStorage.getItem('bag');
-  const bagProducts = JSON.parse(local);
-
+  
   function handleNavigateHome() {
     if(pathname==="/") {
       navigate("/sobre")
@@ -21,18 +21,15 @@ const Header = () => {
       navigate("/")
     }
   }
-
+  
   React.useEffect(() => {    
     if(pathname==="/" || pathname==="/produtos" || pathname==="/contato" || pathname==="/sobre") {
       setHandleOrder("/contato");
     } else {
       setHandleOrder("/order");
     }
-    console.log(pathname)
-  })
-
+  },[pathname])
   
-
   return (
     <header className={styles.header}>
       <div className={styles.container}>
@@ -47,7 +44,7 @@ const Header = () => {
         </div>
 
         <NavLink className={styles.navLink} activeClassName={styles.activePage} to={handleOrder ? handleOrder : 'contato'}>
-          <span className={styles.bagCount}>{bagProducts.length}</span>
+          {bag.length!==0 && <span className={styles.bagCount}>{bag.length}</span>}
           <Bag className={styles.icon}/>
           Comprar
         </NavLink>
