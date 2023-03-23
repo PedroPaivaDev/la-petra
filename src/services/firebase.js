@@ -52,24 +52,15 @@ export function registerProductsOrder(name, description, price, image) {
   push(ordersRef, product)
 }
 
-//Para buscar os ovos no DB
-export function getEggs(setState) {
-  const eggsRef = ref(db, 'eggs');
-  onValue(eggsRef, (snapshot) => {
-    setState(snapshot.val())
-  }, {onlyOnce: true})
-}
-
 //Para buscar os produtos no DB
-export function getProducts(setState) {
-  const productsRef = ref(db, 'products');
+export function getProducts(path, setState) {
+  const productsRef = ref(db, path);
   let products = [];
   onValue(productsRef, (snapshot) => {
     snapshot.forEach(product => {
       products = [...products, product.val()]
     })
     setState(products)
-    console.log(products)
   }, {onlyOnce: true})
 }
 

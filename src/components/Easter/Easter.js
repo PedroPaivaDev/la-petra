@@ -7,11 +7,15 @@ import { useNavigate } from 'react-router-dom';
 
 import ModalEasterProduct from './ModalEasterProduct';
 import Grid from '../Grid/Grid';
-import { getEggs } from '../../services/firebase';
+import { getProducts } from '../../services/firebase';
+import useLocalStorage from '../../hooks/useLocalStorage';
 
 const Easter = () => {
-  const [products, setProducts] = React.useState();
-  const [idsArray, setIdsArray] = React.useState();
+  const [cart, setCart] = useLocalStorage('cart', []);
+  const [eggs, setEggs] = React.useState();
+  const [truffles, setTruffles] = React.useState();
+  const [kids, setKids] = React.useState();
+  const [others, setOthers] = React.useState();
   const [modalProduct, setModalProduct] = React.useState(null);
   const navigate = useNavigate();
 
@@ -20,33 +24,63 @@ const Easter = () => {
   }
 
   React.useEffect(() => {
-    getEggs(setProducts);
+    getProducts('eggs', setEggs);
+    getProducts('truffles', setTruffles);
+    getProducts('kids', setKids);
+    getProducts('others', setOthers);
   },[])
-
-  React.useEffect(() => {
-    products && setIdsArray(Object.keys(products));
-  },[products])
   
   return (
     <div className={styles.container}>
-      <h2>Cardápio de Páscoa</h2>
-      <p>Os ovos contém 1 banda e são feitos com casca de chocolate nobre e recheios de alta qualidade.</p>
-      <p>Até o dia 06 de abril, você poderá escolher sua casca: blend, ao leite, meio amargo, branca ou branca crocante de biscoito.</p>
-      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 250g: 350g a 450g</p>
-      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 350g: 450g a 500g</p>
-
       {modalProduct && 
         <ModalEasterProduct
-          products={products}
+          eggs={eggs}
           modalProduct={modalProduct}
           setModalProduct={setModalProduct}
         />
       }
 
+      <h2>Cardápio de Páscoa</h2>
+      <p>Até o dia 06 de abril, você poderá escolher sua casca: blend, ao leite, meio amargo, branca ou branca crocante de biscoito.</p>
+      
+      <h3>Ovos de Colher</h3>
+      <p>Os ovos contém 1 banda e são feitos com casca de chocolate nobre e recheios de alta qualidade.</p>
+      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 250g: 350g a 450g</p>
+      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 350g: 450g a 500g</p>
       <div className={styles.products}>
-        {idsArray && idsArray.map((id) => (
-          <Grid key={products[id].id} xs={12} sm={6} md={4} lg={4} xl={3}>
-            <EasterProduct product={products[id]} setModalProduct={setModalProduct}/>
+        {eggs && eggs.map((egg) => (
+          <Grid key={egg.id} xs={12} sm={6} md={4} lg={4} xl={3}>
+            <EasterProduct product={egg} setModalProduct={setModalProduct}/>
+          </Grid>
+        ))}
+      </div>
+
+      <h3>Cascas Trufadas</h3>
+      <p>Duas bandas feitas com chocolate nobre recheados com cremes de alta qualidade.</p>
+      <div className={styles.products}>
+        {truffles && truffles.map((truffle) => (
+          <Grid key={truffle.id} xs={12} sm={6} md={4} lg={4} xl={3}>
+            <EasterProduct product={truffle} setModalProduct={setModalProduct}/>
+          </Grid>
+        ))}
+      </div>
+
+      <h3>Linha Kids</h3>
+      <p>Ovos feitos com chocolate nobre e recheios de alta qualidade.</p>
+      <div className={styles.products}>
+        {kids && kids.map((kid) => (
+          <Grid key={kid.id} xs={12} sm={6} md={4} lg={4} xl={3}>
+            <EasterProduct product={kid} setModalProduct={setModalProduct}/>
+          </Grid>
+        ))}
+      </div>
+
+      <h3>Para Presentear</h3>
+      <p>Produtos feitos com chocolate nobre e recheios de alta qualidade.</p>
+      <div className={styles.products}>
+        {others && others.map((other) => (
+          <Grid key={other.id} xs={12} sm={6} md={4} lg={4} xl={3}>
+            <EasterProduct product={other} setModalProduct={setModalProduct}/>
           </Grid>
         ))}
       </div>

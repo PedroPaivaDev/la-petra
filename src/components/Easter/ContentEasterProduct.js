@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Forms/Button';
 import styles from './ContentEasterProduct.module.css';
 
 const ContentEasterProduct = ({modalProduct}) => {
@@ -12,14 +13,15 @@ const ContentEasterProduct = ({modalProduct}) => {
         <p>{modalProduct.description}</p>
         <div className={styles.prices}>
           <div>
-            <h6>Peso final aprox. {modalProduct.weightsm}g</h6>
-            <h4 className={styles.price}>R${modalProduct.pricesm.toFixed(2)}</h4>
+            <h6>Peso final aprox. {modalProduct.sizesm.weight}g</h6>
+            <h4 className={styles.price}>R${modalProduct.sizesm.price.toFixed(2)}</h4>
           </div>
-          <div>
-          <h6>Peso final aprox. {modalProduct.weightlg}g</h6>
-            <h4 className={styles.price}>R${modalProduct.pricelg.toFixed(2)}</h4>
-          </div>
+          {modalProduct.sizelg && <div>
+            <h6>Peso final aprox. {modalProduct.sizelg.weight}g</h6>
+            <h4 className={styles.price}>R${modalProduct.sizelg.price.toFixed(2)}</h4>
+          </div>}
         </div>
+        <Button>Adicionar à Sacola</Button>
       </div>
     </div>
   )

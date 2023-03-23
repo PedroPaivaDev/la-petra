@@ -55,7 +55,6 @@
 }
 
 .container * {
-  color: var(--lightPink);
   text-shadow: 1px 1px 5px white;
 }
 
@@ -71,7 +70,6 @@
   letter-spacing: 1px;
   text-shadow: none;
   color: black;
-  font-family: cursive;
 }
 
 .container .price {
@@ -85,7 +83,7 @@
 
 .container h6 {
   font-size: 0.625rem;
-  font-family: cursive;
+  font-family: arial;
   color: black;
   text-shadow: none;
 }
@@ -120,7 +118,6 @@
   }
   .description p {
     font-size: 0.75rem;
-    font-family: cursive;
   }
 }
 
@@ -130,14 +127,12 @@
   }
   .description p {
     font-size: 0.75rem;
-    font-family: cursive;
   }
 }
 
 @media (max-width: 20rem) {
   .description p {
     font-size: 0.625rem;
-    font-family: cursive;
   }
 }
 

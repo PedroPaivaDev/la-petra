@@ -11,6 +11,11 @@
   padding: 0 10px;
 }
 
+.container h3 {
+  margin-top: 10px;
+  font-size: 1.2rem;
+}
+
 .products {
   display: flex;
   justify-content: center;
@@ -18,4 +23,5 @@
   gap: 10px;
   width: 100%;
   flex-wrap: wrap;
+  margin-bottom: 10px;
 }
