@@ -4,7 +4,6 @@
   align-items: center;
   justify-content: flex-end;
   height: 50px;
-  margin-bottom: 20px;
 }
 
 .button {
@@ -23,5 +22,14 @@
   position: relative;
   align-self: center;
   color: #f31;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sucess {
+  position: relative;
+  align-self: center;
+  color: #1AB912;
+  font-size: 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
 }

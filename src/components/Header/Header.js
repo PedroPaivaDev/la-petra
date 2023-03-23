@@ -4,15 +4,17 @@ import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 import Logotipo from '../../assets/Logotipo.png';
 import {ReactComponent as Cake} from '../../assets/icons/cake.svg';
-// import {ReactComponent as Cart} from '../../assets/icons/shopping-cart-simple.svg';
 import {ReactComponent as Bag} from '../../assets/icons/bag.svg';
 
 const Header = () => {
-
+  const [handleOrder, setHandleOrder] = React.useState();
   const {pathname} = useLocation();
   const navigate = useNavigate();
 
-  function handleNavigate() {
+  const local = window.localStorage.getItem('bag');
+  const bagProducts = JSON.parse(local);
+
+  function handleNavigateHome() {
     if(pathname==="/") {
       navigate("/sobre")
     } else {
@@ -20,27 +22,34 @@ const Header = () => {
     }
   }
 
+  React.useEffect(() => {    
+    if(pathname==="/" || pathname==="/produtos" || pathname==="/contato" || pathname==="/sobre") {
+      setHandleOrder("/contato");
+    } else {
+      setHandleOrder("/order");
+    }
+    console.log(pathname)
+  })
+
+  
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <NavLink className={styles.navLink} activeClassName={styles.activePage} to="/produtos">
           <Cake className={styles.icon}/>
-          <span>Produtos</span>
+          Produtos
         </NavLink>
 
-        {/* {pathname!=="/" && <NavLink className={styles.navLink} to="/">
-          <span>Início</span>
-        </NavLink>} */}
-
-        <div className={styles.logo} onClick={handleNavigate}>
+        <div className={styles.logo} onClick={handleNavigateHome}>
           <div className={styles.shadow}></div>
           <img src={Logotipo} height="80px" alt="Logotipo"/>
         </div>
 
-        <NavLink className={styles.navLink} activeClassName={styles.activePage} to="/contato">
-          {/* <Cart className={styles.icon}/> */}
+        <NavLink className={styles.navLink} activeClassName={styles.activePage} to={handleOrder ? handleOrder : 'contato'}>
+          <span className={styles.bagCount}>{bagProducts.length}</span>
           <Bag className={styles.icon}/>
-          <span>Comprar</span>
+          Comprar
         </NavLink>
       </div>
     </header>

@@ -2,7 +2,10 @@ import React from 'react';
 import Button from '../Forms/Button';
 import styles from './ContentEasterProduct.module.css';
 
-const ContentEasterProduct = ({modalProduct}) => {
+const ContentEasterProduct = ({modalProduct, bag, setBag}) => {
+  function handleCLick() {
+    setBag([...bag, modalProduct])
+  }
 
   return (
     <div className={styles.container}>
@@ -21,7 +24,7 @@ const ContentEasterProduct = ({modalProduct}) => {
             <h4 className={styles.price}>R${modalProduct.sizelg.price.toFixed(2)}</h4>
           </div>}
         </div>
-        <Button>Adicionar à Sacola</Button>
+        <Button onClick={handleCLick}>Adicionar à Sacola</Button>
       </div>
     </div>
   )
