@@ -26,11 +26,18 @@ const ContentEasterProduct = ({modalProduct}) => {
 
   React.useEffect(() => {
     if(option==="Branco" || option==="Branco Crocante") {
-      setModifiedProduct({
-        ...modifiedProduct, 
-          sizesm:{...modifiedProduct["sizesm"],price: modalProduct["sizesm"].price + 3},
-          sizelg:{...modifiedProduct["sizelg"],price: modalProduct["sizelg"].price + 3}
-      });
+      if(modifiedProduct.sizelg) {
+        setModifiedProduct({
+          ...modifiedProduct, 
+            sizesm:{...modifiedProduct.sizesm,price: modalProduct.sizesm.price + 3},
+            sizelg:{...modifiedProduct.sizelg,price: modalProduct.sizelg.price + 3}
+        });
+      } else {
+        setModifiedProduct({
+          ...modifiedProduct, 
+            sizesm:{...modifiedProduct.sizesm,price: modalProduct.sizesm.price + 3}
+        });
+      }
     } else {
       setModifiedProduct(modalProduct)
     }
