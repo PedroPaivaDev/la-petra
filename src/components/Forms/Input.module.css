@@ -15,7 +15,7 @@
   width: 200px;
 }
 
-.input:focus, input:hover {
+.input:focus, .input:hover {
   outline: none;
   border-color: var(--darkCyan);
   background: white;

@@ -60,16 +60,15 @@
 
 .description h4 {
   color: var(--darkPink);
-  font-size: 1.2rem;
+  font-size: 1rem;
   text-align: center;
 }
 
-.description p {
-  font-size: 1rem;
+.description p, .description label {
+  font-size: 0.75rem;
   text-align: justify;
-  letter-spacing: 1px;
   text-shadow: none;
-  color: black;
+  color: var(--darkBrown);
 }
 
 .container .price {
@@ -81,10 +80,21 @@
   gap: 20px;
 }
 
+.options {
+  display: flex;
+  gap: 5px;
+}
+
+.options select, .options option {
+  background-color: var(--lightPink);
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
 .container h6 {
   font-size: 0.625rem;
-  font-family: arial;
-  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--darkBrown);
   text-shadow: none;
 }
 
@@ -107,6 +117,9 @@
   .description h4 {
     font-size: 1.2rem;
   }
+  .options {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-height: 27rem) {
@@ -116,7 +129,7 @@
   .description h4 {
     font-size: 1rem;
   }
-  .description p {
+  .description p, .description label {
     font-size: 0.75rem;
   }
 }
@@ -125,13 +138,13 @@
   .description h4 {
     font-size: 1rem;
   }
-  .description p {
+  .description p, .description label {
     font-size: 0.75rem;
   }
 }
 
 @media (max-width: 20rem) {
-  .description p {
+  .description p, .description label, .options select, .options option {
     font-size: 0.625rem;
   }
 }
@@ -143,7 +156,7 @@
   .description h4 {
     font-size: 0.75rem;
   }
-  .description p {
+  .description p, .description label, .options select, .options option {
     font-size: 0.625rem;
   }
 }

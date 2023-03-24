@@ -1,7 +1,7 @@
 import React from 'react';
 import './Grid.css';
 
-const Grid = ({children, xs=12, sm, md, lg, xl}) => {
+const Grid = ({children, xs=12, sm, md, lg, xl, className}) => {
   return (
     <div className={`rowGrid
       ${xs && `col-xs-${xs}`}
@@ -9,6 +9,7 @@ const Grid = ({children, xs=12, sm, md, lg, xl}) => {
       ${md && `col-md-${md}`}
       ${lg && `col-lg-${lg}`}
       ${xl && `col-xl-${xl}`}
+      ${className}
     `}>
       {children}
     </div>

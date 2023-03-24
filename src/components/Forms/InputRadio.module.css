@@ -1,0 +1,33 @@
+.inputGroup {
+  display: flex;
+  gap: 5px;
+}
+
+.inputGroup label {
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.inputGroup label:hover, .inputGroup input:checked + label {
+  color: var(--darkPink);
+}
+
+.inputGroup label::before {
+  /* border: 2px solid white; */
+  position: absolute;
+  top: -2px;
+  left: -15px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  content: "";
+}
+
+.inputGroup input:checked + label::before {  
+  background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.414 11L4 12.414l5.414 5.414L20.828 6.414 19.414 5l-10 10z' fill='green' fill-rule='nonzero'/%3E%3C/svg%3E ");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 2;
+}

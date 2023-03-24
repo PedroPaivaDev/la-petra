@@ -1,9 +1,10 @@
 .container {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-  height: 100px;
+  margin-top: 10px;
 }
 
 .button {
@@ -19,7 +20,8 @@
 }
 
 .error {
-  position: relative;
+  position: absolute;
+  top: 0px;
   align-self: center;
   color: #f31;
   font-size: 0.75rem;
@@ -27,7 +29,8 @@
 }
 
 .sucess {
-  position: relative;
+  position: absolute;
+  top: -15px;
   align-self: center;
   color: #1AB912;
   font-size: 0.75rem;
