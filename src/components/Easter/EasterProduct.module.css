@@ -1,14 +1,15 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  background-color: rgb(218,185,191,0.6);
-  border: 2px solid var(--lightBrown);
-  border-radius: 10px;
-  width: 100%;
-  height: 100%;
-  padding: 0px 10px 10px 10px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: rgb(218,185,191,0.6);
+    border: 2px solid var(--lightBrown);
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    padding: 0px 10px 10px 10px;
 }
 
 .image {
@@ -30,4 +31,20 @@
     color: var(--darkPink);
     text-shadow: 1px 1px 5px white;
     cursor: pointer;
+}
+
+.delete {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    color: #f31;
+    width: 24px;
+    line-height: 24px;
+    border-radius: 12px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.delete:hover {
+    background-color: var(--lightPink);
 }

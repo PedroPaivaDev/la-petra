@@ -6,10 +6,19 @@ import styles from './ContentEasterProduct.module.css';
 const ContentEasterProduct = ({modalProduct}) => {
   
   const [bag, setBag] = React.useContext(BagContext);
+  const [submitSucess, setSubmitSucess] = React.useState(false);
 
   function handleCLick() {
-    setBag([...bag, modalProduct])
+    setSubmitSucess(true);
+    const newModalProduct = {...modalProduct, id:Date.now()}
+    setBag([...bag, newModalProduct])
   }
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setSubmitSucess(false);
+    },4000)
+  },[submitSucess])
 
   return (
     <div className={styles.container}>
@@ -28,7 +37,7 @@ const ContentEasterProduct = ({modalProduct}) => {
             <h4 className={styles.price}>R${modalProduct.sizelg.price.toFixed(2)}</h4>
           </div>}
         </div>
-        <Button onClick={handleCLick}>Adicionar à Sacola</Button>
+        <Button onClick={handleCLick} submitSucess={submitSucess}>Adicionar à Sacola</Button>
       </div>
     </div>
   )

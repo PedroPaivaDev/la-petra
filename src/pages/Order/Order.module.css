@@ -9,6 +9,16 @@
   text-align: center;
   overflow: auto;
   padding: 0 10px;
+  margin-bottom: 10px;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .form {

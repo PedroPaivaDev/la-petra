@@ -8,7 +8,7 @@ import {ReactComponent as Bag} from '../../assets/icons/bag.svg';
 import { BagContext } from '../../contexts/BagContext';
 
 const Header = () => {
-  const [bag, setBag] = React.useContext(BagContext);
+  const [bag] = React.useContext(BagContext);
   const [handleOrder, setHandleOrder] = React.useState();
 
   const {pathname} = useLocation();
@@ -44,7 +44,7 @@ const Header = () => {
         </div>
 
         <NavLink className={styles.navLink} activeClassName={styles.activePage} to={handleOrder ? handleOrder : 'contato'}>
-          {bag.length!==0 && <span className={styles.bagCount}>{bag.length}</span>}
+          {Object.keys(bag).length!==0 && <span className={styles.bagCount}>{Object.keys(bag).length}</span>}
           <Bag className={styles.icon}/>
           Comprar
         </NavLink>
