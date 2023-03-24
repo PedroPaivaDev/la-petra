@@ -32,7 +32,7 @@
     /* color: var(--lightPink); */
     color: white;
     font-size: 1.2rem;
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px #333;
     transition: 0.3s;
 }
 

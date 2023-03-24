@@ -9,32 +9,39 @@ const ContentEasterProduct = ({modalProduct}) => {
   
   const [bag, setBag] = React.useContext(BagContext);
   const [submitSucess, setSubmitSucess] = React.useState(false);
+  const [submitError, setSubmitError] = React.useState(false);
   const [option, setOption] = React.useState('');
+  const [flavor, setFlavor] = React.useState('');
   const [modifiedProduct, setModifiedProduct] = React.useState(modalProduct);
 
   function handleCLick() {
-    setSubmitSucess(true);
-    const newModalProduct = {...modifiedProduct, id:Date.now()}
-    setBag([...bag, newModalProduct])
-  }  
-
-  React.useEffect(() => {
-    setTimeout(() => {
-      setSubmitSucess(false);
-    },4000)
-  },[submitSucess])
+    if((modalProduct.options && option==='') || (modalProduct.flavors && flavor==='')) {
+      setSubmitError(true);
+    } else {
+      setSubmitSucess(true);
+      const newModalProduct = {...modifiedProduct, id:Date.now()}
+      setBag([...bag, newModalProduct])
+    }
+  }
 
   React.useEffect(() => {
     if(option==="Branco" || option==="Branco Crocante") {
       setModifiedProduct({
         ...modifiedProduct, 
-          ["sizesm"]:{...modifiedProduct["sizesm"],price: modalProduct["sizesm"].price + 3},
-          ["sizelg"]:{...modifiedProduct["sizelg"],price: modalProduct["sizelg"].price + 3}
+          sizesm:{...modifiedProduct["sizesm"],price: modalProduct["sizesm"].price + 3},
+          sizelg:{...modifiedProduct["sizelg"],price: modalProduct["sizelg"].price + 3}
       });
     } else {
       setModifiedProduct(modalProduct)
     }
   }, [option])
+
+  React.useEffect(() => {
+    setTimeout(() => {
+      setSubmitSucess(false);
+      setSubmitError(false);
+    },3000)
+  },[submitSucess, submitError])
 
   return (
     <div className={styles.container}>
@@ -44,12 +51,19 @@ const ContentEasterProduct = ({modalProduct}) => {
         <h4>{modifiedProduct.name}</h4>
         <p>{modifiedProduct.description}</p>
 
-        <div className={styles.options}>
-          <p>Escolha a Casca:</p>
-          {modifiedProduct.options && 
-            <Select initial="Selecione Aqui" options={modifiedProduct.options} selectedOption={option} setSelectedOption={setOption}/>
-          }
-        </div>
+        {modifiedProduct.flavors && 
+          <div className={styles.options}>
+            <p>Sabores:</p>
+              <Select initial="Selecione Aqui" options={modifiedProduct.flavors} selectedOption={flavor} setSelectedOption={setFlavor}/>
+          </div>
+        }
+
+        {modifiedProduct.options && 
+          <div className={styles.options}>
+            <p>Escolha a Casca:</p>
+              <Select initial="Selecione Aqui" options={modifiedProduct.options} selectedOption={option} setSelectedOption={setOption}/>
+          </div>
+        }
 
         <div className={styles.prices}>
           <div>
@@ -62,8 +76,10 @@ const ContentEasterProduct = ({modalProduct}) => {
           </div>}
         </div>
 
-        <Button onClick={handleCLick} submitSucess={submitSucess}>Adicionar à Sacola</Button>
-        
+        <Button onClick={handleCLick} submitSucess={submitSucess} submitError={submitError}>
+          Adicionar à Sacola
+        </Button>
+
       </div>
     </div>
   )

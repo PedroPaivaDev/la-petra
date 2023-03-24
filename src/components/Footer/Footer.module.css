@@ -10,6 +10,6 @@
 
 .footer a {
   color: var(--lightBrown);
-  text-shadow: 1px 1px 5px black;
+  text-shadow: 1px 1px 5px #333;
   font-size: 0.5rem;
 }

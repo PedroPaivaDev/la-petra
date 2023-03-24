@@ -46,7 +46,7 @@
 
 .contact a:hover {
     color: var(--lightPink);
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 5px #333;
     background: var(--darkCyan);
     box-shadow: 0 0 10px 10px var(--darkCyan);
     border-radius: 20px;

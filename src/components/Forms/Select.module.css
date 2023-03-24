@@ -1,0 +1,9 @@
+.select, .select option {
+  background-color: var(--lightPink);
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
+.select {
+  max-width: 150px;
+}
