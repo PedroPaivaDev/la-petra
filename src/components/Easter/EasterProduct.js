@@ -13,7 +13,9 @@ const EasterProduct = ({product, setModalProduct}) => {
   }
 
   function handleDelete() {
-    setBag(bag.filter(productBag => productBag.id !== product.id));
+    if(window.confirm(`Deseja remover ${product.name} do seu pedido?`)) {
+      setBag(bag.filter(productBag => productBag.id !== product.id));
+    } else {return;}
   }
 
   return (
@@ -28,6 +30,10 @@ const EasterProduct = ({product, setModalProduct}) => {
       }
 
       {pathname==='/order' && <div className={styles.description}>
+        {product.type!=="" ?
+          <p>Tipo: {product.type}</p> :
+          <p style={{opacity: 0}}> . </p>
+        }
         {product.size && <p>Tamanho: {product.size}</p>}
         {product.options && product.options!=='' ?
           <p>Casca: {product.options}</p> :
@@ -37,10 +43,7 @@ const EasterProduct = ({product, setModalProduct}) => {
           <p>Sabor: {product.flavors}</p> :
           <p style={{opacity: 0}}> . </p>
         }
-        <h4>R${product.size==="Pequeno" || product.size==="Único" ?
-          product.sizesm.price.toFixed(2) :
-          product.sizelg.price.toFixed(2)
-        }</h4>
+        <h4>R${product.price.toFixed(2)}</h4>
       </div>}
 
       <div
