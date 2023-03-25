@@ -58,7 +58,7 @@
   text-shadow: 1px 1px 5px white;
 }
 
-.description h4 {
+.description span {
   color: var(--darkPink);
   font-size: 1rem;
   text-align: center;
@@ -69,6 +69,13 @@
   text-align: justify;
   text-shadow: none;
   color: var(--darkBrown);
+}
+
+.size {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container .price {
@@ -108,7 +115,7 @@
     width: 100%;
     gap: 5px;
   }
-  .description h4 {
+  .description span {
     font-size: 1.2rem;
   }
   .options {
@@ -120,7 +127,7 @@
   .container {
     flex-direction: row;
   }
-  .description h4 {
+  .description span {
     font-size: 1rem;
   }
   .description p, .description label {
@@ -129,7 +136,7 @@
 }
 
 @media (max-width: 42rem), (max-height: 20rem) {
-  .description h4 {
+  .description span {
     font-size: 1rem;
   }
   .description p, .description label {
@@ -147,7 +154,7 @@
   .description {
     gap: 0;
   }
-  .description h4 {
+  .description span {
     font-size: 0.75rem;
   }
   .description p, .description label, .options select, .options option {

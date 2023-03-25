@@ -1,23 +1,22 @@
 import React from 'react';
 import styles from './InputRadio.module.css';
 
-const InputRadio = ({options, state, setState, name, ...props}) => {
+const InputRadio = ({option, state, setState, name, className, ...props}) => {
   return (
     <>
-      {options.map(option => 
-        <div className={styles.inputGroup} key={`${name + option}`}>
-          <input 
-            id={`${name + option}`}
-            value={option}
-            checked={state === option}
-            onChange={({target}) => setState(target.value)}
-            {...props}
-          />
-          <label htmlFor={`${name + option}`}>
-            {option}
-          </label>
-        </div>
-      )}
+      <div className={styles.inputGroup} key={`${name + option}`}>
+        <input
+          id={`${name + option}`}
+          value={name}
+          checked={state === name}
+          onChange={({target}) => setState(target.value)}
+          type="radio"
+          {...props}
+        />
+        <label htmlFor={`${name + option}`}>
+          <span className={className}>R${option.toFixed(2)}</span>
+        </label>
+      </div>
     </>
   )
 }

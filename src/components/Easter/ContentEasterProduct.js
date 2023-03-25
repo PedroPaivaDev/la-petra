@@ -4,6 +4,7 @@ import styles from './ContentEasterProduct.module.css';
 import { BagContext } from '../../contexts/BagContext';
 import Button from '../Forms/Button';
 import Select from '../Forms/Select';
+import InputRadio from '../Forms/InputRadio';
 
 const ContentEasterProduct = ({modalProduct}) => {
   
@@ -12,14 +13,20 @@ const ContentEasterProduct = ({modalProduct}) => {
   const [submitError, setSubmitError] = React.useState(false);
   const [option, setOption] = React.useState('');
   const [flavor, setFlavor] = React.useState('');
+  const [size, setSize] = React.useState();
   const [modifiedProduct, setModifiedProduct] = React.useState(modalProduct);
 
   function handleCLick() {
-    if((modalProduct.options && option==='') || (modalProduct.flavors && flavor==='')) {
+    if((modalProduct.options && option==='') || (modalProduct.flavors && flavor==='') || (modalProduct.sizelg && !size)) {
       setSubmitError(true);
     } else {
       setSubmitSucess(true);
-      const newModalProduct = {...modifiedProduct, id:Date.now()}
+      const newModalProduct = {...modifiedProduct,
+        id: Date.now(),
+        options: option,
+        flavors: flavor,
+        size: size
+      }
       setBag([...bag, newModalProduct])
     }
   }
@@ -44,10 +51,12 @@ const ContentEasterProduct = ({modalProduct}) => {
   }, [option])
 
   React.useEffect(() => {
-    setTimeout(() => {
-      setSubmitSucess(false);
-      setSubmitError(false);
-    },3000)
+    if(submitSucess || submitError) {
+      setTimeout(() => {
+        setSubmitSucess(false);
+        setSubmitError(false);
+      },2000)
+    }
   },[submitSucess, submitError])
 
   return (
@@ -55,7 +64,7 @@ const ContentEasterProduct = ({modalProduct}) => {
       <div className={styles.image} style={{background: `url(${modifiedProduct.image[0]}) no-repeat center center`,backgroundSize: "cover"}}/>
       <div className={styles.description}>
         <div className={styles.image} style={{background: `url(${modifiedProduct.image[1]}) no-repeat center center`,backgroundSize: "cover"}}/>
-        <h4>{modifiedProduct.name}</h4>
+        <span>{modifiedProduct.name}</span>
         <p>{modifiedProduct.description}</p>
 
         {modifiedProduct.flavors && 
@@ -73,13 +82,30 @@ const ContentEasterProduct = ({modalProduct}) => {
         }
 
         <div className={styles.prices}>
-          <div>
+          <div className={styles.size}>
             <h6>Peso final aprox. {modifiedProduct.sizesm.weight}g</h6>
-            <h4 className={styles.price}>R${modifiedProduct.sizesm.price.toFixed(2)}</h4>
+            {modifiedProduct.sizelg ?
+              <InputRadio
+                option={modifiedProduct.sizesm.price}
+                state={size}
+                setState={setSize}
+                name="Pequeno"
+                className={styles.price}
+              /> :
+              <span className={styles.price}>
+                R${modifiedProduct.sizesm.price.toFixed(2)}
+              </span>
+            }
           </div>
-          {modifiedProduct.sizelg && <div>
+          {modifiedProduct.sizelg && <div className={styles.size}>
             <h6>Peso final aprox. {modifiedProduct.sizelg.weight}g</h6>
-            <h4 className={styles.price}>R${modifiedProduct.sizelg.price.toFixed(2)}</h4>
+            <InputRadio
+              option={modifiedProduct.sizelg.price}
+              state={size}
+              setState={setSize}
+              name="Grande"
+              className={styles.price}
+            />
           </div>}
         </div>
 
