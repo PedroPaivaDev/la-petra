@@ -38,8 +38,7 @@ const Order = () => {
   function handleSubmit(event) {
     event.preventDefault();
 
-    const storeNumber = 553799237253;
-    // let urlApi = 'http://api.whatsapp.com/send'; //Para testes
+    const storeNumber = 5537988031002;
     let urlApi = 'http://web.whatsapp.com/send';
     if(width[0]<914){
       urlApi = "https://api.whatsapp.com/send";
@@ -49,14 +48,11 @@ const Order = () => {
 
     const mappedProducts = mapProducts();
     
-    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===null) {
+    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0) {
       setSubmitError(true);
       return;
     } else {
       setSubmitError(false);
-      // window.location = `
-      //   ${urlApi}?phone=${storeNumber}&text=Cliente: ${client.value}%0aContato: ${contact.value}%0a
-      // `;      
       window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
     }
   }
@@ -70,11 +66,6 @@ const Order = () => {
   }, [bag])
 
   React.useEffect(() => {
-    client.setValue('Pedro')
-    contact.setValue('(37) 9 9923-7253')
-  })
-
-  React.useEffect(() => {
     setTimeout(() => {
       setSubmitError(false);
     },4000)
@@ -85,11 +76,12 @@ const Order = () => {
       <h2>Finalizar Pedido</h2>
 
       <div className={styles.products}>
-        {bag && bag.map(product => 
+        {bag.length!==0 ? bag.map(product => 
           <Grid key={product.id} xs={12} sm={6} md={4} lg={4} xl={3}>
             <EasterProduct product={product}/>
-          </Grid>
-        )}
+          </Grid>) : 
+          <p>Sua sacola ainda está vazia...</p>
+        }
       </div>
 
       <h2>Preço Total: <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>R${totalPrice.toFixed(2)}</span></h2>

@@ -3,7 +3,7 @@
   flex-direction: row;
   justify-content: stretch !important;
   align-items: center;
-  background-color: var(--mediumPink);
+  background-color: #E9D5D9;
   border: 2px solid var(--darkBrown);
   border-radius: 10px;
   width: 90%;

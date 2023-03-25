@@ -9,7 +9,6 @@ import { BagContext } from '../../contexts/BagContext';
 
 const Header = () => {
   const [bag] = React.useContext(BagContext);
-  const [handleOrder, setHandleOrder] = React.useState();
 
   const {pathname} = useLocation();
   const navigate = useNavigate();
@@ -21,14 +20,6 @@ const Header = () => {
       navigate("/")
     }
   }
-  
-  React.useEffect(() => {    
-    if(pathname==="/" || pathname==="/produtos" || pathname==="/contato" || pathname==="/sobre") {
-      setHandleOrder("/contato");
-    } else {
-      setHandleOrder("/order");
-    }
-  },[pathname])
   
   return (
     <header className={styles.header}>
@@ -43,7 +34,7 @@ const Header = () => {
           <img src={Logotipo} height="80px" alt="Logotipo"/>
         </div>
 
-        <NavLink className={styles.navLink} activeClassName={styles.activePage} to={handleOrder ? handleOrder : 'contato'}>
+        <NavLink className={styles.navLink} activeClassName={styles.activePage} to='order'>
           {Object.keys(bag).length!==0 && <span className={styles.bagCount}>{Object.keys(bag).length}</span>}
           <Bag className={styles.icon}/>
           Comprar

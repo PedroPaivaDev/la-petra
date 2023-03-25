@@ -70,18 +70,18 @@
 @keyframes pulse {
   0% {
     width: 180px;
-    background: rgba(255,255,255,0.7);
-    box-shadow: 0 0 10px 10px rgba(255,255,255,0.7);
+    background: rgba(79,188,175,0.7);
+    box-shadow: 0 0 10px 10px rgba(79,188,175,0.7);
   }
   50% {
-    width: 160px;
-    background: rgba(255,255,255,0.6);
-    box-shadow: 0 0 10px 10px rgba(255,255,255,0.6);
+    width: 165px;
+    background: rgba(79,188,175,0.6);
+    box-shadow: 0 0 10px 10px rgba(79,188,175,0.6);
   }
   100% {
     width: 180px;
-    background: rgba(255,255,255,0.7);
-    box-shadow: 0 0 10px 10px rgba(255,255,255,0.7);
+    background: rgba(79,188,175,0.7);
+    box-shadow: 0 0 10px 10px rgba(79,188,175,0.7);
   }
 }
 
@@ -93,7 +93,23 @@
 .layers {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   width: 250px;
   height: var(--clocheHeight);
+  opacity: 0;
+  animation: logoDown 1s cubic-bezier(.44,.04,.97,.03) forwards;
+}
+
+.button {
+  cursor: pointer;
+  background-color: rgba(79,188,175,0.7);
+  box-shadow: 0 0 10px 10px rgba(79,188,175,0.7);
+  transition: 0.3s;
+  border-radius: 15px;
+  text-align: center;
+  z-index: 2;
+  font-size: 1rem;
+  margin-top: 25px;
+  animation: pulse 2s infinite;
 }

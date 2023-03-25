@@ -96,7 +96,8 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  background: url('/src/assets/backgrounds/bg-main-bolos-rosa.png') no-repeat;
+  /* background: url('/src/assets/backgrounds/bg-main-bolos-rosa.png') no-repeat; */
+  background: url('/src/assets/backgrounds/bg-dots-opacity.png') no-repeat;
   background-position: center right;
   background-size: cover;
   height: var(--mainHeightWeb);

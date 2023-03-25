@@ -1,70 +1,55 @@
 import React from 'react';
 import styles from './Products.module.css';
-// import styles from './GridProducts.module.css';
 
-import useFetch from '../../hooks/useFetch';
-import {PRODUCTS_GET} from '../../services/api';
+// import { Link } from 'react-router-dom';
+import Cloche from '../../components/Cloche/Cloche';
 
-import Product from '../../components/Product/Product';
-import Loading from '../../helpers/Loading';
-import ModalProduct from '../../components/Product/ModalProduct';
-import Grid from '../../components/Grid/Grid';
+import goomer from '../../assets/icons/iconGoomer.png';
+import ifood from '../../assets/icons/iconIfood.png';
+import whatsapp from '../../assets/icons/iconWhatsapp.png';
+import instagram from '../../assets/icons/iconInstagram.png';
+// import pascoa from '../../assets/icons/iconPascoa.png';
 
 const Products = () => {
-  const {data, error, loading, request} = useFetch();
-  const [products, setProducts] = React.useState([]);
-  const [idsArray, setIdsArray] =  React.useState(null);
-  const [modalProduct, setModalProduct] = React.useState();
-
-  React.useEffect(() => {
-    async function fetchProducts() {
-      const {url} = PRODUCTS_GET();
-      await request(url);
-    }
-    fetchProducts();
-  },[request])
-
-  React.useEffect(() => {
-    data && setProducts(data.reduce((total, currentValue) => {
-      return {...total, [currentValue.id]: {
-        id: currentValue.id,
-        name: currentValue.name,
-        description: currentValue.description,
-        price: currentValue.price,
-        image: currentValue.image
-      }}
-    }, {}));
-  }, [data])
-
-  React.useEffect(() => {
-    products && setIdsArray(Object.keys(products))
-  },[products])
-
-  if(error) return <p>Não foi possível carregar os produtos. Verifique sua conexão com a internet</p>;
-  if(loading) return <Loading/>;
-  if(idsArray) return (
+  return (
     <div className={`${styles.container} animeLeft`}>
-      {modalProduct && 
-        <ModalProduct
-          products={products}
-          modalProduct={modalProduct}
-          setModalProduct={setModalProduct}
-        />
-      }
-      {/* <div className={styles.products}>
-        {idsArray.map((id) => (
-          <Product key={products[id].id} product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
-        ))}
-      </div> */}
-      <div className={styles.products}>
-        {idsArray.map((id) => (
-          <Grid key={products[id].id} xs={11} sm={6} md={4} lg={4} xl={3}>
-            <Product product={products[id]} modalProduct={modalProduct} setModalProduct={setModalProduct}/>
-          </Grid>
-        ))}
+      <h2>Horários de Funcionamento</h2>
+      <p>Terça a Sábado: 12:30h às 18:00h</p>
+      <p>Domingo: 11:30h às 14:30h</p>
+      <p style={{color: 'tomato'}}>Não abre na segunda-feira</p>
+      
+      <Cloche/>
+
+      <div className={styles.contact}>
+        <h2>Clique para Pedir</h2>
+        <a href='https://l-petra.goomer.app/'>
+          <img src={goomer} alt="goomer"/>
+          Peça mais barato aqui
+        </a>
+        <a href='https://www.ifood.com.br/delivery/bom-despacho-mg/la-petra-novo-sao-jose/ffb8ee69-9fd7-46bb-81d1-7a3a290d80db?utm_medium=share'>
+          <img src={ifood} alt="ifood"/>          
+          Peça pelo Ifood
+        </a>
+        <a href='https://api.whatsapp.com/send/?phone=5537988031002&text&type=phone_number&app_absent=0'>
+          <img src={whatsapp} alt="whatsapp"/>
+          Encomende bolos personalizados
+        </a>
+        <a href='https://www.instagram.com/lapetradoceria/'>
+          <img src={instagram} alt="instagram"/>
+          Instagram
+        </a>
+        {/* <Link to='/sazonal'>
+          <img src={pascoa} alt="pascoa"/>
+          Faça aqui o seu pedido de Páscoa
+        </Link> */}
       </div>
+
+      <h2>Localização</h2>
+      <p>Av. Doutor Roberto de Melo Queiroz</p>
+      <p>Número ..., Bairro Novo São José</p>
+      <p>Bom Despacho / MG</p>
     </div>
-  );  
+  )
 }
 
 export default Products;

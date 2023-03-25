@@ -7,7 +7,7 @@ import { BagStorage } from "./contexts/BagContext";
 
 import About from "./pages/About/About";
 import Admin from "./pages/Admin/Admin";
-import Contact from "./pages/Contact/Contact";
+import Delivery from "./components/Delivery/Delivery";
 import Home from "./pages/Home/Home";
 import Order from "./pages/Order/Order";
 import Products from "./pages/Products/Products";
@@ -24,7 +24,7 @@ function App() {
               <Route path="/" element={<Home/>}/>
               <Route path="/sobre" element={<About/>}/>
               <Route path="/produtos" element={<Products/>}/>
-              <Route path="/contato" element={<Contact/>}/>
+              <Route path="/delivery" element={<Delivery/>}/>
               <Route path="/sazonal" element={<Seasonal/>}/>
               <Route path="/order" element={<Order/>}/>
               <Route path="/admin" element={<Admin/>}/>
