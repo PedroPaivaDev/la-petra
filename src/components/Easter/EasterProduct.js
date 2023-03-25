@@ -27,6 +27,22 @@ const EasterProduct = ({product, setModalProduct}) => {
         <span className={styles.delete} onClick={handleDelete}>X</span>
       }
 
+      {pathname==='/order' && <div className={styles.description}>
+        {product.size && <p>Tamanho: {product.size}</p>}
+        {product.options && product.options!=='' ?
+          <p>Casca: {product.options}</p> :
+          <p style={{opacity: 0}}> . </p>
+        }
+        {product.flavors && product.flavors!=='' ?
+          <p>Sabor: {product.flavors}</p> :
+          <p style={{opacity: 0}}> . </p>
+        }
+        <h4>R${product.size==="Pequeno" || product.size==="Único" ?
+          product.sizesm.price.toFixed(2) :
+          product.sizelg.price.toFixed(2)
+        }</h4>
+      </div>}
+
       <div
         className={styles.image}
         style={{

@@ -25,9 +25,16 @@ const ContentEasterProduct = ({modalProduct}) => {
         id: Date.now(),
         options: option,
         flavors: flavor,
-        size: size
+        size: chosedSize()
       }
       setBag([...bag, newModalProduct])
+    }
+    function chosedSize() {
+      if(size) {
+        return size;
+      } else {
+        return "Único";
+      }
     }
   }
 
