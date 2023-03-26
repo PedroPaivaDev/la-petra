@@ -1,0 +1,12 @@
+.datePicker {
+  display: inline-flex;
+  align-items: center;
+}
+
+.datePicker label {
+  margin-right: 10px;
+}
+
+.datePicker input {
+  background-color: transparent;
+}

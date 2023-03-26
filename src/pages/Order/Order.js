@@ -9,6 +9,7 @@ import Button from '../../components/Forms/Button';
 import Input from '../../components/Forms/Input';
 import Grid from '../../components/Grid/Grid';
 import EasterProduct from '../../components/Easter/EasterProduct';
+import DatePickerInput from '../../components/Forms/DatePickerInput';
 
 const Order = () => {
   const [bag] = React.useContext(BagContext);
@@ -18,11 +19,13 @@ const Order = () => {
 
   const client = useForm();
   const contact = useForm('contact');
+  const [withdrawal, setWithdrawal] = React.useState(null);
+
   const width = useMediaQuery();
 
   function mapProducts() {
     let products = "";
-    bag.map(product => {
+    bag.forEach(product => {
       const type = product.type ? `${product.type}: ` : "";
       const name = `*${product.name}*%0a`;
       const size = `Tamanho: *${product.size}*%0a`;
@@ -45,21 +48,22 @@ const Order = () => {
     }
 
     const header = `_Código do Pedido: ${Date.now()}_%0a_Cliente: ${client.value}_%0a_Contato: ${contact.value}_%0a`;
+    const date = `Data de retirada: ${withdrawal}%0a`;
 
     const mappedProducts = mapProducts();
     
-    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0) {
+    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawal===null) {
       setSubmitError(true);
       return;
     } else {
       setSubmitError(false);
-      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
+      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}${date}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
     }
   }
 
   React.useEffect(() => {
     let sumPrices = 0;
-    bag && bag.map(product => {
+    bag && bag.forEach(product => {
       sumPrices = sumPrices + product.price;
     })
     setTotalPrice(sumPrices);
@@ -92,6 +96,11 @@ const Order = () => {
         />
         <Input label="Contato:" type="text" name="contact"
           placeholder={"(37) 9 9999-9999"} {...contact}
+        />
+        <DatePickerInput
+          label="Retirada:"
+          selectedDate={withdrawal}
+          setSelectedDate={setWithdrawal}
         />
         <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
       </form>
