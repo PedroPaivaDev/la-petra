@@ -11,6 +11,10 @@
   padding: 0 10px;
 }
 
+.container > p:last-child {
+  margin-bottom: 20px;
+}
+
 .products {
   display: flex;
   justify-content: center;

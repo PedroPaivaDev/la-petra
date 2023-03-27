@@ -11,6 +11,10 @@
   padding: 0 10px;
 }
 
+.container > div:last-child {
+  margin-bottom: 20px;
+}
+
 .container h3 {
   margin-top: 10px;
   font-size: 1.2rem;
@@ -23,5 +27,4 @@
   gap: 10px;
   width: 100%;
   flex-wrap: wrap;
-  margin-bottom: 10px;
 }

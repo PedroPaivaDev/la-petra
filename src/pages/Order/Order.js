@@ -102,8 +102,10 @@ const Order = () => {
           selectedDate={withdrawal}
           setSelectedDate={setWithdrawal}
         />
-        <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
       </form>
+      <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
+      <p><b>Não faremos entregas</b>, o cliente deve fazer a retirada na loja pessoalmente, dentro do período informado e data combinada, ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
+      <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
     </div>
   )
 }

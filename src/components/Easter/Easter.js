@@ -39,12 +39,19 @@ const Easter = () => {
       }
 
       <h2>Cardápio de Páscoa</h2>
-      <p>Até o dia 06 de abril, você poderá escolher sua casca: blend, ao leite, meio amargo, branca ou branca crocante de biscoito.</p>
+      <p>Até o dia <b>06 de abril</b>, você poderá escolher sua casca: blend, ao leite, meio amargo, branca ou branca crocante de biscoito.</p>
+      <p>Retiradas das encomendas na loja entre os dias <b>14/03</b> a <b>08/04</b>, de terça a sábado. Agende sua data no ato da encomenda. Os horários para retirada serão no período das <b>15h</b> as <b>18h</b></p>
+
+      <h3>Armazenamento e Durabilidade</h3>
+      <p>Nossos ovos são feitos artesanalmente com chocolate nobre, eles devem ser mantidos sob-refrigeração e consumidos em <b>até 4 dias</b>, com exceção dos ovos que contém morangos frescos, que devem ser consumidos em <b>até 2 dias</b>.</p>
+      <p>Não vamos nos responsabilizar pelo armazenamento, caso o cliente não venha buscar na data e horário combinado.</p>
+      <p>Para uma maior cremosidade, recomendamos que retire seu ovo da geladeira cerca de 40 minutos antes de consumir.</p>
       
       <h3>Ovos de Colher</h3>
       <p>Os ovos contém 1 banda e são feitos com casca de chocolate nobre e recheios de alta qualidade.</p>
-      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 250g: 350g a 450g</p>
-      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 350g: 450g a 500g</p>
+      <p>Todos os ovos são embalados e entregues em sacolas para presentear.</p>
+      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 250g: <b style={{fontSize: "0.625rem"}}>350g a 450g</b></p>
+      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 350g: <b style={{fontSize: "0.625rem"}}>450g a 500g</b></p>
       <div className={styles.products}>
         {eggs && eggs.map((egg) => (
           <Grid key={egg.id} xs={12} sm={6} md={4} lg={4} xl={3}>
@@ -55,6 +62,7 @@ const Easter = () => {
 
       <h3>Cascas Trufadas</h3>
       <p>Duas bandas feitas com chocolate nobre recheados com cremes de alta qualidade.</p>
+      <p>Peso médio aproximado das 2 cascas de <b>250g a 400g</b></p>
       <div className={styles.products}>
         {truffles && truffles.map((truffle) => (
           <Grid key={truffle.id} xs={12} sm={6} md={4} lg={4} xl={3}>
