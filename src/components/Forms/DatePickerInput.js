@@ -3,18 +3,27 @@ import styles from './DatePickerInput.module.css';
 
 import DatePicker, {registerLocale} from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import {format, parse, parseISO, toDate} from 'date-fns';
+
 import ptBR from 'date-fns/locale/pt-BR';
+registerLocale('pt-br',ptBR);
+
 // import {setHours, setMinutes} from "date-fns";
-registerLocale('pt-br',ptBR)
 
 function DatePickerInput({label, selectedDate, setSelectedDate, placeholder}) {
+
+  function formatDateFn(dateHour) {
+    const select = new Date(dateHour)
+    return select.getDate() + "/"+ parseInt(select.getMonth()+1) +"/"+ select.getFullYear();
+  }
+
   return (
     <div className={styles.datePicker}>
       <label>{label}</label>
       <DatePicker
         placeholderText={placeholder}
-        selected={selectedDate}
-        onChange={date => setSelectedDate(date)}
+        selected={selectedDate && parseISO(selectedDate)}
+        onChange={date => setSelectedDate(date.toISOString())}
         // showTimeSelect
         // timeIntervals={60}
         // includeTimes={[

@@ -8,6 +8,8 @@ import { BagContext } from '../../contexts/BagContext';
 import Button from '../../components/Forms/Button';
 import Input from '../../components/Forms/Input';
 import Grid from '../../components/Grid/Grid';
+import useLocalStorage from '../../hooks/useLocalStorage';
+
 import EasterProduct from '../../components/Easter/EasterProduct';
 import DatePickerInput from '../../components/Forms/DatePickerInput';
 import Select from '../../components/Forms/Select';
@@ -20,8 +22,8 @@ const Order = () => {
 
   const client = useForm(false, 'client', "");
   const contact = useForm('contact', 'contact', "");
-  const [withdrawalDate, setWithdrawalDate] = React.useState(null);
-  const [withdrawalHour, setWithdrawalHour] = React.useState('');
+  const [withdrawalDate, setWithdrawalDate] = useLocalStorage('date', '');
+  const [withdrawalHour, setWithdrawalHour] = useLocalStorage('hour', '');
 
   const width = useMediaQuery();
 
@@ -60,7 +62,7 @@ const Order = () => {
 
     const mappedProducts = mapProducts();
     
-    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawalDate===null || withdrawalHour==='') {
+    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawalDate==='' || withdrawalHour==='') {
       setSubmitError(true);
       return;
     } else {
