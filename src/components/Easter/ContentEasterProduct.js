@@ -86,15 +86,13 @@ const ContentEasterProduct = ({modalProduct}) => {
 
         {modifiedProduct.flavors && 
           <div className={styles.options}>
-            <p>Sabores:</p>
-              <Select initial="Selecione Aqui" options={modifiedProduct.flavors} selectedOption={flavor} setSelectedOption={setFlavor}/>
+              <Select className={styles.select} label="Sabores: " initial="Selecione Aqui" options={modifiedProduct.flavors} selectedOption={flavor} setSelectedOption={setFlavor}/>
           </div>
         }
 
         {modifiedProduct.options && 
           <div className={styles.options}>
-            <p>Escolha a Casca:</p>
-              <Select initial="Selecione Aqui" options={modifiedProduct.options} selectedOption={option} setSelectedOption={setOption}/>
+              <Select className={styles.select} label="Escolha a Casca: " initial="Selecione Aqui" options={modifiedProduct.options} selectedOption={option} setSelectedOption={setOption}/>
           </div>
         }
 

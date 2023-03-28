@@ -10,6 +10,7 @@ import Input from '../../components/Forms/Input';
 import Grid from '../../components/Grid/Grid';
 import EasterProduct from '../../components/Easter/EasterProduct';
 import DatePickerInput from '../../components/Forms/DatePickerInput';
+import Select from '../../components/Forms/Select';
 
 const Order = () => {
   const [bag] = React.useContext(BagContext);
@@ -19,7 +20,8 @@ const Order = () => {
 
   const client = useForm();
   const contact = useForm('contact');
-  const [withdrawal, setWithdrawal] = React.useState(null);
+  const [withdrawalDate, setWithdrawalDate] = React.useState(null);
+  const [withdrawalHour, setWithdrawalHour] = React.useState('');
 
   const width = useMediaQuery();
 
@@ -47,17 +49,23 @@ const Order = () => {
       urlApi = "https://api.whatsapp.com/send";
     }
 
+    function formatDateFn(dateHour) {
+      const select = new Date(dateHour)
+      return select.getDate() + "/"+ parseInt(select.getMonth()+1) +"/"+ select.getFullYear();
+    }
+
     const header = `_Código do Pedido: ${Date.now()}_%0a_Cliente: ${client.value}_%0a_Contato: ${contact.value}_%0a`;
-    const date = `Data de retirada: ${withdrawal}%0a`;
+    const date = `Data de retirada: ${formatDateFn(withdrawalDate)}`;
+    const hour = ` as ${withdrawalHour}%0a`
 
     const mappedProducts = mapProducts();
     
-    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawal===null) {
+    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawalDate===null || withdrawalHour==='') {
       setSubmitError(true);
       return;
     } else {
       setSubmitError(false);
-      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}${date}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
+      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}${date}${hour}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
     }
   }
 
@@ -99,8 +107,15 @@ const Order = () => {
         />
         <DatePickerInput
           label="Retirada:"
-          selectedDate={withdrawal}
-          setSelectedDate={setWithdrawal}
+          placeholder="Selecione a data"
+          selectedDate={withdrawalDate}
+          setSelectedDate={setWithdrawalDate}
+        />
+        <Select
+          label={"Hora:"}
+          initial="Selecione a hora"
+          options={['15:00h','16:00h','17:00h','18:00h']}
+          selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
         />
       </form>
       <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>

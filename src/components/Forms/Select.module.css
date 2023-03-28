@@ -1,7 +1,25 @@
-.select, .select option {
-  background-color: #FFF3F2;
-  border: 2px solid var(--mediumPink);
-  max-width: 210px;
+.inputGroup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+.select {
+  border: 1px solid var(--mediumPink);
+  font-size: 1rem;
+  line-height: 26px;
+  padding: 2px 5px;
   border-radius: 5px;
-  font-size: 0.75rem;
+  background: var(--lightPink);
+  transition: 0.2s;
+  width: 200px;
+  cursor: pointer;
+}
+
+.select:focus, .select:hover {
+  outline: none;
+  border-color: var(--darkCyan);
+  background: white;
+  box-shadow: 0 0 0 3px var(--lightCyan)
 }

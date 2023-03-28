@@ -30,7 +30,7 @@ body {
   --lightBrown: rgba(127,105,91);
   --darkPink: #f14670;
   --mediumPink: rgba(218,185,191);
-  --lightPink: rgba(239,225,227);
+  --lightPink: #FFF3F2;
   --darkCyan: #4fbcaf;
   --lightCyan: #95d6cf;
 
@@ -50,7 +50,7 @@ a {
 	text-decoration: none;
 }
 
-p, label, select, option {
+p, label, option {
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -62,7 +62,7 @@ label {
   user-select: initial;
 }
 
-input {
+input, select {
   -webkit-user-select: initial;
   -khtml-user-select: initial;
   -moz-user-select: initial;
@@ -145,10 +145,19 @@ h2 {
 
 .react-datepicker-wrapper {
   border: 1px solid var(--mediumPink) !important;
-  font-size: 1rem !important;
+  font-size: 1rem;
   padding: 2px 5px !important;
   border-radius: 5px !important;
   background: var(--lightPink) !important;
   transition: 0.2s;
   width: 200px !important;
+}
+
+.react-datepicker__day-name {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+}
+
+.react-datepicker__time-list-item--disabled {
+  display: none;
 }

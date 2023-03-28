@@ -1,19 +1,30 @@
 import React from 'react';
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
 import styles from './DatePickerInput.module.css';
 
-function DatePickerInput({label, selectedDate, setSelectedDate}) {
+import DatePicker, {registerLocale} from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import ptBR from 'date-fns/locale/pt-BR';
+// import {setHours, setMinutes} from "date-fns";
+registerLocale('pt-br',ptBR)
+
+function DatePickerInput({label, selectedDate, setSelectedDate, placeholder}) {
   return (
     <div className={styles.datePicker}>
       <label>{label}</label>
       <DatePicker
+        placeholderText={placeholder}
         selected={selectedDate}
         onChange={date => setSelectedDate(date)}
+        // showTimeSelect
+        // timeIntervals={60}
+        // includeTimes={[
+        //   setHours(setMinutes(new Date(), 0), 15),
+        //   setHours(setMinutes(new Date(), 0), 16),
+        //   setHours(setMinutes(new Date(), 0), 17),
+        //   setHours(setMinutes(new Date(), 0), 18)
+        // ]}
         dateFormat="dd/MM/yyyy"
-        showMonthDropdown
-        showYearDropdown
-        dropdownMode="select"
+        locale="pt-br"
         includeDateIntervals={[
           { start: new Date(), end: new Date("Sat Apr 08 2023 00:00:00 GMT-0300") },
         ]}
