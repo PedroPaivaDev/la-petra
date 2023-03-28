@@ -6,6 +6,8 @@ import Button from '../Forms/Button';
 import Select from '../Forms/Select';
 import InputRadio from '../Forms/InputRadio';
 
+import Carousel from '../Carousel/Carousel';
+
 const ContentEasterProduct = ({modalProduct}) => {
   
   const [bag, setBag] = React.useContext(BagContext);
@@ -76,7 +78,7 @@ const ContentEasterProduct = ({modalProduct}) => {
 
   return (
     <div className={styles.container}>
-      <div className={styles.image} style={{background: `url(${modifiedProduct.image[0]}) no-repeat center center`,backgroundSize: "cover"}}/>
+      <Carousel product={modifiedProduct.image} className={styles.image}/>
       <div className={styles.description}>
         <div className={styles.image} style={{background: `url(${modifiedProduct.image[1]}) no-repeat center center`,backgroundSize: "cover"}}/>
         <span>{modifiedProduct.name}</span>

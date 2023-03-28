@@ -1,7 +1,8 @@
 .container {
     width: 100%;
-    height: var(--mainHeightWeb);
+    height: 100%;
     background-color: var(--darkBrown);
+    overflow: hidden;
 }
 
 .photo {
@@ -19,6 +20,6 @@
 
 @media (max-width: 58rem) {
     .container {
-        height: var(--mainHeightMobile);
+        height: 100%;
     }
 }

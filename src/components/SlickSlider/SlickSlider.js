@@ -1,40 +1,13 @@
 import React from 'react';
 import styles from './SlickSlider.module.css';
-import {SLIDER_GET} from '../../services/api';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-import useFetch from '../../hooks/useFetch';
 import Loading from '../../helpers/Loading';
 
-const SlickSlider = () => {
-  const {data, loading, error, request} = useFetch();
-  const [products, setProducts] = React.useState(null);
-  const [photos, setPhotos] =  React.useState(null);
-
-  React.useEffect(() => {
-    async function fetchProducts() {
-      const {url} = SLIDER_GET();
-      await request(url)
-    }
-    fetchProducts();
-  },[request])
-
-  React.useEffect(() => {
-    data && setProducts(data.reduce((total, currentValue) => {
-      return {...total, [currentValue.name]: {
-        name: currentValue.name,
-        image: currentValue.image,
-        display: "flex"
-      }}
-    }, {}));
-  }, [data])
-
-  React.useEffect(() => {
-    products && setPhotos(Object.keys(products))
-  },[products])
+const SlickSlider = ({loading, error, photos, className}) => {
 
   const settings = {
     dots: true, /* bolinhas */
@@ -77,7 +50,8 @@ const SlickSlider = () => {
     <div className={`${styles.container} animeLeft`}>
       <Slider {...settings}>
         {photos.map((photo, index) => (
-          <img key={index} src={products[photo].image} alt={products[photo].name}/>
+          <img key={index} className={className} src={photo} alt={`photo${index}`}/>
+          // <div key={index} className={className} style={{background: `url(${photo}) no-repeat center center`, backgroundSize: "cover"}}/>
         ))}
       </Slider>
     </div>

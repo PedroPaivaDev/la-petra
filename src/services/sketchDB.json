@@ -2,13 +2,13 @@
   "slider": [
     {
       "id": 1,
-      "name": "petra",
-      "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/1-petra.jpg"
+      "name": "ovos",
+      "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/1-ovos.jpg"
     },
     {
       "id": 2,
-      "name": "brigadeiro",
-      "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/2-brigadeiro.jpg"
+      "name": "naked",
+      "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/2-naked.jpg"
     },
     {
       "id": 3,
@@ -17,8 +17,8 @@
     },
     {
       "id": 4,
-      "name": "lis",
-      "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/4-lis.jpg"
+      "name": "brigadeiro",
+      "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/4-brigadeiro.jpg"
     },
     {
       "id": 5,
