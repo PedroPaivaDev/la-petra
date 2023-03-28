@@ -1,5 +1,5 @@
 import React from "react";
-// import useLocalStorage from './useLocalStorage';
+import useLocalStorage from './useLocalStorage';
 
 const types = {
   email: {
@@ -13,9 +13,8 @@ const types = {
   },
 };
 
-const useForm = (type) => {
-  const [value, setValue] = React.useState("");
-  // const [key, setItem] = useLocalStorage();
+const useForm = (type, key, initial) => {
+  const [value, setValue] = useLocalStorage(key, initial);
   const [error, setError] = React.useState(null);
 
   function validate(value) {

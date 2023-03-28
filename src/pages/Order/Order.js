@@ -18,8 +18,8 @@ const Order = () => {
   const [submitError, setSubmitError] = React.useState(false);
   const [totalPrice, setTotalPrice] = React.useState(0);
 
-  const client = useForm();
-  const contact = useForm('contact');
+  const client = useForm(false, 'client', "");
+  const contact = useForm('contact', 'contact', "");
   const [withdrawalDate, setWithdrawalDate] = React.useState(null);
   const [withdrawalHour, setWithdrawalHour] = React.useState('');
 
