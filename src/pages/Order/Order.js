@@ -24,6 +24,15 @@ const Order = () => {
   const contact = useForm('contact', 'contact', "");
   const [withdrawalDate, setWithdrawalDate] = useLocalStorage('date', '');
   const [withdrawalHour, setWithdrawalHour] = useLocalStorage('hour', '');
+  const [payment, setPayment] = useLocalStorage('payment', '');
+  const [installmentCard, setInstallmentCard] = useLocalStorage('installment','');
+
+  const installmentCardPayment = {
+    0.065: '2x',
+    0.073: '3x',
+    0.08: '4x',
+    0.087: '5x'
+  }
 
   const width = useMediaQuery();
 
@@ -57,27 +66,35 @@ const Order = () => {
     }
 
     const header = `_Código do Pedido: ${Date.now()}_%0a_Cliente: ${client.value}_%0a_Contato: ${contact.value}_%0a`;
+    const pay = `Forma de Pagamento: ${payment} ${installmentCard ? installmentCardPayment[installmentCard] : ''}%0a`;
     const date = `Data de retirada: ${formatDateFn(withdrawalDate)}`;
     const hour = ` as ${withdrawalHour}%0a`
 
     const mappedProducts = mapProducts();
     
-    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawalDate==='' || withdrawalHour==='') {
+    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawalDate==='' || withdrawalHour==='' || payment==='' || (payment==="Cartão de Crédito (parcelado)" && installmentCard==='')) {
       setSubmitError(true);
       return;
     } else {
       setSubmitError(false);
-      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}${date}${hour}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
+      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}${pay}${date}${hour}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
     }
   }
 
   React.useEffect(() => {
     let sumPrices = 0;
-    bag && bag.forEach(product => {
-      sumPrices = sumPrices + product.price;
-    })
-    setTotalPrice(sumPrices);
-  }, [bag])
+    if(installmentCard==='') {
+      bag && bag.forEach(product => {
+        sumPrices = sumPrices + product.price;
+      })
+      setTotalPrice(sumPrices);
+    } else {
+      bag && bag.forEach(product => {
+        sumPrices = sumPrices + product.price;
+      })
+      setTotalPrice(sumPrices + sumPrices/2*installmentCard);
+    }
+  }, [bag, installmentCard])
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -97,31 +114,52 @@ const Order = () => {
           <p>Sua sacola ainda está vazia...</p>
         }
       </div>
-
-      <h2>Preço Total: <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>R${totalPrice.toFixed(2)}</span></h2>
       
-      <form className={styles.form}>
-        <Input label="Nome:" type="text" name="client"
-          placeholder={"Digite seu nome"} {...client}
-        />
-        <Input label="Contato:" type="text" name="contact"
-          placeholder={"(37) 9 9999-9999"} {...contact}
-        />
-        <DatePickerInput
-          label="Retirada:"
-          placeholder="Selecione a data"
-          selectedDate={withdrawalDate}
-          setSelectedDate={setWithdrawalDate}
-        />
-        <Select
-          label={"Hora:"}
-          initial="Selecione a hora"
-          options={['15:00h','16:00h','17:00h','18:00h']}
-          selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
-        />
-      </form>
-      <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
-      <p><b>Não faremos entregas</b>, o cliente deve fazer a retirada na loja pessoalmente, dentro do período informado e data combinada, ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
+      <div className={styles.order}>
+        <form className={styles.form}>
+          <Input label="Nome:" type="text" name="client"
+            placeholder={"Digite seu nome"} {...client}
+          />
+          <Input label="Contato:" type="text" name="contact"
+            placeholder={"(37) 9 9999-9999"} {...contact}
+          />
+          <DatePickerInput
+            label="Retirada:"
+            placeholder="Selecione a data"
+            selectedDate={withdrawalDate}
+            setSelectedDate={setWithdrawalDate}
+          />
+          <Select
+            label={"Hora:"}
+            initial="Selecione a hora"
+            options={['15:00h','16:00h','17:00h','18:00h']}
+            selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
+          />
+        </form>
+        <div className={styles.payment}>
+          <Select
+            label={"Pagamento:"}
+            initial="Escolha a forma"
+            options={["Transferência (total)", "Pix (total)", "Cartão de Débito (total)", "Dinheiro (total)", "Cartão de Crédito (parcelado)"]}
+            selectedOption={payment} setSelectedOption={setPayment}
+          />
+          {payment==="Cartão de Crédito (parcelado)" &&
+            <Select
+              label={"Parcelas:"}
+              initial="Selecione aqui"
+              options={["2x", "3x", "4x", "5x"]}
+              value={Object.keys(installmentCardPayment)}
+              selectedOption={installmentCard} setSelectedOption={setInstallmentCard}
+            />
+          }
+          <h2>Preço Total: <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>R${totalPrice.toFixed(2)}</span></h2>
+        </div>
+      </div>
+
+      <div className={styles.notes}>
+        <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
+        <p><b>Não faremos entregas</b>, o cliente deve fazer a retirada na loja pessoalmente, dentro do período informado e data combinada, ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
+      </div>
       <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
     </div>
   )
