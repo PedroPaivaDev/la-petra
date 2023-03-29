@@ -7,12 +7,12 @@ import { BagContext } from '../../contexts/BagContext';
 
 import Button from '../../components/Forms/Button';
 import Input from '../../components/Forms/Input';
-import Grid from '../../components/Grid/Grid';
-import useLocalStorage from '../../hooks/useLocalStorage';
-
-import EasterProduct from '../../components/Easter/EasterProduct';
 import DatePickerInput from '../../components/Forms/DatePickerInput';
 import Select from '../../components/Forms/Select';
+import useLocalStorage from '../../hooks/useLocalStorage';
+
+import Grid from '../../components/Grid/Grid';
+import EasterProduct from '../../components/Easter/EasterProduct';
 
 const Order = () => {
   const [bag] = React.useContext(BagContext);
@@ -25,13 +25,13 @@ const Order = () => {
   const [withdrawalDate, setWithdrawalDate] = useLocalStorage('date', '');
   const [withdrawalHour, setWithdrawalHour] = useLocalStorage('hour', '');
   const [payment, setPayment] = useLocalStorage('payment', '');
-  const [installmentCard, setInstallmentCard] = useLocalStorage('installment','');
+  const [installmentCard, setInstallmentCard] = React.useState('');
 
   const installmentCardPayment = {
-    0.065: '2x',
-    0.073: '3x',
-    0.08: '4x',
-    0.087: '5x'
+    0.065: 2,
+    0.073: 3,
+    0.08: 4,
+    0.087: 5
   }
 
   const width = useMediaQuery();
@@ -66,7 +66,7 @@ const Order = () => {
     }
 
     const header = `_Código do Pedido: ${Date.now()}_%0a_Cliente: ${client.value}_%0a_Contato: ${contact.value}_%0a`;
-    const pay = `Forma de Pagamento: ${payment} ${installmentCard ? installmentCardPayment[installmentCard] : ''}%0a`;
+    const pay = `Forma de Pagamento: ${payment} ${installmentCard ? `${installmentCardPayment[installmentCard]}x` : ''}%0a`;
     const date = `Data de retirada: ${formatDateFn(withdrawalDate)}`;
     const hour = ` as ${withdrawalHour}%0a`
 
@@ -83,18 +83,18 @@ const Order = () => {
 
   React.useEffect(() => {
     let sumPrices = 0;
-    if(installmentCard==='') {
+    if(payment==="Cartão de Crédito (parcelado)") {
       bag && bag.forEach(product => {
         sumPrices = sumPrices + product.price;
       })
-      setTotalPrice(sumPrices);
+      setTotalPrice(sumPrices + sumPrices * installmentCard);
     } else {
       bag && bag.forEach(product => {
         sumPrices = sumPrices + product.price;
       })
-      setTotalPrice(sumPrices + sumPrices/2*installmentCard);
+      setTotalPrice(sumPrices);
     }
-  }, [bag, installmentCard])
+  }, [bag, payment, installmentCard])
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -140,7 +140,7 @@ const Order = () => {
           <Select
             label={"Pagamento:"}
             initial="Escolha a forma"
-            options={["Transferência (total)", "Pix (total)", "Cartão de Débito (total)", "Dinheiro (total)", "Cartão de Crédito (parcelado)"]}
+            options={["Transferência", "Pix", "Cartão de Débito", "Dinheiro", "Cartão de Crédito (parcelado)"]}
             selectedOption={payment} setSelectedOption={setPayment}
           />
           {payment==="Cartão de Crédito (parcelado)" &&
@@ -152,12 +152,22 @@ const Order = () => {
               selectedOption={installmentCard} setSelectedOption={setInstallmentCard}
             />
           }
-          <h2>Preço Total: <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>R${totalPrice.toFixed(2)}</span></h2>
+          {installmentCard!=="" && payment==="Cartão de Crédito (parcelado)" &&
+            <h2>{installmentCardPayment[installmentCard]} Parcelas de <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>
+              R${(totalPrice/installmentCardPayment[installmentCard]).toFixed(2)}
+            </span></h2>
+          }
+          {payment!=="Cartão de Crédito (parcelado)" &&
+            <h2>Preço Total: <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>R${totalPrice.toFixed(2)}</span></h2>
+          }
         </div>
       </div>
 
       <div className={styles.notes}>
-        <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
+        {payment==="Cartão de Crédito (parcelado)" ?
+          <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. Para confirmar o seu pedido, você deverá <b>ir até a loja</b> para efetuar o parcelamento no cartão <b>ou</b> solicitar que a máquina de cartão da loja seja levada até você.</p> :
+          <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
+        }
         <p><b>Não faremos entregas</b>, o cliente deve fazer a retirada na loja pessoalmente, dentro do período informado e data combinada, ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
       </div>
       <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>

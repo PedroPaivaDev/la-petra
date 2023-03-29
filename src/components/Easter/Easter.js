@@ -50,8 +50,8 @@ const Easter = () => {
       <h3>Ovos de Colher</h3>
       <p>Os ovos contém 1 banda e são feitos com casca de chocolate nobre e recheios de alta qualidade.</p>
       <p>Todos os ovos são embalados e entregues em sacolas para presentear.</p>
-      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 250g: <b style={{fontSize: "0.625rem"}}>350g a 450g</b></p>
-      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 350g: <b style={{fontSize: "0.625rem"}}>450g a 500g</b></p>
+      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 250g: <b style={{fontSize: "0.625rem"}}>350g</b> a <b style={{fontSize: "0.625rem"}}>450g</b></p>
+      <p style={{fontSize: "0.625rem"}}>Peso aproximado do ovo com casca de 350g: <b style={{fontSize: "0.625rem"}}>450g</b> a <b style={{fontSize: "0.625rem"}}>500g</b></p>
       <div className={styles.products}>
         {eggs && eggs.map((egg) => (
           <Grid key={egg.id} xs={12} sm={6} md={4} lg={4} xl={3}>
