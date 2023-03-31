@@ -1,0 +1,32 @@
+.inputGroup {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+}
+
+.inputGroup label {
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.inputGroup label:hover, .inputGroup input:checked + label {
+  color: var(--darkPink);
+}
+
+.inputGroup label::before {
+  border: 2px solid var(--darkCyan);
+  position: absolute;
+  left: -18px;
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  content: "";
+}
+
+.inputGroup input:checked + label::before {
+  background-color: var(--darkPink);
+  z-index: 2;
+}

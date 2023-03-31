@@ -1,5 +1,6 @@
 .wrapper {
   display: flex;
+  position: relative;
   justify-content: flex-end;
   align-items: center;
   gap: 10px;
@@ -31,5 +32,5 @@ input:-internal-autofill-selected {
   position: absolute;
   margin-top: 50px;
   color: #f31;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }

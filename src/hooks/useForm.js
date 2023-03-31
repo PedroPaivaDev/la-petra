@@ -13,13 +13,13 @@ const types = {
   },
 };
 
-const useForm = (type, key, initial) => {
+const useForm = (key, initial, type) => {
   const [value, setValue] = useLocalStorage(key, initial);
   const [error, setError] = React.useState(null);
 
   function validate(value) {
     if (type === false) return true;
-    if (value.length === 0) {
+    if (value.trim().length === 0) {
       setError("Preenchimento obrigatório");
       return false;
     } else if (types[type] && !types[type].regex.test(value)) {

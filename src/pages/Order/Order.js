@@ -13,6 +13,7 @@ import useLocalStorage from '../../hooks/useLocalStorage';
 
 import Grid from '../../components/Grid/Grid';
 import EasterProduct from '../../components/Easter/EasterProduct';
+import Checkbox from '../../components/Forms/Checkbox';
 
 const Order = () => {
   const [bag] = React.useContext(BagContext);
@@ -20,12 +21,13 @@ const Order = () => {
   const [submitError, setSubmitError] = React.useState(false);
   const [totalPrice, setTotalPrice] = React.useState(0);
 
-  const client = useForm(false, 'client', "");
-  const contact = useForm('contact', 'contact', "");
+  const client = useForm('client', "");
+  const contact = useForm("", 'contact', 'contact');
   const [withdrawalDate, setWithdrawalDate] = useLocalStorage('date', '');
   const [withdrawalHour, setWithdrawalHour] = useLocalStorage('hour', '');
   const [payment, setPayment] = useLocalStorage('payment', '');
   const [installmentCard, setInstallmentCard] = React.useState('');
+  const [delivery, setDelivery] = React.useState();
 
   const installmentCardPayment = {
     0.065: 2,
@@ -87,14 +89,14 @@ const Order = () => {
       bag && bag.forEach(product => {
         sumPrices = sumPrices + product.price;
       })
-      setTotalPrice(sumPrices + sumPrices * installmentCard);
+      setTotalPrice(sumPrices + sumPrices * installmentCard + (delivery ? 5 : 0));
     } else {
       bag && bag.forEach(product => {
         sumPrices = sumPrices + product.price;
       })
-      setTotalPrice(sumPrices);
+      setTotalPrice(sumPrices + (delivery ? 5 : 0));
     }
-  }, [bag, payment, installmentCard])
+  }, [bag, payment, installmentCard, delivery])
 
   React.useEffect(() => {
     setTimeout(() => {
@@ -103,7 +105,7 @@ const Order = () => {
   },[submitError])
 
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} animeLeft`}>
       <h2>Finalizar Pedido</h2>
 
       <div className={styles.products}>
@@ -152,6 +154,14 @@ const Order = () => {
               selectedOption={installmentCard} setSelectedOption={setInstallmentCard}
             />
           }
+          {payment && <Checkbox
+            option={true}
+            state={delivery}
+            setState={setDelivery}
+            name="delivery"
+            className={styles.price}
+            label={"Pagar pelo entregador (+R$5,00)"}
+          />}
           {installmentCard!=="" && payment==="Cartão de Crédito (parcelado)" &&
             <h2>{installmentCardPayment[installmentCard]} Parcelas de <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>
               R${(totalPrice/installmentCardPayment[installmentCard]).toFixed(2)}

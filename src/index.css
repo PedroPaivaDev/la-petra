@@ -21,9 +21,10 @@
 }
 
 body {
-  --mainHeightWeb: calc(100vh - 75px);
-  --mainWidthWeb: 100vw;
-  --mainHeightMobile: calc(100vh - 75px - 85px);
+  --mainHeightWeb: calc(100vh);
+  /* --mainHeightWeb: calc(100vh - 75px); */
+  --mainHeightMobile: calc(100vh);
+  /* --mainHeightMobile: calc(100vh - 75px - 85px); */
   --mainWidthWeb: 100vw;
 
   --darkBrown: rgba(86,63,57);
@@ -104,6 +105,10 @@ main {
   width: var(--mainWidthWeb);
   overflow: hidden;
   z-index: 0;
+}
+
+main > div {
+  padding: 60px 0px 15px 0px;
 }
 
 @media (max-width: 58rem) {

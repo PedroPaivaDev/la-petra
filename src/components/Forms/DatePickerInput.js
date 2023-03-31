@@ -3,7 +3,7 @@ import styles from './DatePickerInput.module.css';
 
 import DatePicker, {registerLocale} from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import {format, parse, parseISO, toDate} from 'date-fns';
+import {parseISO} from 'date-fns';
 
 import ptBR from 'date-fns/locale/pt-BR';
 registerLocale('pt-br',ptBR);
