@@ -10,4 +10,5 @@
 
 .datePicker input {
   background-color: transparent;
+  max-width: 100%;
 }

@@ -21,13 +21,13 @@ const Order = () => {
   const [submitError, setSubmitError] = React.useState(false);
   const [totalPrice, setTotalPrice] = React.useState(0);
 
-  const client = useForm('client', "");
-  const contact = useForm("", 'contact', 'contact');
+  const client = useForm('client', '');
+  const contact = useForm('contact', '', 'contact');
   const [withdrawalDate, setWithdrawalDate] = useLocalStorage('date', '');
   const [withdrawalHour, setWithdrawalHour] = useLocalStorage('hour', '');
   const [payment, setPayment] = useLocalStorage('payment', '');
   const [installmentCard, setInstallmentCard] = React.useState('');
-  const [delivery, setDelivery] = React.useState();
+  const [delivery, setDelivery] = useLocalStorage('delivery', '');
 
   const installmentCardPayment = {
     0.065: 2,
@@ -37,6 +37,11 @@ const Order = () => {
   }
 
   const width = useMediaQuery();
+
+  function formatDateFn(dateHour) {
+    const select = new Date(dateHour)
+    return select.getDate() + "/"+ parseInt(select.getMonth()+1) +"/"+ select.getFullYear();
+  }
 
   function mapProducts() {
     let products = "";
@@ -62,15 +67,11 @@ const Order = () => {
       urlApi = "https://api.whatsapp.com/send";
     }
 
-    function formatDateFn(dateHour) {
-      const select = new Date(dateHour)
-      return select.getDate() + "/"+ parseInt(select.getMonth()+1) +"/"+ select.getFullYear();
-    }
-
     const header = `_Código do Pedido: ${Date.now()}_%0a_Cliente: ${client.value}_%0a_Contato: ${contact.value}_%0a`;
     const pay = `Forma de Pagamento: ${payment} ${installmentCard ? `${installmentCardPayment[installmentCard]}x` : ''}%0a`;
     const date = `Data de retirada: ${formatDateFn(withdrawalDate)}`;
     const hour = ` as ${withdrawalHour}%0a`
+    const delivery = withdrawalHour ? `*Entregar no endereço*:%0a` : '';
 
     const mappedProducts = mapProducts();
     
@@ -79,22 +80,22 @@ const Order = () => {
       return;
     } else {
       setSubmitError(false);
-      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}${pay}${date}${hour}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
+      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}${pay}${date}${hour}${delivery}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
     }
   }
 
   React.useEffect(() => {
-    let sumPrices = 0;
+    let sumPrices = delivery ? 15 : 0;
     if(payment==="Cartão de Crédito (parcelado)") {
       bag && bag.forEach(product => {
         sumPrices = sumPrices + product.price;
       })
-      setTotalPrice(sumPrices + sumPrices * installmentCard + (delivery ? 5 : 0));
+      setTotalPrice(sumPrices + sumPrices * installmentCard);
     } else {
       bag && bag.forEach(product => {
         sumPrices = sumPrices + product.price;
       })
-      setTotalPrice(sumPrices + (delivery ? 5 : 0));
+      setTotalPrice(sumPrices);
     }
   }, [bag, payment, installmentCard, delivery])
 
@@ -106,81 +107,86 @@ const Order = () => {
 
   return (
     <div className={`${styles.container} animeLeft`}>
-      <h2>Finalizar Pedido</h2>
+      <div className={styles.row}>
+        <h2>Finalizar Pedido</h2>
 
-      <div className={styles.products}>
-        {bag.length!==0 ? bag.map(product => 
-          <Grid key={product.id} xs={12} sm={6} md={4} lg={4} xl={3}>
-            <EasterProduct product={product}/>
-          </Grid>) : 
-          <p>Sua sacola ainda está vazia...</p>
-        }
-      </div>
-      
-      <div className={styles.order}>
-        <form className={styles.form}>
-          <Input label="Nome:" type="text" name="client"
-            placeholder={"Digite seu nome"} {...client}
-          />
-          <Input label="Contato:" type="text" name="contact"
-            placeholder={"(37) 9 9999-9999"} {...contact}
-          />
-          <DatePickerInput
-            label="Retirada:"
-            placeholder="Selecione a data"
-            selectedDate={withdrawalDate}
-            setSelectedDate={setWithdrawalDate}
-          />
-          <Select
-            label={"Hora:"}
-            initial="Selecione a hora"
-            options={['15:00h','16:00h','17:00h','18:00h']}
-            selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
-          />
-        </form>
-        <div className={styles.payment}>
-          <Select
-            label={"Pagamento:"}
-            initial="Escolha a forma"
-            options={["Transferência", "Pix", "Cartão de Débito", "Dinheiro", "Cartão de Crédito (parcelado)"]}
-            selectedOption={payment} setSelectedOption={setPayment}
-          />
-          {payment==="Cartão de Crédito (parcelado)" &&
-            <Select
-              label={"Parcelas:"}
-              initial="Selecione aqui"
-              options={["2x", "3x", "4x", "5x"]}
-              value={Object.keys(installmentCardPayment)}
-              selectedOption={installmentCard} setSelectedOption={setInstallmentCard}
-            />
-          }
-          {payment && <Checkbox
-            option={true}
-            state={delivery}
-            setState={setDelivery}
-            name="delivery"
-            className={styles.price}
-            label={"Pagar pelo entregador (+R$5,00)"}
-          />}
-          {installmentCard!=="" && payment==="Cartão de Crédito (parcelado)" &&
-            <h2>{installmentCardPayment[installmentCard]} Parcelas de <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>
-              R${(totalPrice/installmentCardPayment[installmentCard]).toFixed(2)}
-            </span></h2>
-          }
-          {payment!=="Cartão de Crédito (parcelado)" &&
-            <h2>Preço Total: <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>R${totalPrice.toFixed(2)}</span></h2>
+        <div className={styles.products}>
+          {bag.length!==0 ? bag.map(product => 
+            <Grid key={product.id} xs={12} sm={6} md={4} lg={4} xl={3}>
+              <EasterProduct product={product}/>
+            </Grid>) : 
+            <p>Sua sacola ainda está vazia...</p>
           }
         </div>
-      </div>
+        
+        <div className={styles.order}>
+          <form className={styles.form}>
+            <Input label="Nome:" type="text" name="client"
+              placeholder={"Digite seu nome"} {...client}
+            />
+            <Input label="Contato:" type="text" name="contact"
+              placeholder={"(37) 9 9999-9999"} {...contact}
+            />
+            <DatePickerInput
+              label="Retirada:"
+              placeholder="Selecione a data"
+              selectedDate={withdrawalDate}
+              setSelectedDate={setWithdrawalDate}
+            />
+            <Select
+              label={"Hora:"}
+              initial="Selecione a hora"
+              options={['15:00h','16:00h','17:00h','18:00h']}
+              selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
+            />
+          </form>
+          <div className={styles.payment}>
+            <Select
+              label={"Pagamento:"}
+              initial="Escolha a forma"
+              options={["Transferência", "Pix", "Cartão de Débito", "Dinheiro", "Cartão de Crédito (parcelado)"]}
+              selectedOption={payment} setSelectedOption={setPayment}
+            />
+            {payment==="Cartão de Crédito (parcelado)" &&
+              <Select
+                label={"Parcelas:"}
+                initial="Selecione aqui"
+                options={["2x", "3x", "4x", "5x"]}
+                value={Object.keys(installmentCardPayment)}
+                selectedOption={installmentCard} setSelectedOption={setInstallmentCard}
+              />
+            }
+            {payment && <Checkbox
+              option={true}
+              state={delivery}
+              setState={setDelivery}
+              name="delivery"
+              className={styles.price}
+              label={"Pagar pela entrega (+R$15,00)"}
+            />}
+            {installmentCard!=="" && payment==="Cartão de Crédito (parcelado)" &&
+              <h2>{installmentCardPayment[installmentCard]} Parcelas de <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>
+                R${(totalPrice/installmentCardPayment[installmentCard]).toFixed(2)}
+              </span></h2>
+            }
+            {payment!=="Cartão de Crédito (parcelado)" &&
+              <h2>Preço Total: <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>R${totalPrice.toFixed(2)}</span></h2>
+            }
+          </div>
+        </div>
 
-      <div className={styles.notes}>
-        {payment==="Cartão de Crédito (parcelado)" ?
-          <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. Para confirmar o seu pedido, você deverá <b>ir até a loja</b> para efetuar o parcelamento no cartão <b>ou</b> solicitar que a máquina de cartão da loja seja levada até você.</p> :
-          <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
-        }
-        <p><b>Não faremos entregas</b>, o cliente deve fazer a retirada na loja pessoalmente, dentro do período informado e data combinada, ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
+        <div className={styles.notes}>
+          {payment==="Cartão de Crédito (parcelado)" ?
+            <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. Para confirmar o seu pedido, você deverá <b>ir até a loja</b> para efetuar o parcelamento no cartão <b>ou</b> solicitar que a máquina de cartão da loja seja levada até você.</p> :
+            <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
+          }
+          {!delivery ? 
+            <p><b>Não faremos a entrega</b>, então o cliente deve fazer a retirada na loja, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}, pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p> :
+            <p>O pedido <b>será entregue no endereço</b> informado acima, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}. Caso o cliente não esteja no local, sob o dia e data definidos anteriormente, o pedido será retornado para a loja e o cliente deverá fazer a retirada na loja pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
+          }
+        </div>
+        <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
       </div>
-      <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
     </div>
   )
 }

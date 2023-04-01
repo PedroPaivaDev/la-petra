@@ -1,12 +1,13 @@
 .container, .container img {
     width: 100%;
-    height: var(--mainHeightWeb);
+    height: calc(var(--mainHeightWeb) - 60px);
+    /* height: var(--mainHeightWeb); */
     object-fit: cover;
     overflow: hidden;
 }
 
-@media (max-width: 58rem) {
+/* @media (max-width: 58rem) {
     .container, .container img {
         height: var(--mainHeightMobile);
     }
-}
+} */
