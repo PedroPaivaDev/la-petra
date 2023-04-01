@@ -1,6 +1,6 @@
 .container, .container img {
     width: 100%;
-    height: calc(var(--mainHeightWeb) - 60px);
+    height: calc(var(--mainHeightWeb) - 60px - 15px);
     /* height: var(--mainHeightWeb); */
     object-fit: cover;
     overflow: hidden;

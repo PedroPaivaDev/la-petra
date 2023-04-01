@@ -15,15 +15,15 @@
   box-sizing: border-box;
   font-family: 'Coiny', arial;
 	font-size: 16px;
-  vertical-align: middle;
+  /* vertical-align: middle; */
   color: var(--darkBrown);
   text-shadow: 1px 1px 5px white;
 }
 
 body {
-  --mainHeightWeb: calc(100vh - 15px);
+  --mainHeightWeb: calc(100vh);
   /* --mainHeightWeb: calc(100vh - 75px); */
-  --mainHeightMobile: calc(100vh - 15px);
+  --mainHeightMobile: calc(100vh);
   /* --mainHeightMobile: calc(100vh - 75px - 85px); */
   --mainWidthWeb: 100vw;
 
@@ -108,7 +108,7 @@ main {
 }
 
 main > div {
-  padding: 60px 0px 0px 0px;
+  padding: 60px 0px 15px 0px;
 }
 
 @media (max-width: 58rem) {

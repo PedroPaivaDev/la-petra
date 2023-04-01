@@ -28,6 +28,10 @@ const Order = () => {
   const [payment, setPayment] = useLocalStorage('payment', '');
   const [installmentCard, setInstallmentCard] = React.useState('');
   const [delivery, setDelivery] = useLocalStorage('delivery', '');
+  const street = useForm('street', '');
+  const number = useForm('number', '');
+  const neighborhood = useForm('neighborhood', '');
+  const reference = useForm('reference', '');
 
   const installmentCardPayment = {
     0.065: 2,
@@ -51,7 +55,7 @@ const Order = () => {
       const size = `Tamanho: *${product.size}*%0a`;
       const option = product.options ? `Casca: *${product.options}*%0a` : "";
       const flavor = product.flavors ? `Sabor: *${product.flavors}*%0a` : "";
-      const price = `Preço Unitário: *R$${product.price.toFixed(2)}*%0a%0a`;
+      const price = `Preço Unitário: *R$${product.price.toFixed(2)}*%0a----------%0a`;
 
       products = products + type + name + size + option + flavor + price
     })
@@ -68,24 +72,24 @@ const Order = () => {
     }
 
     const header = `_Código do Pedido: ${Date.now()}_%0a_Cliente: ${client.value}_%0a_Contato: ${contact.value}_%0a`;
-    const pay = `Forma de Pagamento: ${payment} ${installmentCard ? `${installmentCardPayment[installmentCard]}x` : ''}%0a`;
-    const date = `Data de retirada: ${formatDateFn(withdrawalDate)}`;
-    const hour = ` as ${withdrawalHour}%0a`
-    const delivery = withdrawalHour ? `*Entregar no endereço*:%0a` : '';
+    const pay = `_Forma de Pagamento: ${payment}${installmentCard ? ` ${installmentCardPayment[installmentCard]}x` : ''}_%0a`;
+    const date = `_Data de retirada: ${formatDateFn(withdrawalDate)}`;
+    const hour = ` as ${withdrawalHour}_%0a`
+    const deliveryAddress = delivery ? `_*Entregar no endereço*: Rua ${street.value}, ${number.value}, Bairro ${neighborhood.value}. Ponto de referência: ${reference.value}._%0a` : '_*Retirada na Loja*_%0a';
 
     const mappedProducts = mapProducts();
     
-    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawalDate==='' || withdrawalHour==='' || payment==='' || (payment==="Cartão de Crédito (parcelado)" && installmentCard==='')) {
+    if(client.value.length<=0 || contact.value.length<=0 || client.error || contact.error || totalPrice===0 || withdrawalDate==='' || withdrawalHour==='' || payment==='' || (payment==="Cartão de Crédito (parcelado)" && installmentCard==='') || (delivery && (street.value.length<=0 || number.value.length<=0 || neighborhood.value.length<=0))) {
       setSubmitError(true);
       return;
     } else {
       setSubmitError(false);
-      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}${pay}${date}${hour}${delivery}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
+      window.open(`${urlApi}?phone=${storeNumber}&text=${header}%0a${mappedProducts}%0a${pay}${date}${hour}${deliveryAddress}_Preço Total: *R$${totalPrice.toFixed(2)}*_`, "_blank");
     }
   }
 
   React.useEffect(() => {
-    let sumPrices = delivery ? 15 : 0;
+    let sumPrices = delivery ? 5 : 0;
     if(payment==="Cartão de Crédito (parcelado)") {
       bag && bag.forEach(product => {
         sumPrices = sumPrices + product.price;
@@ -139,8 +143,6 @@ const Order = () => {
               options={['15:00h','16:00h','17:00h','18:00h']}
               selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
             />
-          </form>
-          <div className={styles.payment}>
             <Select
               label={"Pagamento:"}
               initial="Escolha a forma"
@@ -156,21 +158,34 @@ const Order = () => {
                 selectedOption={installmentCard} setSelectedOption={setInstallmentCard}
               />
             }
+          </form>
+          <div className={styles.payment}>
             {payment && <Checkbox
               option={true}
               state={delivery}
               setState={setDelivery}
               name="delivery"
-              className={styles.price}
-              label={"Pagar pela entrega (+R$15,00)"}
+              label={"Pagar pela entrega (+R$5,00)"}
             />}
-            {installmentCard!=="" && payment==="Cartão de Crédito (parcelado)" &&
-              <h2>{installmentCardPayment[installmentCard]} Parcelas de <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>
+            {delivery && <div className={styles.deliveryAddress}>
+              <Input label="Rua/Av:" type="text" name="street"
+                placeholder={"Informe a rua"} {...street}
+              />
+              <Input label="Nº:" type="text" name="number"
+                placeholder={"Informe o número"} {...number}
+              />
+              <Input label="Bairro:" type="text" name="neighborhood"
+                placeholder={"Informe o bairro"} {...neighborhood}
+              />
+              <Input label="Ref.:" type="text" name="reference"
+                placeholder={"Ponto de referência"} {...reference}
+              />
+            </div>}
+            {(installmentCard!=="" && payment==="Cartão de Crédito (parcelado)") ?
+              <h3 className={styles.price}>{installmentCardPayment[installmentCard]} Parcelas de <span>
                 R${(totalPrice/installmentCardPayment[installmentCard]).toFixed(2)}
-              </span></h2>
-            }
-            {payment!=="Cartão de Crédito (parcelado)" &&
-              <h2>Preço Total: <span style={{fontSize: '1.5rem', color: `var(--darkCyan)`}}>R${totalPrice.toFixed(2)}</span></h2>
+              </span></h3> :
+              <h3 className={styles.price}>Preço Total: <span>R${totalPrice.toFixed(2)}</span></h3>
             }
           </div>
         </div>
@@ -180,9 +195,12 @@ const Order = () => {
             <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. Para confirmar o seu pedido, você deverá <b>ir até a loja</b> para efetuar o parcelamento no cartão <b>ou</b> solicitar que a máquina de cartão da loja seja levada até você.</p> :
             <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
           }
-          {!delivery ? 
+          {!delivery ?
             <p><b>Não faremos a entrega</b>, então o cliente deve fazer a retirada na loja, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}, pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p> :
-            <p>O pedido <b>será entregue no endereço</b> informado acima, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}. Caso o cliente não esteja no local, sob o dia e data definidos anteriormente, o pedido será retornado para a loja e o cliente deverá fazer a retirada na loja pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
+            <div>
+              <p>O pedido <b>será entregue no endereço</b> informado acima, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}. Caso o cliente não esteja no local, sob o dia e data definidos anteriormente, o pedido será retornado para a loja e o cliente deverá fazer a retirada na loja pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
+              <p style={{color: '#f31'}}><b style={{color: '#f31'}}>ATENÇÃO!!!</b> Não nos responsabilizamos pela integridade dos produtos durante o percurso da entrega, pois ela é feita usando uma moto.</p>
+            </div>
           }
         </div>
         <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>

@@ -6,6 +6,9 @@
   width: var(--mainWidthWeb);
   height: 15px;
   z-index: 1;
+
+  position: fixed;
+  bottom: 0px;
 }
 
 .footer a {
