@@ -10,16 +10,16 @@ import { BagContext } from '../../contexts/BagContext';
 const Header = () => {
   const [bag] = React.useContext(BagContext);
 
-  const {pathname} = useLocation();
-  const navigate = useNavigate();
+  // const {pathname} = useLocation();
+  // const navigate = useNavigate();
   
-  function handleNavigateHome() {
-    if(pathname==="/") {
-      navigate("/sobre")
-    } else {
-      navigate("/")
-    }
-  }
+  // function handleNavigateHome() {
+  //   if(pathname==="/") {
+  //     navigate("/sobre")
+  //   } else {
+  //     navigate("/")
+  //   }
+  // }
   
   return (
     <header className={styles.header}>
@@ -29,7 +29,12 @@ const Header = () => {
           Produtos
         </NavLink>
 
-        <div className={styles.logo} onClick={handleNavigateHome}>
+        {/* <div className={styles.logo} onClick={handleNavigateHome}>
+          <div className={styles.shadow}></div>
+          <img src={Logotipo} height="80px" alt="Logotipo"/>
+        </div> */}
+
+        <div className={styles.logo}>
           <div className={styles.shadow}></div>
           <img src={Logotipo} height="80px" alt="Logotipo"/>
         </div>

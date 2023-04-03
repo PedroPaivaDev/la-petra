@@ -41,11 +41,6 @@ const Easter = () => {
       <h2>Cardápio de Páscoa</h2>
       <p>Até o dia <b>06 de abril</b>, você poderá escolher sua casca: blend, ao leite, meio amargo, branca ou branca crocante de biscoito.</p>
       <p>Retiradas das encomendas na loja entre os dias <b>14/03</b> a <b>08/04</b>, de terça a sábado. Agende sua data no ato da encomenda. Os horários para retirada serão no período das <b>15h</b> as <b>18h</b></p>
-
-      <h3>Armazenamento e Durabilidade</h3>
-      <p>Nossos ovos são feitos artesanalmente com chocolate nobre, eles devem ser mantidos sob-refrigeração e consumidos em <b>até 4 dias</b>, com exceção dos ovos que contém morangos frescos, que devem ser consumidos em <b>até 2 dias</b>.</p>
-      <p>Não vamos nos responsabilizar pelo armazenamento, caso o cliente não venha buscar na data e horário combinado.</p>
-      <p>Para uma maior cremosidade, recomendamos que retire seu ovo da geladeira cerca de 40 minutos antes de consumir.</p>
       
       <h3>Ovos de Colher</h3>
       <p>Os ovos contém 1 banda e são feitos com casca de chocolate nobre e recheios de alta qualidade.</p>
@@ -90,6 +85,11 @@ const Easter = () => {
           </Grid>
         ))}
       </div>
+
+      <h3>Armazenamento e Durabilidade</h3>
+      <p>Nossos ovos são feitos artesanalmente com chocolate nobre, eles devem ser mantidos sob-refrigeração e consumidos em <b>até 4 dias</b>, com exceção dos ovos que contém morangos frescos, que devem ser consumidos em <b>até 2 dias</b>.</p>
+      <p>Não vamos nos responsabilizar pelo armazenamento, caso o cliente não venha buscar na data e horário combinado.</p>
+      <p>Para uma maior cremosidade, recomendamos que retire seu ovo da geladeira cerca de 40 minutos antes de consumir.</p>
 
       <Button onClick={handleClick}>Finalizar Pedido</Button>
     </div>

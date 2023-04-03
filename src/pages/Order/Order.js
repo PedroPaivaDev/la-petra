@@ -119,7 +119,7 @@ const Order = () => {
             <Grid key={product.id} xs={12} sm={6} md={4} lg={4} xl={3}>
               <EasterProduct product={product}/>
             </Grid>) : 
-            <p>Sua sacola ainda está vazia...</p>
+            <p style={{color: '#f31'}}>Sua sacola ainda está vazia. Escolha pelo menos um produto.</p>
           }
         </div>
         

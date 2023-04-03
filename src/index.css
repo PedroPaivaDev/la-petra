@@ -22,7 +22,6 @@
 
 body {
   --mainHeightWeb: calc(100vh);
-  /* --mainHeightWeb: calc(100vh - 75px); */
   --mainHeightMobile: calc(100vh);
   /* --mainHeightMobile: calc(100vh - 75px - 85px); */
   --mainWidthWeb: 100vw;
