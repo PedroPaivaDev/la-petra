@@ -140,7 +140,7 @@ const Order = () => {
             <Select
               label={"Hora:"}
               initial="Selecione a hora"
-              options={['15:00h','16:00h','17:00h','18:00h']}
+              options={['16:00h','17:00h','18:00h']}
               selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
             />
             <Select
@@ -201,7 +201,8 @@ const Order = () => {
               <p>O pedido <b>será entregue no endereço</b> informado acima, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}. Caso o cliente não esteja no local, sob o dia e data definidos anteriormente, o pedido será retornado para a loja e o cliente deverá fazer a retirada na loja pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
               <p style={{color: '#f31'}}><b style={{color: '#f31'}}>ATENÇÃO!!!</b> Não nos responsabilizamos pela integridade dos produtos durante o percurso da entrega, pois ela é feita usando uma moto.</p>
             </div>
-          }
+          }          
+          <p>Não vamos nos responsabilizar pelo armazenamento, caso o cliente não venha buscar na data e horário combinado.</p>
         </div>
         <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
       </div>
