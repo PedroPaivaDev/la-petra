@@ -140,7 +140,7 @@ const Order = () => {
             <Select
               label={"Hora:"}
               initial="Selecione a hora"
-              options={['15:00h','16:00h','17:00h','18:00h']}
+              options={['16:00h','17:00h','18:00h']}
               selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
             />
             <Select

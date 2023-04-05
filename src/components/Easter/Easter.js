@@ -40,7 +40,7 @@ const Easter = () => {
 
       <h2>Cardápio de Páscoa</h2>
       <p>Até o dia <b>06 de abril</b>, você poderá escolher sua casca: blend, ao leite, meio amargo, branca ou branca crocante de biscoito.</p>
-      <p>Retiradas das encomendas na loja entre os dias <b>14/03</b> a <b>08/04</b>, de terça a sábado. Agende sua data no ato da encomenda. Os horários para retirada serão no período das <b>15h</b> as <b>18h</b></p>
+      <p>Retiradas das encomendas na loja entre os dias <b>14/03</b> a <b>08/04</b>, de terça a sábado. Agende sua data no ato da encomenda. Os horários para retirada serão no período das <b>16h</b> as <b>18h</b></p>
       
       <h3>Ovos de Colher</h3>
       <p>Os ovos contém 1 banda e são feitos com casca de chocolate nobre e recheios de alta qualidade.</p>
