@@ -3,7 +3,7 @@
 Versão simplificada do site da doceria La Petra, desenvolvido com a biblioteca React, com o objetivo de atender os pedidos de ovos de páscoa.
 
 ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) ![](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
-<img src="https://www.gstatic.com/devrel-devsite/prod/v8a94f…925fa3ba11417ee489de75/firebase/images/lockup.svg" height="28px" alt="firebase"/>
+<img src="https://firebase.google.com/static/images/brand-guidelines/logo-standard.png" height="28px" alt="firebase"/>
 
 ## Descrição
 O projeto é uma *Single-Page Application* feita com componentes **React** e estilizados com CSS puro.

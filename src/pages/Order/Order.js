@@ -160,13 +160,13 @@ const Order = () => {
             }
           </form>
           <div className={styles.payment}>
-            {payment && <Checkbox
+            <Checkbox
               option={true}
               state={delivery}
               setState={setDelivery}
               name="delivery"
               label={"Pagar pela entrega (+R$5,00)"}
-            />}
+            />
             {delivery && <div className={styles.deliveryAddress}>
               <Input label="Rua/Av:" type="text" name="street"
                 placeholder={"Informe a rua"} {...street}
