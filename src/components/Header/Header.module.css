@@ -70,7 +70,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* cursor: pointer; */
+    cursor: pointer;
 }
 
 .logo img {
@@ -81,7 +81,7 @@
     transition: 0.3s;
 }
 
-/* .logo:hover .shadow {
+.logo:hover .shadow {
     position: absolute;
     z-index: 0;
     width: 60px;
@@ -89,7 +89,7 @@
     border-radius: 30px;  
     background: var(--lightPink);
     box-shadow: 0 0 10px 10px var(--lightPink);
-} */
+}
 
 .bagCount {
     position: absolute;

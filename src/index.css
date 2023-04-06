@@ -106,8 +106,12 @@ main {
   z-index: 0;
 }
 
-main > div {
+main > div:first-child {
   padding: 60px 0px 15px 0px;
+}
+
+main > div:first-child > div:first-child {
+  padding-bottom: 75px;
 }
 
 @media (max-width: 58rem) {

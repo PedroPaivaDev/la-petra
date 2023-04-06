@@ -18,12 +18,12 @@
   text-align: center;
   overflow: auto;
   padding: 0 10px;
-  padding-bottom: 75px;
+  /* padding-bottom: 75px; */
 }
 
-.row > div:last-child {
+/* .row > div:last-child {
   margin-bottom: 20px;
-}
+} */
 
 .products {
   display: flex;
