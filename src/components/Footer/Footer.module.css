@@ -3,8 +3,8 @@
   justify-content: center;
   align-items: center;
   background-color: var(--darkBrown);
-  width: var(--mainWidthWeb);
-  height: 15px;
+  width: var(--mainWidth);
+  height: var(--FooterHeigth);
   z-index: 1;
 
   position: fixed;

@@ -21,10 +21,10 @@
 }
 
 body {
-  --mainHeightWeb: calc(100vh);
-  --mainHeightMobile: calc(100vh);
-  /* --mainHeightMobile: calc(100vh - 75px - 85px); */
-  --mainWidthWeb: 100vw;
+  --mainHeight: calc(100vh);
+  --mainWidth: 100vw;
+  --HeaderHeigth: 60px;
+  --FooterHeigth: 15px;
 
   --darkBrown: rgba(86,63,57);
   --lightBrown: rgba(127,105,91);
@@ -100,22 +100,40 @@ main {
   background: url('/src/assets/backgrounds/bg-dots-opacity.png') no-repeat;
   background-position: center right;
   background-size: cover;
-  height: var(--mainHeightWeb);
-  width: var(--mainWidthWeb);
+  height: var(--mainHeight);
+  width: var(--mainWidth);
   overflow: hidden;
   z-index: 0;
 }
 
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: var(--HeaderHeigth) 0px var(--FooterHeigth) 0px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  gap: 20px;
+  padding-bottom: 75px;
+}
+
 main > div:first-child {
-  padding: 60px 0px 15px 0px;
+  padding: var(--HeaderHeigth) 0px var(--FooterHeigth) 0px;
 }
 
 main > div:first-child > div:first-child {
   padding-bottom: 75px;
-}
-
-@media (max-width: 58rem) {
-  main {height: var(--mainHeightMobile);}
 }
 
 h2 {

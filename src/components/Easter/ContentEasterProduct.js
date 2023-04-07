@@ -40,7 +40,7 @@ const ContentEasterProduct = ({modalProduct}) => {
       }
     }
     function chosedPrice() {
-      if(!size || size==="400g") {
+      if(!size || size===`${modifiedProduct.sizesm.weight}g`) {
         return modifiedProduct.sizesm.price;
       } else {
         return modifiedProduct.sizelg.price;
@@ -104,7 +104,7 @@ const ContentEasterProduct = ({modalProduct}) => {
                 option={modifiedProduct.sizesm.price}
                 state={size}
                 setState={setSize}
-                name="400g"
+                name={`${modifiedProduct.sizesm.weight}g`}
                 className={styles.price}
               /> :
               <span className={styles.price}>
@@ -118,7 +118,7 @@ const ContentEasterProduct = ({modalProduct}) => {
               option={modifiedProduct.sizelg.price}
               state={size}
               setState={setSize}
-              name="500g"
+              name={`${modifiedProduct.sizelg.weight}g`}
               className={styles.price}
             />
           </div>}

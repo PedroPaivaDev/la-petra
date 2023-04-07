@@ -45,6 +45,7 @@ Clique nas versões abaixo, para observar a evolução do projeto ao longo do te
 | ------ | ------ |
 | [versão_0.1](https://la-petra-git-v01-pedropaivadev.vercel.app/) | Primeira versão do projeto. |
 | [versão_0.2](https://la-petra-git-v02-pedropaivadev.vercel.app/) | Versão simplificada do site, para facilitar o acesso dos clientes ao cardápio de Páscoa de 2023. |
+| [versão_0.3](https://la-petra-git-v03-pedropaivadev.vercel.app/) | Versão em construção. |
 
 [//]: # (These are reference links used in the body of this note and get stripped out when the markdown processor does its job. There is no need to format nicely because it shouldn't be seen. Thanks SO - http://stackoverflow.com/questions/4823468/store-comments-in-markdown-syntax)
 

@@ -2,8 +2,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: var(--mainWidthWeb);
-    height: 60px;
+    width: var(--mainWidth);
+    height: var(--HeaderHeigth);
     background-color: var(--mediumPink);
     border-top: 3px solid var(--darkBrown);
     border-bottom: 3px solid var(--darkBrown);

@@ -9,5 +9,8 @@
   top: 0px;
   left: 0px;
   z-index: 10;
-  padding: 10px 40px;
+  padding:calc(var(--HeaderHeigth) + 10px)
+          40px 
+          calc(var(--FooterHeigth) + 10px) 
+          40px;
 }
