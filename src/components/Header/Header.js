@@ -23,23 +23,23 @@ const Header = () => {
   
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
-        <NavLink className={styles.navLink} activeClassName={styles.activePage} to="/produtos">
+      <nav className={styles.container}>
+        <NavLink className={styles.navLink} activeClassName={styles.activePage} to={`/produtos`}>
           <Cake className={styles.icon}/>
           Produtos
         </NavLink>
 
         <div className={styles.logo} onClick={handleNavigateHome}>
           <div className={styles.shadow}></div>
-          <img src={Logotipo} height="80px" alt="Logotipo"/>
+          <img src={Logotipo} height="50px" alt="Logotipo"/>
         </div>
 
         <NavLink className={styles.navLink} activeClassName={styles.activePage} to='order'>
           {Object.keys(bag).length!==0 && <span className={styles.bagCount}>{Object.keys(bag).length}</span>}
           <Bag className={styles.icon}/>
-          Sacola
+          Sacola<span style={{opacity: 0}}>..</span>
         </NavLink>
-      </div>
+      </nav>
     </header>
   )
 }

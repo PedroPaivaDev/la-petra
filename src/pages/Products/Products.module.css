@@ -6,3 +6,27 @@
     width: 100%;
     height: 100%;
 }
+
+.subNavbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 30px;
+    background-color: var(--darkBrown);
+    width: 100%;
+    max-width: 900px;
+}
+
+.subNavbar a {
+    color: var(--lightBrown);
+    text-shadow: none;
+    transition: 0.3s;
+}
+
+.activeProducts {
+    background-color: antiquewhite;
+}
+
+.activeProducts a, .subNavbar a:hover {
+    color: var(--lightPink);
+}

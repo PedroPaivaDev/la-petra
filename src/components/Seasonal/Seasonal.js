@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './Seasonal.module.css';
 
-import Easter from '../../components/Easter/Easter';
+import Easter from '../Easter/Easter';
 
 const Seasonal = () => {
   return (
