@@ -26,6 +26,9 @@ const Products = () => {
           <NavLink to="sazonal" activeClassName={styles.activeProducts}>Sazonal</NavLink>
         </div>
       </nav>
+      {pathname==='/produtos' && 
+        <p style={{margin: '20px', textAlign:'center'}}>Selecione acima a categoria de produto desejada</p>
+      }
       {category==='/produtos/delivery' && <Delivery/>}
       {category==='/produtos/bolos' && <Cakes/>}
       {category==='/produtos/docinhos' && <Sweeties/>}

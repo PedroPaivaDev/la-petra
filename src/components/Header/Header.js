@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.container}>
-        <NavLink className={styles.navLink} activeClassName={styles.activePage} to={`${category}`}>
+        <NavLink className={styles.navLink} activeClassName={styles.activePage} to={category==='delivery' ? 'produtos' : category}>
           <Cake className={styles.icon}/>
           Produtos
         </NavLink>
