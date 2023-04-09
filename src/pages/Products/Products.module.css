@@ -9,24 +9,27 @@
 
 .subNavbar {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkBrown);
+    width: 100%;
+}
+
+.navLinks {
+    display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 30px;
-    background-color: var(--darkBrown);
     width: 100%;
     max-width: 900px;
 }
 
-.subNavbar a {
+.navLinks a {
     color: var(--lightBrown);
     text-shadow: none;
+    line-height: 30px;
     transition: 0.3s;
 }
 
-.activeProducts {
-    background-color: antiquewhite;
-}
-
-.activeProducts a, .subNavbar a:hover {
-    color: var(--lightPink);
+.activeProducts, .subNavbar a:hover {
+    color: var(--lightPink) !important;
 }

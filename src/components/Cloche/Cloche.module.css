@@ -111,5 +111,10 @@
   z-index: 2;
   font-size: 1rem;
   margin-top: 25px;
+  transition: 0.3s;
   animation: pulse 2s infinite;
+}
+
+.button:hover {
+  color: var(--darkPink);
 }

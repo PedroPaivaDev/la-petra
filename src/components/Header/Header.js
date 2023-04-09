@@ -8,7 +8,7 @@ import {ReactComponent as Bag} from '../../assets/icons/bag.svg';
 import { BagContext } from '../../contexts/BagContext';
 
 const Header = () => {
-  const [bag] = React.useContext(BagContext);
+  const [bag, , category] = React.useContext(BagContext);
 
   const {pathname} = useLocation();
   const navigate = useNavigate();
@@ -24,7 +24,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <nav className={styles.container}>
-        <NavLink className={styles.navLink} activeClassName={styles.activePage} to={`/produtos`}>
+        <NavLink className={styles.navLink} activeClassName={styles.activePage} to={`${category}`}>
           <Cake className={styles.icon}/>
           Produtos
         </NavLink>
