@@ -270,8 +270,8 @@
       "name": "Ninho com Nutella",
       "description": "Casca de chocolate Blend, recheio cremoso de leite ninho e nutella pura, decorado com brigadeiros de ninho c/ nutella por cima.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoNinhoNutella-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoNinhoNutella-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoNinhoNutella-1.jpg?alt=media&token=e1898d19-9350-4811-8ce9-b81bf1fc4b4f",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoNinhoNutella-2.jpg?alt=media&token=159ec1b1-c6d9-467e-8cb6-62ab5b184498"
       ],
       "sizesm": {
         "weight": 400,
@@ -296,8 +296,8 @@
       "name": "Delícia Crocante",
       "description": "Casca de chocolate branco crocante de biscoito oreo, recheio trufado com biscoito e nutella pura com ovomaltine, decorado com biscoito oreo e pedaços de laka oreo.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDeliciaCrocante-1.jpg?alt=media&token=e858d55a-5464-4541-a6be-1f39519d7d6b",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDeliciaCrocante-2.jpg?alt=media&token=740f01e6-d179-4edd-b617-c45ec4a12809"
       ],
       "sizesm": {
         "weight": 400,
@@ -322,8 +322,8 @@
       "name": "Bombom de Morango",
       "description": "Casca de chocolate blend, recheio 4 leites e recheio de chocolate ao leite com morangos, decorado com brigadeiros enrolados em confeito belga e morangos.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoBombomMorango-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoBombomMorango-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoBombomMorango-1.jpg?alt=media&token=59678cce-2386-4192-a0c6-1570fa06bc28",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoBombomMorango-2.jpg?alt=media&token=a6d9f2ea-111a-4569-9b94-d27d9634c974"
       ],
       "sizesm": {
         "weight": 400,
@@ -348,8 +348,8 @@
       "name": "Explosão Kinder",
       "description": "Casca de chocolate blend, recheio cremoso de chocolate branco e chocolate ao leite, decorado com kinder Bueno.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoExplosaoKinder-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoExplosaoKinder-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoExplosaoKinder-1.jpg?alt=media&token=d88b3e5c-1054-434e-9694-9a251a0af024",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoExplosaoKinder-2.jpg?alt=media&token=47b95b05-7f86-4912-ae05-bc3530086947"
       ],
       "sizesm": {
         "weight": 400,
@@ -374,8 +374,8 @@
       "name": "Delírio de Pudim",
       "description": "Casca de chocolate branca, recheio cremoso brûlée, mousse de ninho e 1 mini pudim por cima.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDelirioPudim-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDelirioPudim-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDelirioPudim-1.jpg?alt=media&token=6b5d8ff8-be75-4ebb-a21c-30c21e25b27c",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDelirioPudim-2.jpg?alt=media&token=eb35bb33-311f-4708-8ed4-ccfb3237bed1"
       ],
       "sizesm": {
         "weight": 400,
@@ -400,8 +400,8 @@
       "name": "Ferrero Rocher",
       "description": "Casca de chocolate blend, recheio de brigadeiro goumert, castanhas, nutella, brownie, mousse chocolate, decorado com brigadeiro goumert, nutella, amendoim torrado e ferrero Rocher.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoFerreroRocher-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoFerreroRocher-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoFerreroRocher-1.jpg?alt=media&token=ea9e8301-dad0-468f-a27d-2c01c7000496",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoFerreroRocher-2.jpg?alt=media&token=941cfb7d-de21-480f-9337-b871aac28c23"
       ],
       "sizesm": {
         "weight": 400,
@@ -428,8 +428,8 @@
       "name": "Lá Petra",
       "description": "Cascas de chocolate blend com biscoito, recheadas com caramelo.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaLaPetra-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaLaPetra-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLaPetra-1.jpg?alt=media&token=1bbb5dcf-0ffc-4809-b792-0a078f69e5ab",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLaPetra-2.jpg?alt=media&token=db52ecca-0cf7-4222-a574-f939530bfee7"
       ],
       "sizesm": {
         "weight": 400,
@@ -445,8 +445,8 @@
       "name": "Pistache",
       "description": "Cascas de chocolate branca e blend, recheadas com creme de pistache.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaPistache-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaPistache-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaPistache-1.jpg?alt=media&token=a0409447-6085-4b71-aa56-810cfab9ad7f",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaPistache-2.jpg?alt=media&token=90576c61-2b08-4594-8316-2e31539ef9e9"
       ],
       "sizesm": {
         "weight": 400,
@@ -465,8 +465,8 @@
       "name": "Torta de Limão Siciliano",
       "description": "Cascas de chocolate branca com biscoito, recheadas com um delicioso creme trufado de limão siciliano.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaLimao-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaLimao-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLimao-1.jpg?alt=media&token=5574cc24-0321-4d13-b8ad-b2d002f327cf",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLimao-2.jpg?alt=media&token=ec3d9eb4-3a03-4adb-a85f-7f405970b84e"
       ],
       "sizesm": {
         "weight": 400,
@@ -482,8 +482,8 @@
       "name": "Maracujá",
       "description": "Cascas chocolate blend , recheada com delicioso creme de maracujá.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaMaracuja-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaMaracuja-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaMaracuja-1.jpg?alt=media&token=d2526276-a0fa-4c58-bc95-34ad05261783",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaMaracuja-2.jpg?alt=media&token=9d8904e6-0451-4229-a5b1-f8eed5462606"
       ],
       "sizesm": {
         "weight": 400,
@@ -499,8 +499,8 @@
       "name": "Crocante Nutella",
       "description": "Cascas de chocolate branco com biscoito, recheadas com nutella pura.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaCrocanteNutella-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaCrocanteNutella-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCrocanteNutella-1.jpg?alt=media&token=b0b01d9c-7150-4148-8345-f908a97856cc",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCrocanteNutella-2.jpg?alt=media&token=7e87d49b-bf86-40eb-9c48-3fa59b355c55"
       ],
       "sizesm": {
         "weight": 400,
@@ -516,8 +516,8 @@
       "name": "Coco",
       "description": "Cascas de chocolate blend, recheadas com creme de coco.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaCoco-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaCoco-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCoco-1.jpg?alt=media&token=d60a426a-c4c4-49a8-bdf7-f60fd5df81bd",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCoco-2.jpg?alt=media&token=6c9278d7-d125-4546-b00b-609c298f112c"
       ],
       "sizesm": {
         "weight": 400,
@@ -535,8 +535,8 @@
       "name": "Criança Feliz",
       "description": "Casca de chocolate blend, recheio cremoso de ninho e brigadeiro ao leite, decorado com balas fini, confetes, chiclets, marshmallow e tortuguita.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsOvo-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsOvo-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsOvo-1.jpg?alt=media&token=cd668417-675c-4d61-8e83-e321abb3d451",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsOvo-2.jpg?alt=media&token=a07d9c8d-7385-435a-8500-c1fdb4f57633"
       ],
       "sizesm": {
         "weight": 230,
@@ -555,8 +555,8 @@
       "name": "Surpresa",
       "description": "Composto por 2 cascas chocolate branco colorido, por dentro contém marshmallow e dentaduras fini.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsSurpresa-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsSurpresa-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsSurpresa-1.jpg?alt=media&token=1c6e9bae-7b0b-4638-9a51-68656bc12e78",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsSurpresa-2.jpg?alt=media&token=5da72fa1-7f81-482d-bedc-c35bb5b6526b"
       ],
       "sizesm": {
         "weight": 100,
@@ -572,8 +572,8 @@
       "name": "Kit Mini Confeiteiro",
       "description": "Composto por 1 casca de chocolate blend, 1 bisnaga de brigadeiro branco, 1 tubete de confetes, 1 tubete de granulados coloridos e 1 tortuguita.",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsKitMini-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsKitMini-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsKitMini-1.jpg?alt=media&token=4411c14c-2bb3-49d8-858d-7a3b523f9250",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsKitMini-2.jpg?alt=media&token=3352542f-0392-4fc6-a187-87798544d2a7"
       ],
       "sizesm": {
         "weight": 100,
@@ -591,8 +591,8 @@
       "name": "Barra Recheada",
       "description": "Escolha uma opção de recheio:",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/barraRecheada-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/barraRecheada-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FbarraRecheada-1.jpg?alt=media&token=98a360b6-3053-45e7-9852-b8736fbaf1c6",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FbarraRecheada-2.jpg?alt=media&token=80927fb4-7b13-4864-b1ca-121429bc474f"
       ],
       "sizesm": {
         "weight": 250,
@@ -618,8 +618,8 @@
       "name": "Ovo no Pote",
       "description": "Potes de vidro, recheados com deliciosos cremes para comer de colher, intercalados com pedaços de chocolate meio amargo. O pote é embalado em sacolinha Kraft e fita La Petra",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/poteOvo-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/poteOvo-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FpoteOvo-1.jpg?alt=media&token=199473db-1557-46a9-971c-35d8fe8145db",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FpoteOvo-2.jpg?alt=media&token=41f2ef4a-4d3c-43d8-bd73-b2e9f01fb8b3"
       ],
       "sizesm": {
         "weight": 250,
@@ -639,8 +639,8 @@
       "name": "Trio de Ovos",
       "description": "Composto por 3 ovos de colher com as seguintes combinações de sabores:",
       "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trioOvos-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trioOvos-2.jpg"
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FtrioOvos-1.jpg?alt=media&token=bc9e1a30-2a62-4b85-9dc5-36aed627a5d4",
+        "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FtrioOvos-2.jpg?alt=media&token=0c277111-fe1f-47dc-b33b-2e3f0e242c2d"
       ],
       "sizesm": {
         "weight": 550,

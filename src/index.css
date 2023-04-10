@@ -125,7 +125,7 @@ main {
   height: 100%;
   overflow: auto;
   gap: 20px;
-  padding-bottom: 75px;
+  padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth));
 }
 
 main > div:first-child {
@@ -133,7 +133,7 @@ main > div:first-child {
 }
 
 main > div:first-child > div:first-child {
-  padding-bottom: 75px;
+  padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth));
 }
 
 h2 {

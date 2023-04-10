@@ -199,7 +199,7 @@ const Order = () => {
             <p><b>Não faremos a entrega</b>, então o cliente deve fazer a retirada na loja, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}, pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p> :
             <div>
               <p>O pedido <b>será entregue no endereço</b> informado acima, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}. Caso o cliente não esteja no local, sob o dia e data definidos anteriormente, o pedido será retornado para a loja e o cliente deverá fazer a retirada na loja pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
-              <p style={{color: '#f31'}}><b style={{color: '#f31'}}>ATENÇÃO!!!</b> Não nos responsabilizamos pela integridade dos produtos durante o percurso da entrega, pois ela é feita usando uma moto.</p>
+              <p style={{color: '#f31'}}><b style={{color: '#f31'}}>ATENÇÃO!!!</b> Dependendo do tipo, não nos responsabilizamos pela integridade dos produtos durante o percurso da entrega, pois ela é feita usando uma moto.</p>
             </div>
           }          
           <p>Não vamos nos responsabilizar pelo armazenamento, caso o cliente não venha buscar na data e horário combinado.</p>
