@@ -1,13 +1,13 @@
 import React from 'react';
 import styles from './Easter.module.css';
 
-import Button from '../Forms/Button';
-import EasterProduct from './EasterProduct';
 import { useNavigate } from 'react-router-dom';
-
-import ModalEasterProduct from './ModalEasterProduct';
+import Button from '../Forms/Button';
 import Grid from '../Grid/Grid';
 import { getProducts } from '../../services/firebase';
+
+import EasterProduct from './EasterProduct';
+import ModalEasterProduct from './ModalEasterProduct';
 
 const Easter = () => {
   const [eggs, setEggs] = React.useState();
@@ -22,17 +22,16 @@ const Easter = () => {
   }
 
   React.useEffect(() => {
-    getProducts('eggs', setEggs);
-    getProducts('truffles', setTruffles);
-    getProducts('kids', setKids);
-    getProducts('others', setOthers);
+    getProducts('easter/eggs', setEggs);
+    getProducts('easter/truffles', setTruffles);
+    getProducts('easter/kids', setKids);
+    getProducts('easter/others', setOthers);
   },[])
   
   return (
-    <div className={styles.container}>
+    <div className={`${styles.container} animeLeft`}>
       {modalProduct && 
         <ModalEasterProduct
-          eggs={eggs}
           modalProduct={modalProduct}
           setModalProduct={setModalProduct}
         />
