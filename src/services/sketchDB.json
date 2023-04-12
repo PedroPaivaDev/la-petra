@@ -69,11 +69,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/1-bombomMorangoCoco.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/1-bombomMorangoCoco.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 7
+            "sizes": {
+              "100g": 7
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -86,11 +84,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/2-bombomMorangoTradicional.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/2-bombomMorangoTradicional.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 7
+            "sizes": {
+              "100g": 7
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -103,11 +99,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/3-bombomLaPetra.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/3-bombomLaPetra.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 7.5
+            "sizes": {
+              "100g": 7.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -120,11 +114,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/4-bombomFrutasVermelhas.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/4-bombomFrutasVermelhas.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 7.5
+            "sizes": {
+              "100g": 7.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -137,11 +129,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/5-coxinhaMorango.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/5-coxinhaMorango.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 9
+            "sizes": {
+              "100g": 9
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -154,11 +144,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/6-bombomFerrero.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/6-bombomFerrero.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 9
+            "sizes": {
+              "100g": 9
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -171,11 +159,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/7-brigadeiroGourmet.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/7-brigadeiroGourmet.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 5.5
+            "sizes": {
+              "100g": 5.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -188,11 +174,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/8-deliciaCrocante.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/8-deliciaCrocante.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 9
+            "sizes": {
+              "100g": 9
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -205,11 +189,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/10-cookieChocolate.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/10-cookieChocolate.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 8.5
+            "sizes": {
+              "100g": 8.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -222,11 +204,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/36-cookieRedVelvet.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/36-cookieRedVelvet.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 9.5
+            "sizes": {
+              "100g": 9.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -239,11 +219,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 7
+            "sizes": {
+              "100g": 7
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           }
@@ -262,11 +240,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/9-marmitaBrownie.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/9-marmitaBrownie.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 10
+            "sizes": {
+              "100g": 10
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -279,11 +255,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/11-folhata.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/11-folhata.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 18
+            "sizes": {
+              "100g": 18
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -296,11 +270,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/12-bombomAberto.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/12-bombomAberto.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 15
+            "sizes": {
+              "100g": 15
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -313,11 +285,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/13-salada.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/13-salada.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 16
+            "sizes": {
+              "100g": 16
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -330,11 +300,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/14-caseirinho.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/14-caseirinho.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 20
+            "sizes": {
+              "100g": 20
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -347,11 +315,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/21-chocolateCremoso.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/21-chocolateCremoso.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 20
+            "sizes": {
+              "100g": 20
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -364,11 +330,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/22-brownieSorvete.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/22-brownieSorvete.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 15
+            "sizes": {
+              "100g": 15
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -381,11 +345,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/23-copoOuroBranco.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/23-copoOuroBranco.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 20
+            "sizes": {
+              "100g": 20
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -398,11 +360,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/24-copoMorango.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/24-copoMorango.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 19
+            "sizes": {
+              "100g": 19
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -415,11 +375,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/37-copoChocolateCremoso.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/37-copoChocolateCremoso.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 8.5
+            "sizes": {
+              "100g": 8.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -432,11 +390,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/38-cupCake.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/38-cupCake.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 8.5
+            "sizes": {
+              "100g": 8.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -449,11 +405,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/46-pudim.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/46-pudim.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 10
+            "sizes": {
+              "100g": 10
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -466,11 +420,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/47-banofe.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/47-banofe.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 11.5
+            "sizes": {
+              "100g": 11.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -483,11 +435,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 17
+            "sizes": {
+              "100g": 17
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           }
@@ -506,11 +456,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/16-boloAlpino.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/16-boloAlpino.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 13.5
+            "sizes": {
+              "100g": 13.5
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -523,11 +471,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/17-fatiaFrutasVermelhas.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/17-fatiaFrutasVermelhas.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 14
+            "sizes": {
+              "100g": 14
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -540,11 +486,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/18-fatiaPrestigio.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/18-fatiaPrestigio.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 14
+            "sizes": {
+              "100g": 14
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -557,11 +501,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/20-cheeseCakeLimao.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/20-cheeseCakeLimao.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 17
+            "sizes": {
+              "100g": 17
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -574,11 +516,9 @@
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/40-tortaHolandesa.jpeg",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/40-tortaHolandesa.jpeg"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 18
+            "sizes": {
+              "100g": 18
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           }
@@ -604,22 +544,18 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoNinhoNutella-1.jpg?alt=media&token=e1898d19-9350-4811-8ce9-b81bf1fc4b4f",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoNinhoNutella-2.jpg?alt=media&token=159ec1b1-c6d9-467e-8cb6-62ab5b184498"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 95
-            },
-            "sizelg": {
-              "weight": 500,
-              "price": 105
+            "sizes": {
+              "400g": 95,
+              "500g": 105
             },
             "flavors": null,
-            "options": [
-              "Preto Blend",
-              "Preto ao Leite",
-              "Preto Meio Amargo",
-              "Branco",
-              "Branco Crocante"
-            ]
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
           },
           "e2": {
             "type": "Ovo de Colher",
@@ -630,22 +566,18 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDeliciaCrocante-1.jpg?alt=media&token=e858d55a-5464-4541-a6be-1f39519d7d6b",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDeliciaCrocante-2.jpg?alt=media&token=740f01e6-d179-4edd-b617-c45ec4a12809"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 90
-            },
-            "sizelg": {
-              "weight": 500,
-              "price": 100
+            "sizes": {
+              "400g": 90,
+              "500g": 100
             },
             "flavors": null,
-            "options": [
-              "Preto Blend",
-              "Preto ao Leite",
-              "Preto Meio Amargo",
-              "Branco.",
-              "Branco Crocante."
-            ]
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
           },
           "e3": {
             "type": "Ovo de Colher",
@@ -656,22 +588,18 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoBombomMorango-1.jpg?alt=media&token=59678cce-2386-4192-a0c6-1570fa06bc28",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoBombomMorango-2.jpg?alt=media&token=a6d9f2ea-111a-4569-9b94-d27d9634c974"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 90
-            },
-            "sizelg": {
-              "weight": 500,
-              "price": 100
+            "sizes": {
+              "400g": 90,
+              "500g": 100
             },
             "flavors": null,
-            "options": [
-              "Preto Blend",
-              "Preto ao Leite",
-              "Preto Meio Amargo",
-              "Branco",
-              "Branco Crocante"
-            ]
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
           },
           "e4": {
             "type": "Ovo de Colher",
@@ -682,22 +610,18 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoExplosaoKinder-1.jpg?alt=media&token=d88b3e5c-1054-434e-9694-9a251a0af024",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoExplosaoKinder-2.jpg?alt=media&token=47b95b05-7f86-4912-ae05-bc3530086947"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 90
-            },
-            "sizelg": {
-              "weight": 500,
-              "price": 100
+            "sizes": {
+              "400g": 90,
+              "500g": 100
             },
             "flavors": null,
-            "options": [
-              "Preto Blend",
-              "Preto ao Leite",
-              "Preto Meio Amargo",
-              "Branco",
-              "Branco Crocante"
-            ]
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
           },
           "e5": {
             "type": "Ovo de Colher",
@@ -708,22 +632,18 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDelirioPudim-1.jpg?alt=media&token=6b5d8ff8-be75-4ebb-a21c-30c21e25b27c",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDelirioPudim-2.jpg?alt=media&token=eb35bb33-311f-4708-8ed4-ccfb3237bed1"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 90
-            },
-            "sizelg": {
-              "weight": 500,
-              "price": 100
+            "sizes": {
+              "400g": 90,
+              "500g": 100
             },
             "flavors": null,
-            "options": [
-              "Preto Blend",
-              "Preto ao Leite",
-              "Preto Meio Amargo",
-              "Branco.",
-              "Branco Crocante."
-            ]
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
           },
           "e6": {
             "type": "Ovo de Colher",
@@ -734,22 +654,18 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoFerreroRocher-1.jpg?alt=media&token=ea9e8301-dad0-468f-a27d-2c01c7000496",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoFerreroRocher-2.jpg?alt=media&token=941cfb7d-de21-480f-9337-b871aac28c23"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 90
-            },
-            "sizelg": {
-              "weight": 500,
-              "price": 100
+            "sizes": {
+              "400g": 90,
+              "500g": 100
             },
             "flavors": null,
-            "options": [
-              "Preto Blend",
-              "Preto ao Leite",
-              "Preto Meio Amargo",
-              "Branco",
-              "Branco Crocante"
-            ]
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
           }
         }
       },
@@ -766,11 +682,9 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLaPetra-1.jpg?alt=media&token=1bbb5dcf-0ffc-4809-b792-0a078f69e5ab",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLaPetra-2.jpg?alt=media&token=db52ecca-0cf7-4222-a574-f939530bfee7"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 90
+            "sizes": {
+              "400g": 90
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -783,16 +697,14 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaPistache-1.jpg?alt=media&token=a0409447-6085-4b71-aa56-810cfab9ad7f",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaPistache-2.jpg?alt=media&token=90576c61-2b08-4594-8316-2e31539ef9e9"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 100
+            "sizes": {
+              "400g": 100
             },
-            "sizelg": null,
             "flavors": null,
-            "options": [
-              "Preto Blend",
-              "Branco."
-            ]
+            "options": {
+              "Preto Blend": 0,
+              "Branco": 3
+            }
           },
           "t3": {
             "type": "Casca Trufada",
@@ -803,11 +715,9 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLimao-1.jpg?alt=media&token=5574cc24-0321-4d13-b8ad-b2d002f327cf",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLimao-2.jpg?alt=media&token=ec3d9eb4-3a03-4adb-a85f-7f405970b84e"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 100
+            "sizes": {
+              "400g": 100
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -820,11 +730,9 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaMaracuja-1.jpg?alt=media&token=d2526276-a0fa-4c58-bc95-34ad05261783",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaMaracuja-2.jpg?alt=media&token=9d8904e6-0451-4229-a5b1-f8eed5462606"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 85
+            "sizes": {
+              "400g": 85
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -837,11 +745,9 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCrocanteNutella-1.jpg?alt=media&token=b0b01d9c-7150-4148-8345-f908a97856cc",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCrocanteNutella-2.jpg?alt=media&token=7e87d49b-bf86-40eb-9c48-3fa59b355c55"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 100
+            "sizes": {
+              "400g": 100
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -854,11 +760,9 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCoco-1.jpg?alt=media&token=d60a426a-c4c4-49a8-bdf7-f60fd5df81bd",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCoco-2.jpg?alt=media&token=6c9278d7-d125-4546-b00b-609c298f112c"
             ],
-            "sizesm": {
-              "weight": 400,
-              "price": 85
+            "sizes": {
+              "400g": 85
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           }
@@ -877,13 +781,9 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsOvo-1.jpg?alt=media&token=cd668417-675c-4d61-8e83-e321abb3d451",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsOvo-2.jpg?alt=media&token=a07d9c8d-7385-435a-8500-c1fdb4f57633"
             ],
-            "sizesm": {
-              "weight": 230,
-              "price": 50
-            },
-            "sizelg": {
-              "weight": 400,
-              "price": 80
+            "sizes": {
+              "230g": 50,
+              "400g": 80
             },
             "flavors": null,
             "options": null
@@ -897,11 +797,9 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsSurpresa-1.jpg?alt=media&token=1c6e9bae-7b0b-4638-9a51-68656bc12e78",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsSurpresa-2.jpg?alt=media&token=5da72fa1-7f81-482d-bedc-c35bb5b6526b"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 60
+            "sizes": {
+              "100g": 60
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           },
@@ -914,11 +812,9 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsKitMini-1.jpg?alt=media&token=4411c14c-2bb3-49d8-858d-7a3b523f9250",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsKitMini-2.jpg?alt=media&token=3352542f-0392-4fc6-a187-87798544d2a7"
             ],
-            "sizesm": {
-              "weight": 100,
-              "price": 55
+            "sizes": {
+              "100g": 55
             },
-            "sizelg": null,
             "flavors": null,
             "options": null
           }
@@ -937,23 +833,21 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FbarraRecheada-1.jpg?alt=media&token=98a360b6-3053-45e7-9852-b8736fbaf1c6",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FbarraRecheada-2.jpg?alt=media&token=80927fb4-7b13-4864-b1ca-121429bc474f"
             ],
-            "sizesm": {
-              "weight": 250,
-              "price": 54.5
+            "sizes": {
+              "250g": 54.5
             },
-            "sizelg": null,
-            "flavors": [
-              "Creme moça com geléia morango",
-              "Brigadeiro goumert",
-              "Ninho",
-              "Duo (brigadeiro branco e ao leite)"
-            ],
-            "options": [
-              "Preto Blend Dourado",
-              "Preto Blend Confete",
-              "Branco",
-              "Branco Crocante"
-            ]
+            "flavors": {
+              "Creme moça com geléia morango": 0,
+              "Brigadeiro goumert": 0,
+              "Ninho": 0,
+              "Duo (brigadeiro branco e ao leite)": 0
+            },
+            "options": {
+              "Preto Blend Dourado": 0,
+              "Preto Blend Confete": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
           },
           "o2": {
             "type": "",
@@ -964,16 +858,14 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FpoteOvo-1.jpg?alt=media&token=199473db-1557-46a9-971c-35d8fe8145db",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FpoteOvo-2.jpg?alt=media&token=41f2ef4a-4d3c-43d8-bd73-b2e9f01fb8b3"
             ],
-            "sizesm": {
-              "weight": 250,
-              "price": 38
+            "sizes": {
+              "250g": 38
             },
-            "sizelg": null,
-            "flavors": [
-              "Cookies (creme brulle com pedaços de cookies)",
-              "Duo (Brigadeiro ao leite com brigadeiro branco)",
-              "Morango com creme moça e nutella"
-            ],
+            "flavors": {
+              "Cookies (creme brulle com pedaços de cookies)": 0,
+              "Duo (Brigadeiro ao leite com brigadeiro branco)": 0,
+              "Morango com creme moça e nutella": 0
+            },
             "options": null
           },
           "o3": {
@@ -985,18 +877,16 @@
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FtrioOvos-1.jpg?alt=media&token=bc9e1a30-2a62-4b85-9dc5-36aed627a5d4",
               "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FtrioOvos-2.jpg?alt=media&token=0c277111-fe1f-47dc-b33b-2e3f0e242c2d"
             ],
-            "sizesm": {
-              "weight": 550,
-              "price": 130
+            "sizes": {
+              "550g": 130
             },
-            "sizelg": null,
-            "flavors": [
-              "Ninho com nutella,   Explosão de kinder,  Laka com geléia de morango",
-              "Ferrero Rocher,  Delicia Crocante,  Ninho com nutella",
-              "Explosão de kinder,  Laka com geléia de morango,  Ferrero Rocher",
-              "Delicia Crocante,  Ninho com nutella,  Explosão de kinder",
-              "Laka com geléia de morango,  Ferrero Rocher,  Delicia Crocante"
-            ],
+            "flavors": {
+              "Ninho com nutella,   Explosão de kinder,  Laka com geléia de morango": 0,
+              "Ferrero Rocher,  Delicia Crocante,  Ninho com nutella": 0,
+              "Explosão de kinder,  Laka com geléia de morango,  Ferrero Rocher": 0,
+              "Delicia Crocante,  Ninho com nutella,  Explosão de kinder": 0,
+              "Laka com geléia de morango,  Ferrero Rocher,  Delicia Crocante": 0
+            },
             "options": null
           }
         }
@@ -1613,5 +1503,72 @@
       "price": 17.00,
       "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
     }
-  ]
+  ],
+  "cakes": {
+    "title": "Bolos",
+    "description1": "Produtos feitos sob encomenda",
+    "description2": null,
+    "products": {
+      "chantininho": {
+        "title": "Bolo de Chantininho",
+        "description": "Bolo recheado e coberto com Chantilly sabor Leite Ninho",
+        "products":{
+          "cake01": {
+            "type": "Bolo",
+            "id": "cake01",
+            "name": "Chantininho 1 Recheio",
+            "description": "Bolo rechado com uma escolha de recheio e coberto com Chantininho",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg"
+            ],
+            "sizes": {
+              "8 Fatias": 95,
+              "12 Fatias": 110,
+              "22 Fatias": 135,
+              "35 Fatias": 175
+            },
+            "flavors": {
+              "Brigadeiro": 0,
+              "Brigadeiro Branco": 0,
+              "Leite Ninho": 0,
+              "Nozes": 20
+            },
+            "options": {
+              "Granulado": 0,
+              "Glitter": 0,
+              "Colorido Branco": 0,
+              "Colorido Vermelho": 20
+            }
+          },
+          "cake02": {
+            "type": "Bolo",
+            "id": "cake02",
+            "name": "Chantininho 2 Recheios",
+            "description": "Bolo rechado com duas escolha de recheio e coberto com Chantininho",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg"
+            ],
+            "sizes": {
+              "8 Fatias": 95,
+              "12 Fatias": 110
+            },
+            "flavors": {
+              "Brigadeiro": 0,
+              "Brigadeiro Branco": 0,
+              "Leite Ninho": 0,
+              "Nozes": 20
+            },
+            "options": {
+              "Granulado": 0,
+              "Glitter": 0,
+              "Colorido Branco": 0,
+              "Colorido Vermelho": 20
+            }
+          }
+        }
+      }
+    }
+  }
 }

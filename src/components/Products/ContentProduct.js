@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import styles from './ContentProduct.module.css';
 
 import { BagContext } from '../../contexts/BagContext';
@@ -7,6 +7,7 @@ import Select from '../Forms/Select';
 import InputRadio from '../Forms/InputRadio';
 
 import Carousel from '../Carousel/Carousel';
+import usePrevious from '../../hooks/usePrevious';
 
 const ContentProduct = ({modalProduct}) => {
   
@@ -14,12 +15,14 @@ const ContentProduct = ({modalProduct}) => {
   const [submitSucess, setSubmitSucess] = React.useState(false);
   const [submitError, setSubmitError] = React.useState(false);
   const [option, setOption] = React.useState('');
+  const prevOption = usePrevious(option);
   const [flavor, setFlavor] = React.useState('');
-  const [size, setSize] = React.useState();
+  const prevFlavor = usePrevious(flavor);
+  const [size, setSize] = React.useState('');
   const [modifiedProduct, setModifiedProduct] = React.useState(modalProduct);
 
   function handleCLick() {
-    if((modalProduct.options && option==='') || (modalProduct.flavors && flavor==='') || (modalProduct.sizelg && !size)) {
+    if((modalProduct.options && option==='') || (modalProduct.flavors && flavor==='') || (Object.keys(modifiedProduct.sizes).length>1 && size.length<1)) {
       setSubmitError(true);
     } else {
       setSubmitSucess(true);
@@ -28,7 +31,7 @@ const ContentProduct = ({modalProduct}) => {
         options: option,
         flavors: flavor,
         size: chosedSize(),
-        price: chosedPrice()
+        price: size ? modifiedProduct.sizes[size] : modifiedProduct.sizes[Object.keys(modifiedProduct.sizes)[0]]
       }
       setBag([...bag, newModalProduct])
     }
@@ -39,33 +42,40 @@ const ContentProduct = ({modalProduct}) => {
         return "Único";
       }
     }
-    function chosedPrice() {
-      if(!size || size===`${modifiedProduct.sizesm.weight}g`) {
-        return modifiedProduct.sizesm.price;
-      } else {
-        return modifiedProduct.sizelg.price;
+  }
+
+  function sumSelectPrice(select, state, prevState) {
+    const arraySizes = Object.keys(modifiedProduct.sizes);
+    let newPrices = modifiedProduct.sizes
+    if(prevState) {
+      for (let index = 0; index < arraySizes.length; index++) {
+        newPrices =  {
+          ...newPrices,
+          [arraySizes[index]]: modifiedProduct.sizes[arraySizes[index]] + modifiedProduct[select][state] - modifiedProduct[select][prevState]
+        }      
       }
-    }
+    } else if(state) {
+      for (let index = 0; index < arraySizes.length; index++) {
+        newPrices =  {
+          ...newPrices,
+          [arraySizes[index]]: modifiedProduct.sizes[arraySizes[index]] + modifiedProduct[select][state]
+        }      
+      }
+    }  
+    return newPrices;
   }
 
   React.useEffect(() => {
-    if(option==="Branco" || option==="Branco Crocante") {
-      if(modifiedProduct.sizelg) {
-        setModifiedProduct({
-          ...modifiedProduct, 
-            sizesm:{...modifiedProduct.sizesm,price: modalProduct.sizesm.price + 3},
-            sizelg:{...modifiedProduct.sizelg,price: modalProduct.sizelg.price + 3}
-        });
-      } else {
-        setModifiedProduct({
-          ...modifiedProduct, 
-            sizesm:{...modifiedProduct.sizesm,price: modalProduct.sizesm.price + 3}
-        });
-      }
-    } else {
-      setModifiedProduct(modalProduct)
-    }
+    setModifiedProduct({
+      ...modifiedProduct, sizes: sumSelectPrice('options', option, prevOption)
+    });
   }, [option])
+
+  React.useEffect(() => {
+    setModifiedProduct({
+      ...modifiedProduct, sizes: sumSelectPrice('flavors', flavor, prevFlavor)
+    });
+  }, [flavor])
 
   React.useEffect(() => {
     if(submitSucess || submitError) {
@@ -76,7 +86,7 @@ const ContentProduct = ({modalProduct}) => {
     }
   },[submitSucess, submitError])
 
-  return (
+  if(modifiedProduct) return (
     <div className={styles.container}>
       <Carousel product={modifiedProduct.image} className={styles.image}/>
       <div className={styles.description}>
@@ -86,43 +96,55 @@ const ContentProduct = ({modalProduct}) => {
 
         {modifiedProduct.flavors && 
           <div className={styles.options}>
-              <Select className={styles.select} label="Sabores: " initial="Selecione Aqui" options={modifiedProduct.flavors} selectedOption={flavor} setSelectedOption={setFlavor}/>
+              <Select
+                className={styles.select} label="Sabores: " initial="Selecione Aqui"
+                selectedOption={flavor} setSelectedOption={setFlavor}
+                options={Object.keys(modifiedProduct.flavors)} 
+              />
           </div>
         }
 
         {modifiedProduct.options && 
           <div className={styles.options}>
-              <Select className={styles.select} label="Escolha a Casca: " initial="Selecione Aqui" options={modifiedProduct.options} selectedOption={option} setSelectedOption={setOption}/>
+              <Select
+                className={styles.select} label="Opções: " initial="Selecione Aqui"
+                selectedOption={option} setSelectedOption={setOption}
+                options={Object.keys(modifiedProduct.options)}
+              />
           </div>
         }
 
-        <div className={styles.prices}>
-          <div className={styles.size}>
-            <h6>Peso final aprox. {modifiedProduct.sizesm.weight}g</h6>
-            {modifiedProduct.sizelg ?
-              <InputRadio
-                option={modifiedProduct.sizesm.price}
-                state={size}
-                setState={setSize}
-                name={`${modifiedProduct.sizesm.weight}g`}
-                className={styles.price}
-              /> :
-              <span className={styles.price}>
-                R${modifiedProduct.sizesm.price.toFixed(2)}
-              </span>
-            }
-          </div>
-          {modifiedProduct.sizelg && <div className={styles.size}>
-            <h6>Peso final aprox. {modifiedProduct.sizelg.weight}g</h6>
-            <InputRadio
-              option={modifiedProduct.sizelg.price}
-              state={size}
-              setState={setSize}
-              name={`${modifiedProduct.sizelg.weight}g`}
-              className={styles.price}
-            />
-          </div>}
+        <div className={styles.sizes}>
+          {Object.keys(modifiedProduct.sizes).length<=2 ?
+            Object.keys(modifiedProduct.sizes).map(productSize =>
+              <div className={styles.prices} key={productSize}>
+                <h6>Quantia aprox. {productSize}</h6>
+                <InputRadio
+                  option={modifiedProduct.sizes[productSize]}
+                  state={size}
+                  setState={setSize}
+                  name={productSize}
+                  className={styles.price}
+                />
+              </div>
+            ) :
+            <div className={styles.options}>
+              <Select
+                className={styles.select} label="Tamanhos: " initial="Selecione Aqui"
+                selectedOption={size} setSelectedOption={setSize}
+                options={Object.keys(modifiedProduct.sizes)}
+              />
+            </div>
+          }
         </div>
+
+        {size && Object.keys(modifiedProduct.sizes).length>2 &&
+          <div className={styles.prices}>
+            <span className={styles.price}>
+              R${modifiedProduct.sizes[size].toFixed(2)}
+            </span>
+          </div>
+        }
 
         <Button onClick={handleCLick} submitSucess={submitSucess} submitError={submitError}>
           Adicionar à Sacola

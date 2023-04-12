@@ -2,24 +2,24 @@ import React from 'react';
 import styles from './ProductsPage.module.css';
 import { NavLink, useLocation } from 'react-router-dom';
 
-import Products from '../../components/Products/Products';
-import Cakes from '../../components/Cakes/Cakes';
-import Sweeties from '../../components/Sweeties/Sweeties';
-import Seasonal from '../../components/Seasonal/Seasonal';
-import ModalProduct from '../../components/Products/ModalProduct';
-
 import { getProducts } from '../../services/firebase';
 import { BagContext } from '../../contexts/BagContext';
+
+import Seasonal from '../../components/Seasonal/Seasonal';
+import Products from '../../components/Products/Products';
+import ModalProduct from '../../components/Products/ModalProduct';
 
 const ProductsPage = () => {
   const {pathname} = useLocation();
   const [ , , category, setCategory] = React.useContext(BagContext);
   const [modalProduct, setModalProduct] = React.useState();
   const [delivery, setDelivery] = React.useState();
+  const [cakes, setCakes] = React.useState();
   const [seasonal, setSeasonal] = React.useState();
 
   React.useEffect(() => {
     getProducts('delivery', setDelivery);
+    getProducts('cakes', setCakes);
   },[])
 
   React.useEffect(() => {
@@ -50,10 +50,10 @@ const ProductsPage = () => {
             <Products category={delivery} setModalProduct={setModalProduct}/>
           }
           {category==='/produtos/bolos' &&
-            <Cakes/>
+            <Products category={cakes} setModalProduct={setModalProduct}/>
           }
           {category==='/produtos/docinhos' &&
-            <Sweeties/>
+            'Docinhos'
           }
           {category==='/produtos/sazonal' &&
             <Seasonal

@@ -36,7 +36,7 @@ const Product = ({product, setModalProduct}) => {
         }
         {product.size && <p>Tamanho: {product.size}</p>}
         {product.options && product.options!=='' ?
-          <p>Casca: {product.options}</p> :
+          <p>Opção: {product.options}</p> :
           <p style={{opacity: 0}}> . </p>
         }
         {product.flavors && product.flavors!=='' ?

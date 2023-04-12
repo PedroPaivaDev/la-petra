@@ -72,20 +72,24 @@
   color: var(--darkBrown);
 }
 
-.size {
+.sizes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.prices {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .container .price {
   color: var(--darkCyan);
-}
-
-.container .prices {
-  display: flex;
-  gap: 20px;
 }
 
 .options {
