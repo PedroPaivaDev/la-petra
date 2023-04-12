@@ -60,8 +60,8 @@ export function registerProductsOrder(name, description, price, image) {
   push(ordersRef, product)
 }
 
-//Para buscar os produtos no DB
-export function getProducts(path, setState) {
+//Para buscar os produtos no DB (velho)
+export function getProductsOld(path, setState) {
   const productsRef = ref(db, path);
   let products = [];
   onValue(productsRef, (snapshot) => {
@@ -70,6 +70,15 @@ export function getProducts(path, setState) {
     })
     setState(products)
   }, {onlyOnce: true})
+}
+//Para buscar os produtos no DB
+export function getProducts(path, setState) {
+  const productsRef = ref(db, path);
+  onValue(
+    productsRef,
+    (snapshot) => setState(snapshot.val()),
+    {onlyOnce: true}
+  )
 }
 
 //Para remover produtos

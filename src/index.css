@@ -106,7 +106,7 @@ main {
   z-index: 0;
 }
 
-.container {
+.page {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -116,15 +116,45 @@ main {
   padding: var(--HeaderHeigth) 0px var(--FooterHeigth) 0px;
 }
 
-.wrapper {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   width: 100%;
   height: 100%;
-  gap: 20px;
+  overflow: auto;
   padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth));
+}
+
+.envelope {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 main > div:first-child {
@@ -135,9 +165,15 @@ main > div:first-child > div:first-child {
   padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth));
 }
 
-h2 {
+h1 {
   font-size: 1.4rem;
   margin: 10px 0px 5px 0px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 10px 0px 0px 0px;
   text-align: center;
 }
 
@@ -185,4 +221,22 @@ h2 {
 
 .react-datepicker__time-list-item--disabled {
   display: none;
+}
+
+@media (min-width: 40rem) {
+  .container::-webkit-scrollbar {
+      background: transparent;
+      width: 10px;
+  }
+
+  .container::-webkit-scrollbar-track {
+      background: rgba(127,105,91,0.2);
+      border-radius: 10px;
+      padding: 5px;
+  }
+
+  .container::-webkit-scrollbar-thumb {
+      background-color: rgba(127,105,91,0.4);
+      border-radius: 10px;
+  }
 }

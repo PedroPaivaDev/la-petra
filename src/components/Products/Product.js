@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { BagContext } from '../../contexts/BagContext';
-import styles from './EasterProduct.module.css';
+import styles from './Product.module.css';
 
-const EasterProduct = ({product, setModalProduct}) => {
+const Product = ({product, setModalProduct}) => {
 
   const [bag, setBag] = React.useContext(BagContext);
   const {pathname} = useLocation();
@@ -57,4 +57,4 @@ const EasterProduct = ({product, setModalProduct}) => {
   )
 }
 
-export default EasterProduct;
+export default Product;

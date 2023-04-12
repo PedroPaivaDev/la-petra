@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './ContentEasterProduct.module.css';
+import styles from './ContentProduct.module.css';
 
 import { BagContext } from '../../contexts/BagContext';
 import Button from '../Forms/Button';
@@ -8,7 +8,7 @@ import InputRadio from '../Forms/InputRadio';
 
 import Carousel from '../Carousel/Carousel';
 
-const ContentEasterProduct = ({modalProduct}) => {
+const ContentProduct = ({modalProduct}) => {
   
   const [bag, setBag] = React.useContext(BagContext);
   const [submitSucess, setSubmitSucess] = React.useState(false);
@@ -133,4 +133,4 @@ const ContentEasterProduct = ({modalProduct}) => {
   )
 }
 
-export default ContentEasterProduct;
+export default ContentProduct;

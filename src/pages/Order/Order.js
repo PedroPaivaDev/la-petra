@@ -12,7 +12,7 @@ import Select from '../../components/Forms/Select';
 import useLocalStorage from '../../hooks/useLocalStorage';
 
 import Grid from '../../components/Grid/Grid';
-import EasterProduct from '../../components/Easter/EasterProduct';
+import Product from '../../components/Products/Product';
 import Checkbox from '../../components/Forms/Checkbox';
 
 const Order = () => {
@@ -117,7 +117,7 @@ const Order = () => {
         <div className={styles.products}>
           {bag.length!==0 ? bag.map(product => 
             <Grid key={product.id} xs={12} sm={6} md={4} lg={4} xl={3}>
-              <EasterProduct product={product}/>
+              <Product product={product}/>
             </Grid>) : 
             <p style={{color: '#f31'}}>Sua sacola ainda está vazia. Escolha pelo menos um produto.</p>
           }
