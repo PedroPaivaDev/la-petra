@@ -27,7 +27,7 @@ const ProductsPage = () => {
   }, [pathname])
 
   return (
-    <div className={`${styles.container} animeLeft`}>
+    <div className={`page animeLeft`}>
         {modalProduct && 
           <ModalProduct
             modalProduct={modalProduct}

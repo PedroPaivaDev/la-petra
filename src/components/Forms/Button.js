@@ -4,8 +4,8 @@ import styles from './Button.module.css';
 const Button = ({children, submitError, submitSucess, ...props}) => {
   return (
     <div className={styles.container}>
-      {submitError && <h5 className={styles.error}>Verifique os campos</h5>}
-      {submitSucess && <h5 className={styles.sucess}>Enviado com sucesso!</h5>}
+      {submitError && <h6 className={styles.error}>Verifique os campos</h6>}
+      {submitSucess && <h6 className={styles.sucess}>Enviado com sucesso!</h6>}
       <button className={styles.button} {...props}>{children}</button>
     </div>
   )

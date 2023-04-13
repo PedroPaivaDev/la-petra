@@ -1,16 +1,3 @@
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.container > div:last-child > div:first-child {
-    padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth));
-}
-
 .subNavbar {
     display: flex;
     justify-content: center;

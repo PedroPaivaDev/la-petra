@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Home.module.css';
+
 import Contact from '../../components/Contact/Contact';
 
 // import SlickSlider from '../../components/SlickSlider/SlickSlider';
@@ -25,7 +25,7 @@ const Home = () => {
   // }, [data])
 
   return (
-    <div className={styles.container}>
+    <div className='page'>
       {/* <SlickSlider loading={loading} error={error} photos={photos}/> */}
       <Contact/>
     </div>

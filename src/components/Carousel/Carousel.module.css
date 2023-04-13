@@ -17,9 +17,3 @@
         opacity: 1;
     }
 }
-
-@media (max-width: 58rem) {
-    .container {
-        height: 100%;
-    }
-}

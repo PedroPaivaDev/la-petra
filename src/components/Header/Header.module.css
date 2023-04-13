@@ -61,10 +61,6 @@
     fill: var(--darkBrown);
 }
 
-/* @media (max-width: 23rem) {
-    .icon {display: none}
-} */
-
 
 .logo {
     display: flex;

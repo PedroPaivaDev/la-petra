@@ -25,6 +25,7 @@ body {
   --mainWidth: 100vw;
   --HeaderHeigth: 60px;
   --FooterHeigth: 15px;
+  --paddingIPhone: 85px;
 
   --darkBrown: rgba(86,63,57);
   --lightBrown: rgba(127,105,91);
@@ -52,6 +53,8 @@ a {
 
 p, label, option {
   font-family: Arial, Helvetica, sans-serif;
+  text-shadow: none;
+  color: var(--darkBrown);
 }
 
 label {
@@ -121,10 +124,12 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  gap: 10px;
+  text-align: center;
   width: 100%;
   height: 100%;
   overflow: auto;
-  padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth));
+  padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth) + var(--paddingIPhone));
 }
 
 .envelope {
@@ -144,8 +149,10 @@ main {
   justify-content: flex-start;
   align-items: center;
   width: 100%;
-  gap: 10px;
+  gap: 5px;
   text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .row {
@@ -155,26 +162,46 @@ main {
   width: 100%;
   flex-wrap: wrap;
   gap: 20px;
-}
-
-main > div:first-child {
-  padding: var(--HeaderHeigth) 0px var(--FooterHeigth) 0px;
-}
-
-main > div:first-child > div:first-child {
-  padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth));
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 h1 {
   font-size: 1.4rem;
-  margin: 10px 0px 5px 0px;
+  margin-top: 10px;
   text-align: center;
 }
 
 h2 {
   font-size: 1.2rem;
-  margin: 10px 0px 0px 0px;
+  margin-top: 10px;
   text-align: center;
+}
+
+h3 {
+    color: white;
+    font-size: 1rem;
+    line-height: 2rem;
+    text-shadow: 1px 1px 5px #333;
+    transition: 0.3s;
+}
+
+h3:hover {
+    color: var(--darkPink);
+    text-shadow: 1px 1px 5px white;
+    cursor: pointer;
+}
+
+h4 {
+  color: var(--darkCyan);
+  text-shadow: 1px 1px 5px white;
+}
+
+h5 {
+  font-size: 0.625rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--darkBrown);
+  text-shadow: none;
 }
 
 .animeLeft {
@@ -239,4 +266,9 @@ h2 {
       background-color: rgba(127,105,91,0.4);
       border-radius: 10px;
   }
+}
+
+@media (max-width: 21rem), (max-height: 21rem) {
+  p, label, input, select, option, span, b {font-size: 0.75rem;}
+  h1, h2, h3, h4 {font-size: 1rem;}
 }

@@ -38,7 +38,6 @@
   align-items: center;
   width: 50%;
   height: 100%;
-  /* padding: 10px 10px 0px 10px; */
   gap: 5px;
 }
 
@@ -46,30 +45,15 @@
   width: 100%;
 }
 
-@media (max-width: 58rem) {
-  .description .image {
-    display: none;
-  }
-  .description {
-    height: auto;
-  }
-}
-
-.container * {
+.description h3 {
   text-shadow: 1px 1px 5px white;
-}
-
-.description span {
   color: var(--darkPink);
   font-size: 1rem;
   text-align: center;
 }
 
 .description p, .description label {
-  font-size: 0.75rem;
   text-align: justify;
-  text-shadow: none;
-  color: var(--darkBrown);
 }
 
 .sizes {
@@ -89,12 +73,8 @@
 }
 
 .container .price {
+  text-shadow: 1px 1px 5px white;
   color: var(--darkCyan);
-}
-
-.options {
-  display: flex;
-  gap: 5px;
 }
 
 .select select, .select option {
@@ -105,11 +85,13 @@
   line-height: 16px;
 }
 
-.container h6 {
-  font-size: 0.625rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--darkBrown);
-  text-shadow: none;
+@media (max-width: 58rem) {
+  .description .image {
+    display: none;
+  }
+  .description {
+    height: auto;
+  }
 }
 
 @media (max-width: 42rem) {
@@ -128,46 +110,26 @@
     width: 100%;
     gap: 5px;
   }
-  .description span {
-    font-size: 1.2rem;
-  }
-  .options {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-height: 27rem) {
   .container {
     flex-direction: row;
   }
-  .description span {
-    font-size: 1rem;
-  }
-  .description p, .description label {
-    font-size: 0.75rem;
-  }
 }
 
-@media (max-width: 42rem), (max-height: 20rem) {
-  .description span {
-    font-size: 1rem;
-  }
-  .description p, .description label {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 20rem) {
+@media (max-width: 58rem) {
   .description p, .description label, .options select, .options option {
-    font-size: 0.625rem;
+    font-size: 0.75rem;
   }
 }
 
-@media (max-height: 20rem) {
+@media (max-width: 21rem), (max-height: 21rem) {
   .description {
     gap: 0;
   }
-  .description span {
+  .description h3, span {    
+    line-height: 1.5rem;
     font-size: 0.75rem;
   }
   .description p, .description label, .options select, .options option {

@@ -1,13 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import styles from './ContentProduct.module.css';
 
 import { BagContext } from '../../contexts/BagContext';
+import usePrevious from '../../hooks/usePrevious';
+
 import Button from '../Forms/Button';
 import Select from '../Forms/Select';
 import InputRadio from '../Forms/InputRadio';
 
 import Carousel from '../Carousel/Carousel';
-import usePrevious from '../../hooks/usePrevious';
 
 const ContentProduct = ({modalProduct}) => {
   
@@ -91,7 +92,7 @@ const ContentProduct = ({modalProduct}) => {
       <Carousel product={modifiedProduct.image} className={styles.image}/>
       <div className={styles.description}>
         <div className={styles.image} style={{background: `url(${modifiedProduct.image[1]}) no-repeat center center`,backgroundSize: "cover"}}/>
-        <span>{modifiedProduct.name}</span>
+        <h3>{modifiedProduct.name}</h3>
         <p>{modifiedProduct.description}</p>
 
         {modifiedProduct.flavors && 
@@ -118,14 +119,19 @@ const ContentProduct = ({modalProduct}) => {
           {Object.keys(modifiedProduct.sizes).length<=2 ?
             Object.keys(modifiedProduct.sizes).map(productSize =>
               <div className={styles.prices} key={productSize}>
-                <h6>Quantia aprox. {productSize}</h6>
-                <InputRadio
-                  option={modifiedProduct.sizes[productSize]}
-                  state={size}
-                  setState={setSize}
-                  name={productSize}
-                  className={styles.price}
-                />
+                <h5>Quantia aprox. {productSize}</h5>
+                {Object.keys(modifiedProduct.sizes).length>1 ?
+                  <InputRadio
+                    option={modifiedProduct.sizes[productSize]}
+                    state={size}
+                    setState={setSize}
+                    name={productSize}
+                    className={styles.price}
+                  /> :
+                  <h4 className={styles.price}>
+                    R${modifiedProduct.sizes[Object.keys(modifiedProduct.sizes)[0]].toFixed(2)}
+                  </h4>
+                }
               </div>
             ) :
             <div className={styles.options}>
@@ -140,9 +146,9 @@ const ContentProduct = ({modalProduct}) => {
 
         {size && Object.keys(modifiedProduct.sizes).length>2 &&
           <div className={styles.prices}>
-            <span className={styles.price}>
+            <h4 className={styles.price}>
               R${modifiedProduct.sizes[size].toFixed(2)}
-            </span>
+            </h4>
           </div>
         }
 

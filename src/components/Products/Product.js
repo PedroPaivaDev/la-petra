@@ -24,7 +24,7 @@ const Product = ({product, setModalProduct}) => {
       onClick={setModalProduct ? handleClick : null}
     >
 
-      <h4 className={styles.name}>{product.name}</h4>
+      <h3>{product.name}</h3>
       {pathname==='/order' && 
         <span className={styles.delete} onClick={handleDelete}>X</span>
       }
