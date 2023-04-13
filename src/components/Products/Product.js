@@ -43,6 +43,10 @@ const Product = ({product, setModalProduct}) => {
           <p>Sabor: {product.flavors}</p> :
           <p style={{opacity: 0}}> . </p>
         }
+        {product.additional && product.additional!=='' ?
+          <p>Adicional: {product.additional}</p> :
+          <p style={{opacity: 0}}> . </p>
+        }
         <h4>R${product.price.toFixed(2)}</h4>
       </div>}
 

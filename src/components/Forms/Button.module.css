@@ -35,3 +35,12 @@
   font-size: 0.75rem;
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 21rem), (max-height: 21rem) {
+  .button {
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    margin-top: 5px;
+  }
+}

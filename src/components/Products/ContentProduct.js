@@ -2,7 +2,6 @@ import React from 'react';
 import styles from './ContentProduct.module.css';
 
 import { BagContext } from '../../contexts/BagContext';
-import usePrevious from '../../hooks/usePrevious';
 
 import Button from '../Forms/Button';
 import Select from '../Forms/Select';
@@ -16,9 +15,8 @@ const ContentProduct = ({modalProduct}) => {
   const [submitSucess, setSubmitSucess] = React.useState(false);
   const [submitError, setSubmitError] = React.useState(false);
   const [option, setOption] = React.useState('');
-  const prevOption = usePrevious(option);
   const [flavor, setFlavor] = React.useState('');
-  const prevFlavor = usePrevious(flavor);
+  const [additional, setAdditional] = React.useState('');
   const [size, setSize] = React.useState('');
   const [modifiedProduct, setModifiedProduct] = React.useState(modalProduct);
 
@@ -32,7 +30,8 @@ const ContentProduct = ({modalProduct}) => {
         options: option,
         flavors: flavor,
         size: chosedSize(),
-        price: size ? modifiedProduct.sizes[size] : modifiedProduct.sizes[Object.keys(modifiedProduct.sizes)[0]]
+        price: size ? modifiedProduct.sizes[size] : modifiedProduct.sizes[Object.keys(modifiedProduct.sizes)[0]],
+        additional: additional
       }
       setBag([...bag, newModalProduct])
     }
@@ -45,38 +44,34 @@ const ContentProduct = ({modalProduct}) => {
     }
   }
 
-  function sumSelectPrice(select, state, prevState) {
-    const arraySizes = Object.keys(modifiedProduct.sizes);
-    let newPrices = modifiedProduct.sizes
-    if(prevState) {
-      for (let index = 0; index < arraySizes.length; index++) {
-        newPrices =  {
-          ...newPrices,
-          [arraySizes[index]]: modifiedProduct.sizes[arraySizes[index]] + modifiedProduct[select][state] - modifiedProduct[select][prevState]
-        }      
-      }
-    } else if(state) {
-      for (let index = 0; index < arraySizes.length; index++) {
-        newPrices =  {
-          ...newPrices,
-          [arraySizes[index]]: modifiedProduct.sizes[arraySizes[index]] + modifiedProduct[select][state]
-        }      
-      }
-    }  
-    return newPrices;
+  function handleAdditional() {
+    if(size.includes(",")) {
+      return 'group1';
+    } else if(size.includes("*")) {
+      return 'group2';
+    }
   }
 
   React.useEffect(() => {
+    function sumSelectPrice() {
+      const arraySizes = Object.keys(modalProduct.sizes);
+      let newPrices = modalProduct.sizes
+      for (let index = 0; index < arraySizes.length; index++) {
+        newPrices =  {
+          ...newPrices,
+          [arraySizes[index]]:
+            modalProduct.sizes[arraySizes[index]] +
+            (option ? modalProduct.options[option] : 0) +
+            (flavor ? modalProduct.flavors[flavor] : 0) +
+            (additional ? modalProduct.additionals[handleAdditional()][additional] : 0)
+        }
+      }
+      return newPrices;
+    }
     setModifiedProduct({
-      ...modifiedProduct, sizes: sumSelectPrice('options', option, prevOption)
+      ...modifiedProduct, sizes: sumSelectPrice()
     });
-  }, [option])
-
-  React.useEffect(() => {
-    setModifiedProduct({
-      ...modifiedProduct, sizes: sumSelectPrice('flavors', flavor, prevFlavor)
-    });
-  }, [flavor])
+  },[option, flavor, additional, size])
 
   React.useEffect(() => {
     if(submitSucess || submitError) {
@@ -86,6 +81,10 @@ const ContentProduct = ({modalProduct}) => {
       },2000)
     }
   },[submitSucess, submitError])
+
+  React.useEffect(() => {
+    console.log(modifiedProduct.sizes)
+  }, [modifiedProduct])
 
   if(modifiedProduct) return (
     <div className={styles.container}>
@@ -98,7 +97,7 @@ const ContentProduct = ({modalProduct}) => {
         {modifiedProduct.flavors && 
           <div className={styles.options}>
               <Select
-                className={styles.select} label="Sabores: " initial="Selecione Aqui"
+                className={styles.select} label="Sabor: " initial="Selecione Aqui"
                 selectedOption={flavor} setSelectedOption={setFlavor}
                 options={Object.keys(modifiedProduct.flavors)} 
               />
@@ -108,9 +107,19 @@ const ContentProduct = ({modalProduct}) => {
         {modifiedProduct.options && 
           <div className={styles.options}>
               <Select
-                className={styles.select} label="Opções: " initial="Selecione Aqui"
+                className={styles.select} label="Opção: " initial="Selecione Aqui"
                 selectedOption={option} setSelectedOption={setOption}
                 options={Object.keys(modifiedProduct.options)}
+              />
+          </div>
+        }
+        
+        {size && modifiedProduct.additionals && 
+          <div className={styles.options}>
+              <Select
+                className={styles.select} label="Adicional: " initial="Selecione Aqui"
+                selectedOption={additional} setSelectedOption={setAdditional}
+                options={Object.keys(modifiedProduct.additionals[handleAdditional()])}
               />
           </div>
         }
@@ -136,7 +145,7 @@ const ContentProduct = ({modalProduct}) => {
             ) :
             <div className={styles.options}>
               <Select
-                className={styles.select} label="Tamanhos: " initial="Selecione Aqui"
+                className={styles.select} label="Tamanho: " initial="Selecione Aqui"
                 selectedOption={size} setSelectedOption={setSize}
                 options={Object.keys(modifiedProduct.sizes)}
               />

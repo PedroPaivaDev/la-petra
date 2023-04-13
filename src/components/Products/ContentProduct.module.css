@@ -48,11 +48,12 @@
 .description h3 {
   text-shadow: 1px 1px 5px white;
   color: var(--darkPink);
-  font-size: 1rem;
+  font-size: 1.125rem;
   text-align: center;
 }
 
 .description p, .description label {
+  font-size: 0.875rem;
   text-align: justify;
 }
 
