@@ -11,6 +11,10 @@ const types = {
     regex: /^\(?[1-9]{2}\)? ?(?:[2-8]|9 [1-9])[0-9]{3}\-?[0-9]{4}$/,
     message: "Insira um número válido, incluindo DDD",
   },
+  sweeties: {
+    regex: /^(2[5-9]|[3-9][0-9]|1[0-9][0-9])\d?$/,
+    message: "mínimo 25und"
+  }
 };
 
 const useForm = (key, initial, type) => {

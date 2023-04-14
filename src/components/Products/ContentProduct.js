@@ -8,6 +8,8 @@ import Select from '../Forms/Select';
 import InputRadio from '../Forms/InputRadio';
 
 import Carousel from '../Carousel/Carousel';
+import useForm from '../../hooks/useForm';
+import Input from '../Forms/Input';
 
 const ContentProduct = ({modalProduct}) => {
   
@@ -18,10 +20,16 @@ const ContentProduct = ({modalProduct}) => {
   const [flavor, setFlavor] = React.useState('');
   const [additional, setAdditional] = React.useState('');
   const [size, setSize] = React.useState('');
+  const quantity = useForm('quantity', '', 'sweeties')
   const [modifiedProduct, setModifiedProduct] = React.useState(modalProduct);
 
   function handleCLick() {
-    if((modalProduct.options && option==='') || (modalProduct.flavors && flavor==='') || (Object.keys(modifiedProduct.sizes).length>1 && size.length<1)) {
+    if(
+      (modalProduct.options && option==='') ||
+      (modalProduct.flavors && flavor==='') ||
+      (modalProduct.minQuantity && quantity.value<25) ||
+      (Object.keys(modifiedProduct.sizes).length>1 && size.length<1)
+    ) {
       setSubmitError(true);
     } else {
       setSubmitSucess(true);
@@ -31,7 +39,8 @@ const ContentProduct = ({modalProduct}) => {
         flavors: flavor,
         size: chosedSize(),
         price: size ? modifiedProduct.sizes[size] : modifiedProduct.sizes[Object.keys(modifiedProduct.sizes)[0]],
-        additional: additional
+        additional: additional,
+        quantity: quantity.value
       }
       setBag([...bag, newModalProduct])
     }
@@ -56,7 +65,19 @@ const ContentProduct = ({modalProduct}) => {
     function sumSelectPrice() {
       const arraySizes = Object.keys(modalProduct.sizes);
       let newPrices = modalProduct.sizes
-      for (let index = 0; index < arraySizes.length; index++) {
+      if(modalProduct.minQuantity) {
+        for (let index = 0; index < arraySizes.length; index++) {
+        newPrices =  {
+          ...newPrices,
+          [arraySizes[index]]: (
+            modalProduct.sizes[arraySizes[index]] +
+            (option ? modalProduct.options[option] : 0) +
+            (flavor ? modalProduct.flavors[flavor] : 0) +
+            (additional ? modalProduct.additionals[handleAdditional()][additional] : 0)
+          ) * quantity.value
+        }}
+      } else {
+        for (let index = 0; index < arraySizes.length; index++) {
         newPrices =  {
           ...newPrices,
           [arraySizes[index]]:
@@ -64,14 +85,14 @@ const ContentProduct = ({modalProduct}) => {
             (option ? modalProduct.options[option] : 0) +
             (flavor ? modalProduct.flavors[flavor] : 0) +
             (additional ? modalProduct.additionals[handleAdditional()][additional] : 0)
-        }
+        }}
       }
       return newPrices;
     }
     setModifiedProduct({
       ...modifiedProduct, sizes: sumSelectPrice()
     });
-  },[option, flavor, additional, size])
+  },[option, flavor, additional, size, quantity.value])
 
   React.useEffect(() => {
     if(submitSucess || submitError) {
@@ -81,10 +102,6 @@ const ContentProduct = ({modalProduct}) => {
       },2000)
     }
   },[submitSucess, submitError])
-
-  React.useEffect(() => {
-    console.log(modifiedProduct.sizes)
-  }, [modifiedProduct])
 
   if(modifiedProduct) return (
     <div className={styles.container}>
@@ -121,6 +138,14 @@ const ContentProduct = ({modalProduct}) => {
                 selectedOption={additional} setSelectedOption={setAdditional}
                 options={Object.keys(modifiedProduct.additionals[handleAdditional()])}
               />
+          </div>
+        }
+        
+        {modifiedProduct.minQuantity && 
+          <div className={`${styles.options} ${styles.quantityWrapper}`}>
+            <Input label="Quantia:" type="text" name="quantity"
+              placeholder={"Min. 25und"} {...quantity}
+            />
           </div>
         }
 

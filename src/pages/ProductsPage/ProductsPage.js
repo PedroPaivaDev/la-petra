@@ -15,11 +15,13 @@ const ProductsPage = () => {
   const [modalProduct, setModalProduct] = React.useState();
   const [delivery, setDelivery] = React.useState();
   const [cakes, setCakes] = React.useState();
+  const [sweeties, setSweeties] = React.useState();
   const [seasonal, setSeasonal] = React.useState();
 
   React.useEffect(() => {
     getProducts('delivery', setDelivery);
     getProducts('cakes', setCakes);
+    getProducts('sweeties', setSweeties);
   },[])
 
   React.useEffect(() => {
@@ -53,7 +55,7 @@ const ProductsPage = () => {
             <Products category={cakes} setModalProduct={setModalProduct}/>
           }
           {category==='/produtos/docinhos' &&
-            'Docinhos'
+            <Products category={sweeties} setModalProduct={setModalProduct}/>
           }
           {category==='/produtos/sazonal' &&
             <Seasonal

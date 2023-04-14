@@ -78,12 +78,23 @@
   color: var(--darkCyan);
 }
 
-.select select, .select option {
+.options select, .options option, .options input {
   width: auto;
   max-width: 210px;
+}
+
+.options * {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.75rem;
   line-height: 16px;
+}
+
+.quantityWrapper {
+  margin-bottom: 20px;
+}
+
+.quantityWrapper input {
+  width: 100px;
 }
 
 @media (max-width: 58rem) {
@@ -120,7 +131,7 @@
 }
 
 @media (max-width: 58rem) {
-  .description p, .description label, .options select, .options option {
+  .description p, .description label, .options * {
     font-size: 0.75rem;
   }
 }
@@ -133,7 +144,7 @@
     line-height: 1.5rem;
     font-size: 0.75rem;
   }
-  .description p, .description label, .options select, .options option {
+  .description p, .description label, .options * {
     font-size: 0.625rem;
   }
 }

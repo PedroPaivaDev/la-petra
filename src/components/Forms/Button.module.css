@@ -12,6 +12,7 @@
   border-radius: 20px;
   transition: 0.3s;
   box-shadow: 1px 1px 2px 0px var(--darkBrown);
+  margin-top: 10px;
 }
 
 .button:hover {
@@ -20,7 +21,7 @@
 
 .error {
   position: absolute;
-  top: -15px;
+  top: -5px;
   align-self: center;
   color: #f31;
   font-size: 0.75rem;
@@ -29,7 +30,7 @@
 
 .sucess {
   position: absolute;
-  top: -15px;
+  top: -5px;
   align-self: center;
   color: #1AB912;
   font-size: 0.75rem;

@@ -53,11 +53,13 @@ const Order = () => {
       const type = product.type ? `${product.type}: ` : "";
       const name = `*${product.name}*%0a`;
       const size = `Tamanho: *${product.size}*%0a`;
-      const option = product.options ? `Casca: *${product.options}*%0a` : "";
+      const option = product.options ? `Opção: *${product.options}*%0a` : "";
       const flavor = product.flavors ? `Sabor: *${product.flavors}*%0a` : "";
+      const additional = product.additional ? `Adicional: *${product.additional}*%0a` : "";
+      const quantity = product.quantity ? `Quantidade: *${product.quantity}*%0a` : "";
       const price = `Preço Unitário: *R$${product.price.toFixed(2)}*%0a----------%0a`;
 
-      products = products + type + name + size + option + flavor + price
+      products = products + type + name + size + option + flavor + additional + quantity + price
     })
     return products;
   }

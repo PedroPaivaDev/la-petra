@@ -1125,11 +1125,11 @@
             "name": "Chantininho 1 Recheio",
             "description": "Bolo rechado com uma escolha de recheio e coberto com Chantininho",
             "image": [
-              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg",
-              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg"
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fchantininho%2FboloChant1R-1.jpeg?alt=media&token=307acf7d-dfef-4d33-ad9c-2965b6a430b7",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fchantininho%2FboloChant1R-2.jpeg?alt=media&token=77abdfe5-0ed6-4755-b769-30f1fbc8e1d8"
             ],
             "sizes": {
-              "8 Fatias,": 95,
+              "08 Fatias,": 95,
               "12 Fatias,": 110,
               "22 Fatias*": 135,
               "35 Fatias*": 175
@@ -1175,7 +1175,8 @@
             "name": "Chantininho 2 Recheios",
             "description": "Bolo rechado com duas escolha de recheio e coberto com Chantininho",
             "image": [
-              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fchantininho%2FboloChant2R-1.jpeg?alt=media&token=a5243553-ed7c-452a-80ef-3eb13cbbf5ad",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fchantininho%2FboloChant2R-2.jpeg?alt=media&token=5c2338ae-5965-441b-a32d-ae0d19cf60b5",
               "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg"
             ],
             "sizes": {
@@ -1229,6 +1230,562 @@
                 "Nozes": 25
               }
             }
+          }
+        }
+      },
+      "nakedcake": {
+        "title": "Naked Cakes",
+        "description": "Bolos recheados e decorados com morangos",
+        "products":{
+          "cake01": {
+            "type": "Bolo",
+            "id": "cake01",
+            "name": "Naked Cake 1 Recheio",
+            "description": "Bolo rechado com uma escolha de recheio e decorado com morangos",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-1.jpeg?alt=media&token=892bb089-b533-48c9-901f-2925da7b2fb2",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-2.jpeg?alt=media&token=b59d857f-15ec-4504-81c5-30c728524d53",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-3.jpeg?alt=media&token=c0a9af7d-b46d-4736-b244-490ffb2bdc94",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-4.jpeg?alt=media&token=8536fe93-61c0-49f8-80a2-d9bdb0068108",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-5.jpeg?alt=media&token=c7fe074e-6a85-4c80-acb7-01112a22ad2f",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-6.jpeg?alt=media&token=047ae3b5-f2b0-47d3-ad6b-4f60ef37be3d"
+            ],
+            "sizes": {
+              "08 Fatias,": 100,
+              "12 Fatias,": 115,
+              "22 Fatias*": 140,
+              "35 Fatias*": 180
+            },
+            "flavors": {
+              "Ninho": 0,
+              "Brigadeiro Gourmet": 0,
+              "Prestígio(coco)": 0,
+              "Laka": 0,
+              "Oreo": 0,
+              "Abacaxi": 0
+            },
+            "options": {
+              "Granulado": 0,
+              "Glitter": 0,
+              "Colorido Branco": 0,
+              "Colorido Vermelho": 20
+            },
+            "additionals": {
+              "group1": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 8,
+                "Geleia frutas vermelhas": 12,
+                "Sonho de valsa": 5,
+                "Ouro branco": 5,
+                "Nutella": 20,
+                "Nozes": 15
+              },
+              "group2": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 15,
+                "Geleia frutas vermelhas": 20,
+                "Sonho de valsa": 12,
+                "Ouro branco": 12,
+                "Nutella": 40,
+                "Nozes": 25
+              }
+            }
+          },
+          "cake02": {
+            "type": "Bolo",
+            "id": "cake02",
+            "name": "Naked Cake 2 Recheios",
+            "description": "Bolo rechado com duas escolha de recheio e decorado com morangos",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked2R-1.jpeg?alt=media&token=efbdad08-785d-4f81-943e-2092303ce3a0",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked2R-2.jpeg?alt=media&token=e1b4baad-6a5c-4b13-866e-d111b344db6a",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked2R-3.jpeg?alt=media&token=68249fff-5cf1-40e8-895b-9870482ae2ff"
+            ],
+            "sizes": {
+              "12 a 15 Fatias,": 145,
+              "18 a 20 Fatias,": 180,
+              "25 a 30 Fatias*": 200,
+              "35 a 40 Fatias*": 260,
+              "50 a 60 Fatias*": 300,
+              "70 a 80 Fatias*": 390
+            },
+            "flavors": {
+              "Ninho - Brigadeiro": 0,
+              "Ninho - Prestígio(coco)": 0,
+              "Ninho - Laka": 0,
+              "Ninho - Oreo": 0,
+              "Ninho - Abacaxi": 0,
+              "Brigadeiro - Prestígio(coco)": 0,
+              "Brigadeiro - Laka": 0,
+              "Brigadeiro - Oreo": 0,
+              "Brigadeiro - Abacaxi": 0,
+              "Prestígio(coco) - Laka": 0,
+              "Prestígio(coco) - Oreo": 0,
+              "Prestígio(coco) - Abacaxi": 0,
+              "Laka - Oreo": 0,
+              "Laka - Abacaxi": 0,
+              "Oreo - Abacaxi": 0
+            },
+            "options": {
+              "Granulado": 0,
+              "Glitter": 0,
+              "Colorido Branco": 0,
+              "Colorido Vermelho": 20
+            },
+            "additionals": {
+              "group1": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 8,
+                "Geleia frutas vermelhas": 12,
+                "Sonho de valsa": 5,
+                "Ouro branco": 5,
+                "Nutella": 20,
+                "Nozes": 15
+              },
+              "group2": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 15,
+                "Geleia frutas vermelhas": 20,
+                "Sonho de valsa": 12,
+                "Ouro branco": 12,
+                "Nutella": 40,
+                "Nozes": 25
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "sweeties": {
+    "title": "Docinhos",
+    "description1": "Doces feitos com ingredientes nobres e decorados com confeitos variádos. O pedido mínimo é de 25 unidades para cada sabor.",
+    "description2": null,
+    "products": {
+      "tradicionais": {
+        "title": "Docinhos Tradicionais",
+        "description": "Cada mordida é uma lembrança da infância",
+        "products":{
+          "trad01": {
+            "type": "Docinho Tradicional",
+            "id": "trad01",
+            "name": "Beijinho de Coco",
+            "description": "Massa feita de leitinho e coco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBeijinho-1.jpeg?alt=media&token=0bf366c1-050a-47d3-b070-23c464d3f31fg",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBeijinho-2.jpeg?alt=media&token=9e2a57fd-d1a9-4234-b063-b0e74076f87a"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad02": {
+            "type": "Docinho Tradicional",
+            "id": "trad02",
+            "name": "Maçãnzinha",
+            "description": "Massa feita de leitinho e coco, decorado com açúcar vermelho",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradMacanzinha-1.jpeg?alt=media&token=3f500b46-4986-4157-9ca2-227e4223fd09",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradMacanzinha-2.jpeg?alt=media&token=b9e480d3-c265-4103-bf22-c6b6bb525b27",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradMacanzinha-3.jpeg?alt=media&token=c8533db1-8e5e-4219-b93d-c849850fbbcb"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad03": {
+            "type": "Docinho Tradicional",
+            "id": "trad03",
+            "name": "Brigadeiro Preto",
+            "description": "Brigadeiro tradicional feito com chocolate preto ao leite",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-1.jpeg?alt=media&token=84316745-25cd-4a8a-976f-04b841698b19",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-2.jpeg?alt=media&token=661dd594-4222-477c-84ec-76ad0eca230a",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-3.jpeg?alt=media&token=5d45ddd3-6f3e-4599-8692-341828c15545",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-4.jpeg?alt=media&token=aa78ec60-dbdb-41ac-be8a-9dadbb2dc738",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-5.jpeg?alt=media&token=7fdb1568-4f08-4331-b424-e3e0c5d83795"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad04": {
+            "type": "Docinho Tradicional",
+            "id": "trad04",
+            "name": "Brigadeiro Branco",
+            "description": "Massa feita de chocolate branco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-1.jpeg?alt=media&token=ea587fc3-0b6a-4102-b28f-c51dbe59abd7",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-2.jpeg?alt=media&token=61d4bc86-f0af-45d5-b469-4193f2681141",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-3.jpeg?alt=media&token=590d097a-0f53-47c6-aa20-6ca787b16da8",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-4.jpeg?alt=media&token=c5218204-71c8-4e9a-ae08-98d92a981145",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-5.jpeg?alt=media&token=02cb57fa-00c0-4e0c-afee-c64590ba575f",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-6.jpeg?alt=media&token=41a577c9-2dac-4622-b9bd-4b72d89a1730"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad05": {
+            "type": "Docinho Tradicional",
+            "id": "trad05",
+            "name": "Casadinho",
+            "description": "Docinho feito com metade em massa de chocolate branco e metade em massa de chocolate preto",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCasadinho-1.jpeg?alt=media&token=346a3192-9e93-4667-9851-979ce093a04c",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCasadinho-2.jpeg?alt=media&token=5dd7dbd7-2b12-446b-960b-a106bc7a9451",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCasadinho-3.jpeg?alt=media&token=b41a7346-1b7a-4f0e-8dd2-d4a09cc4c66d",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCasadinho-4.jpeg?alt=media&token=2b2104f3-e80f-436c-90c4-2ac59d16eb94"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad06": {
+            "type": "Docinho Tradicional",
+            "id": "trad06",
+            "name": "Olho de Sogra",
+            "description": "Docinho tradicional",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradOlhoSogra-1.jpeg?alt=media&token=2bdab745-eac2-4afa-b679-1104c754aa2e",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradOlhoSogra-2.jpeg?alt=media&token=b8167d71-a82b-4bb8-a4cf-4f38fbded2b0",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradOlhoSogra-3.jpeg?alt=media&token=5369f18c-69f8-4c21-b4d3-25fb83c8ad9e"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad07": {
+            "type": "Docinho Tradicional",
+            "id": "trad07",
+            "name": "Ninho",
+            "description": "Massa feita com leite ninho",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradNinho-1.jpeg?alt=media&token=da8e5b24-b9c6-4f38-8b6e-aca80a2d3c9a",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradNinho-2.jpeg?alt=media&token=32f38a3a-a7f4-4d82-b027-5ed7b045dadf"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad08": {
+            "type": "Docinho Tradicional",
+            "id": "trad08",
+            "name": "Cajuzinho",
+            "description": "Docinho tradicional",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-1.jpeg?alt=media&token=0e53e8f4-f6cb-415f-a089-3a6eff5ddc87",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-2.jpeg?alt=media&token=1760917f-2782-4d8a-b1b0-bef91487f856",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-3.jpeg?alt=media&token=8d9c583c-227f-425a-ad4a-8e6b73ef9e8a",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-4.jpeg?alt=media&token=e21a19f2-a2fe-4cfe-b042-aedb9ef792bf",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-5.jpeg?alt=media&token=2def9916-3e08-421c-a31d-3b44fc9fdcc0"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          }
+        }
+      },
+      "especiais": {
+        "title": "Docinhos Especiais",
+        "description": "Docinho feitos com técnicas mais sofisticadas",
+        "products":{
+          "esp01": {
+            "type": "Docinho Especial",
+            "id": "esp01",
+            "name": "Brigadeiro de Damasco",
+            "description": "Brigadeiro branco, decorado com damasco banhado em chocolate preto",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespDamasco-1.jpeg?alt=media&token=d7f263cc-a227-4ab3-a51d-d6999076fb2b",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespDamasco-2.jpeg?alt=media&token=c32d0d60-5b4a-494c-84cc-c22320c170a2",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespDamasco-3.jpeg?alt=media&token=b83a1b17-f422-4d7c-afb7-620dea91f71a"
+            ],
+            "sizes": {
+              "unidade": 3.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp02": {
+            "type": "Docinho Especial",
+            "id": "esp02",
+            "name": "Ninho com Nutella",
+            "description": "Massa de ninho recheada e enfeitada com Nutella",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespNinhoNutella-1.jpeg?alt=media&token=efd3169e-7be5-4926-8d67-234f582e3336",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespNinhoNutella-2.jpeg?alt=media&token=9c8ea32b-2273-47ec-904e-a900926b8f2d",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespNinhoNutella-3.jpeg?alt=media&token=32a53a53-1ce8-4e52-80c0-8197e1d7a914",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespNinhoNutella-4.jpeg?alt=media&token=f5eab083-3e68-49c2-960e-f959fac74ad4"
+            ],
+            "sizes": {
+              "unidade": 2.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp03": {
+            "type": "Docinho Especial",
+            "id": "esp03",
+            "name": "Brigadeiro Gourmet",
+            "description": "Brigadeiro feito com chocolate nobre, envolto no chocolate granule callebaut",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrigaGourmet-1.jpeg?alt=media&token=c9b4485d-5077-48fa-949f-392c22e08507",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrigaGourmet-2.jpeg?alt=media&token=74d0eae2-37c1-45f0-afbb-15eb28fa6a26",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrigaGourmet-3.jpeg?alt=media&token=e4d1432a-288d-415d-b810-0d71b6b67fcc"
+            ],
+            "sizes": {
+              "unidade": 2.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp04": {
+            "type": "Docinho Especial",
+            "id": "esp04",
+            "name": "Brigadeiro Churros",
+            "description": "Brigadeiro branco rechado com doce de leite",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespChurros-1.jpeg?alt=media&token=5e020e40-5a0b-4de1-851f-ea0a16d2f645",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespChurros-2.jpeg?alt=media&token=4aa72c56-e333-4f83-81ef-490aae631c75"
+            ],
+            "sizes": {
+              "unidade": 2.2
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp05": {
+            "type": "Docinho Especial",
+            "id": "esp05",
+            "name": "Mini-Brownie",
+            "description": "Brownie decorado com brigadeiro preto ou branco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrownie-1.jpeg?alt=media&token=92027cae-1a60-419c-b539-fc89ab58bfa9",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrownie-2.jpeg?alt=media&token=255ca038-56c8-4cb3-977d-80d4e9b9cc1e",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrownie-3.jpeg?alt=media&token=63f1a36d-a025-4b89-8da3-e7e2117507c2"
+            ],
+            "sizes": {
+              "unidade": 3
+            },
+            "flavors": {
+              "Brigadeiro Preto": 0,
+              "Brigadeiro Branco": 0
+            },
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp06": {
+            "type": "Docinho Especial",
+            "id": "esp06",
+            "name": "Mini-Cookie com Nutella",
+            "description": "Cookie recheado com Nutella",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespCookie-1.jpeg?alt=media&token=f13d554b-782d-4871-8bc8-829a587637da",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespCookie-2.jpeg?alt=media&token=f4d80d5d-47f5-4ec0-9f26-1eba2d0132fc",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespCookie-3.jpeg?alt=media&token=bde70eed-378e-49f6-8d5a-e284ce515a8f"
+            ],
+            "sizes": {
+              "unidade": 2.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          }
+        }
+      },
+      "banhados": {
+        "title": "Bombons Banhados",
+        "description": "Bombons banhados com chocolate nobre",
+        "products":{
+          "ban01": {
+            "type": "Banhado",
+            "id": "ban01",
+            "name": "Coco",
+            "description": "Bombom de coco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanCoco-1.jpeg?alt=media&token=6cd8a473-f9b0-483e-9792-974aad580193",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanCoco-2.jpeg?alt=media&token=15690756-7b35-486e-bb97-17de36f9fbe7"
+            ],
+            "sizes": {
+              "unidade": 2.4
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "ban02": {
+            "type": "Banhado",
+            "id": "ban02",
+            "name": "Brigadeiro Preto ou Branco",
+            "description": "Bombom de brigadeiro branco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanBrigadeiro-1.jpeg?alt=media&token=8ac2689f-ce7c-474d-9c6a-96043470fdb3",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanBrigadeiro-2.jpeg?alt=media&token=5d517c49-9052-4811-92a3-8dcd2d84ff6d"
+            ],
+            "sizes": {
+              "unidade": 2.4
+            },
+            "flavors": {
+              "Brigadeiro Preto": 0,
+              "Brigadeiro Branco": 0
+            },
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "ban03": {
+            "type": "Banhado",
+            "id": "ban03",
+            "name": "Uva",
+            "description": "Bombom de uva",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanUva-1.jpeg?alt=media&token=a61376e7-055b-4774-9c17-76edcb5678e4",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanUva-2.jpeg?alt=media&token=3a044b61-7bee-4b95-b97b-f6fc0b977bef"
+            ],
+            "sizes": {
+              "unidade": 2.8
+            },
+            "flavors": {
+              "Brigadeiro Preto": 0,
+              "Brigadeiro Branco": 0
+            },
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "ban04": {
+            "type": "Banhado",
+            "id": "ban04",
+            "name": "Nozes",
+            "description": "Bombom de nozes",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanNozes-1.jpeg?alt=media&token=931dad6a-aaa5-4b23-9cb4-9f97836b5ea2",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanNozes-2.jpeg?alt=media&token=d5ff372c-265e-405e-adf6-127782703471"
+            ],
+            "sizes": {
+              "unidade": 2.8
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "ban05": {
+            "type": "Banhado",
+            "id": "ban05",
+            "name": "Morango",
+            "description": "Bombom de morango",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanMorango-1.jpeg?alt=media&token=7bc0e8d6-4df4-42fb-a7a8-f4bd4f32a3c3",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanMorango-2.jpeg?alt=media&token=357784e4-e795-44e3-9c92-44fc9cd22c08"
+            ],
+            "sizes": {
+              "unidade": 4
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
           }
         }
       }

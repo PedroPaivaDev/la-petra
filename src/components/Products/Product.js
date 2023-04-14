@@ -47,6 +47,10 @@ const Product = ({product, setModalProduct}) => {
           <p>Adicional: {product.additional}</p> :
           <p style={{opacity: 0}}> . </p>
         }
+        {product.quantity && product.quantity!=='' ?
+          <p>Quantidade: {product.quantity}</p> :
+          <p style={{opacity: 0}}> . </p>
+        }
         <h4>R${product.price.toFixed(2)}</h4>
       </div>}
 
