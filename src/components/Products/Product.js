@@ -1,9 +1,9 @@
 import React from 'react';
 import { useLocation } from 'react-router-dom';
 import { BagContext } from '../../contexts/BagContext';
-import styles from './EasterProduct.module.css';
+import styles from './Product.module.css';
 
-const EasterProduct = ({product, setModalProduct}) => {
+const Product = ({product, setModalProduct}) => {
 
   const [bag, setBag] = React.useContext(BagContext);
   const {pathname} = useLocation();
@@ -24,7 +24,7 @@ const EasterProduct = ({product, setModalProduct}) => {
       onClick={setModalProduct ? handleClick : null}
     >
 
-      <h4 className={styles.name}>{product.name}</h4>
+      <h3>{product.name}</h3>
       {pathname==='/order' && 
         <span className={styles.delete} onClick={handleDelete}>X</span>
       }
@@ -36,11 +36,19 @@ const EasterProduct = ({product, setModalProduct}) => {
         }
         {product.size && <p>Tamanho: {product.size}</p>}
         {product.options && product.options!=='' ?
-          <p>Casca: {product.options}</p> :
+          <p>Opção: {product.options}</p> :
           <p style={{opacity: 0}}> . </p>
         }
         {product.flavors && product.flavors!=='' ?
           <p>Sabor: {product.flavors}</p> :
+          <p style={{opacity: 0}}> . </p>
+        }
+        {product.additional && product.additional!=='' ?
+          <p>Adicional: {product.additional}</p> :
+          <p style={{opacity: 0}}> . </p>
+        }
+        {product.quantity && product.quantity!=='' ?
+          <p>Quantidade: {product.quantity}</p> :
           <p style={{opacity: 0}}> . </p>
         }
         <h4>R${product.price.toFixed(2)}</h4>
@@ -57,4 +65,4 @@ const EasterProduct = ({product, setModalProduct}) => {
   )
 }
 
-export default EasterProduct;
+export default Product;

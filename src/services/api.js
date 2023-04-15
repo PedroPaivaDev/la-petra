@@ -2,9 +2,9 @@
 
 const baseURLFirebase = 'https://db-la-petra-default-rtdb.firebaseio.com';
 
-export function PRODUCTS_GET() {
+export function PRODUCTS_GET(category,type) {
     return {
-        url: `${baseURLFirebase}/products.json`
+        url: `${baseURLFirebase}/${category}/${type}.json`
     }
 }
 

@@ -51,6 +51,853 @@
       "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/slider/10-panetone.jpg"
     }
   ],
+  "delivery": {
+    "title": "Delivery",
+    "description1": "Produtos a pronta entrega",
+    "description2": null,
+    "products": {
+      "candy": {
+        "title": "Doces",
+        "description": "Doces maravilhosos para vocês deliciar-se",
+        "products": {
+          "candy01": {
+            "type": "Doce",
+            "id": "candy01",
+            "name": "Bombom Morango com Coco",
+            "description": "Morango envolto na massa de brigadeiro branco com coco, banhado no chocolate meio amargo",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/1-bombomMorangoCoco.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/1-bombomMorangoCoco.jpeg"
+            ],
+            "sizes": {
+              "100g": 7
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy02": {
+            "type": "Doce",
+            "id": "candy02",
+            "name": "Bombom Morango Tradicional",
+            "description": "Morango envolto na massa de brigadeiro branco com ninho, banhado no chocolate meio amargo",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/2-bombomMorangoTradicional.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/2-bombomMorangoTradicional.jpeg"
+            ],
+            "sizes": {
+              "100g": 7
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy03": {
+            "type": "Doce",
+            "id": "candy03",
+            "name": "Bombom La Petra",
+            "description": "Palha italiana recheada com caramelo salgado e coberto de chocolate meio amargo",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/3-bombomLaPetra.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/3-bombomLaPetra.jpeg"
+            ],
+            "sizes": {
+              "100g": 7.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy04": {
+            "type": "Doce",
+            "id": "candy04",
+            "name": "Bombom de Frutas Vermelhas",
+            "description": "Geleia de frutas vermelhas e creme branco, envolto em chocolate meio amargo",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/4-bombomFrutasVermelhas.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/4-bombomFrutasVermelhas.jpeg"
+            ],
+            "sizes": {
+              "100g": 7.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy05": {
+            "type": "Doce",
+            "id": "candy05",
+            "name": "Coxinha de Nutela",
+            "description": "Morango coberto com massa de leite ninho e nutela",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/5-coxinhaMorango.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/5-coxinhaMorango.jpeg"
+            ],
+            "sizes": {
+              "100g": 9
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy06": {
+            "type": "Doce",
+            "id": "candy06",
+            "name": "Bombom Ferrero",
+            "description": "Ferrero rocher envolto com brigadeiro goumert, castanha de caju e Nutella",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/6-bombomFerrero.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/6-bombomFerrero.jpeg"
+            ],
+            "sizes": {
+              "100g": 9
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy07": {
+            "type": "Doce",
+            "id": "candy07",
+            "name": "Brigadeiro Gourmet",
+            "description": "Brigadeiro feito com chocolate nobre, envolto no chocolate granule callebaut",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/7-brigadeiroGourmet.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/7-brigadeiroGourmet.jpeg"
+            ],
+            "sizes": {
+              "100g": 5.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy08": {
+            "type": "Doce",
+            "id": "candy08",
+            "name": "Delícia Crocante",
+            "description": "Palha italiana de biscoito preto, recheado de Nutella crocante",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/8-deliciaCrocante.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/8-deliciaCrocante.jpeg"
+            ],
+            "sizes": {
+              "100g": 9
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy10": {
+            "type": "Doce",
+            "id": "candy10",
+            "name": "Cookie Gourmet com Nutela",
+            "description": "Biscoito feito com gotas de chocolate nobre e recheado com Nutella",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/10-cookieChocolate.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/10-cookieChocolate.jpeg"
+            ],
+            "sizes": {
+              "100g": 8.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy36": {
+            "type": "Doce",
+            "id": "candy36",
+            "name": "Cookie Red Velvet",
+            "description": "Biscoito feito com gotas de chocolate branco e recheado com cream-cheese",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/36-cookieRedVelvet.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/36-cookieRedVelvet.jpeg"
+            ],
+            "sizes": {
+              "100g": 9.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "candy51": {
+            "type": "Doce",
+            "id": "candy51",
+            "name": "Palha Italiana",
+            "description": "Doce feito com massa de brigadeiro e biscoito",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/51-palhaItaliana.jpeg"
+            ],
+            "sizes": {
+              "100g": 7
+            },
+            "flavors": null,
+            "options": null
+          }
+        }
+      },
+      "portions": {
+        "title": "Porções",
+        "description": "Recipientes com os nossos deliciosos recheios e cremes",
+        "products": {
+          "portion09": {
+            "type": "Porção",
+            "id": "portion09",
+            "name": "Brownie Nuts na Marmita",
+            "description": "Brownie úmido recheado com nutela e coberto por castanhas",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/9-marmitaBrownie.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/9-marmitaBrownie.jpeg"
+            ],
+            "sizes": {
+              "100g": 10
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion11": {
+            "type": "Porção",
+            "id": "portion11",
+            "name": "Folhata",
+            "description": "Creme 4 leites, massa folhada doce crocante, morangos e cobertura especial",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/11-folhata.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/11-folhata.jpeg"
+            ],
+            "sizes": {
+              "100g": 18
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion12": {
+            "type": "Porção",
+            "id": "portion12",
+            "name": "Bombom de Morango no Pote",
+            "description": "Creme chocolate branco, chocolate ao leite e morangos frescos",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/12-bombomAberto.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/12-bombomAberto.jpeg"
+            ],
+            "sizes": {
+              "100g": 15
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion13": {
+            "type": "Porção",
+            "id": "portion13",
+            "name": "Salada de Frutas com Creme",
+            "description": "Frutas selecionadas (kiwi, manga, uva e morango) com creme suave",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/13-salada.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/13-salada.jpeg"
+            ],
+            "sizes": {
+              "100g": 16
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion14": {
+            "type": "Porção",
+            "id": "portion14",
+            "name": "Caseirinho",
+            "description": "Bolo de cenoura com cobertura de chocolate",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/14-caseirinho.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/14-caseirinho.jpeg"
+            ],
+            "sizes": {
+              "100g": 20
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion21": {
+            "type": "Porção",
+            "id": "portion21",
+            "name": "Chocolate Cremoso",
+            "description": "Chocolate cremoso, feito a base de chocolate nobre",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/21-chocolateCremoso.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/21-chocolateCremoso.jpeg"
+            ],
+            "sizes": {
+              "100g": 20
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion22": {
+            "type": "Porção",
+            "id": "portion22",
+            "name": "Brownie com Sorvete",
+            "description": "Brownie servido sobre nutela, com fatias de morango e sorvete de creme",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/22-brownieSorvete.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/22-brownieSorvete.jpeg"
+            ],
+            "sizes": {
+              "100g": 15
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion23": {
+            "type": "Copo",
+            "id": "portion23",
+            "name": "Surpresa de Ouro Branco",
+            "description": "Mousse de chocolate, creme 4 leites e bombons Ouro Branco",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/23-copoOuroBranco.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/23-copoOuroBranco.jpeg"
+            ],
+            "sizes": {
+              "100g": 20
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion24": {
+            "type": "Copo",
+            "id": "portion24",
+            "name": "Copo da Felicidade",
+            "description": "Creme suaves, mousse 4 leites, morangos frescos e chantininho",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/24-copoMorango.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/24-copoMorango.jpeg"
+            ],
+            "sizes": {
+              "100g": 19
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion37": {
+            "type": "Copo",
+            "id": "portion37",
+            "name": "Copo Chocolate Cremoso",
+            "description": "Chocolate cremoso, feito a base de chocolate nobre",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/37-copoChocolateCremoso.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/37-copoChocolateCremoso.jpeg"
+            ],
+            "sizes": {
+              "100g": 8.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion38": {
+            "type": "Copo",
+            "id": "portion38",
+            "name": "Cupcake",
+            "description": "Bolinho recheado de creme chocolate branco e chantininho por cima",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/38-cupCake.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/38-cupCake.jpeg"
+            ],
+            "sizes": {
+              "100g": 8.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion46": {
+            "type": "Porção",
+            "id": "portion46",
+            "name": "Pudim",
+            "description": "Pudim de leite condensado com calda tradicional",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/46-pudim.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/46-pudim.jpeg"
+            ],
+            "sizes": {
+              "100g": 10
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion47": {
+            "type": "Porção",
+            "id": "portion47",
+            "name": "Banofe",
+            "description": "Tortinha feita com banana, doce de leite, chantilly e canela",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/47-banofe.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/47-banofe.jpeg"
+            ],
+            "sizes": {
+              "100g": 11.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "portion71": {
+            "type": "Porção",
+            "id": "portion71",
+            "name": "Cookies Cream",
+            "description": "Pedaços de cookie red velvet e creme branco",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
+            ],
+            "sizes": {
+              "100g": 17
+            },
+            "flavors": null,
+            "options": null
+          }
+        }
+      },
+      "slices": {
+        "title": "Fatias",
+        "description": "Em cada mordida, sinta a sensação de como é comer nossos bolos",
+        "products": {
+          "slice16": {
+            "type": "Fatia",
+            "id": "slice16",
+            "name": "Bolo Alpino",
+            "description": "Perfeição divina!",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/16-boloAlpino.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/16-boloAlpino.jpeg"
+            ],
+            "sizes": {
+              "100g": 13.5
+            },
+            "flavors": null,
+            "options": null
+          },
+          "slice17": {
+            "type": "Fatia",
+            "id": "slice17",
+            "name": "Fatia Laka",
+            "description": "Gostinho de infância",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/17-fatiaFrutasVermelhas.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/17-fatiaFrutasVermelhas.jpeg"
+            ],
+            "sizes": {
+              "100g": 14
+            },
+            "flavors": null,
+            "options": null
+          },
+          "slice18": {
+            "type": "Fatia",
+            "id": "slice18",
+            "name": "Fatia Prestígio",
+            "description": "Gostinho de infância",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/18-fatiaPrestigio.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/18-fatiaPrestigio.jpeg"
+            ],
+            "sizes": {
+              "100g": 14
+            },
+            "flavors": null,
+            "options": null
+          },
+          "slice20": {
+            "type": "Fatia",
+            "id": "slice20",
+            "name": "Cheesecake de Limão Siciliano",
+            "description": "Fatia de cheesecake sabor limão siciliano",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/20-cheeseCakeLimao.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/20-cheeseCakeLimao.jpeg"
+            ],
+            "sizes": {
+              "100g": 17
+            },
+            "flavors": null,
+            "options": null
+          },
+          "slice40": {
+            "type": "Fatia",
+            "id": "slice40",
+            "name": "Torta Holandesa",
+            "description": "Cream cheese com chocolate nobre",
+            "image": [
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/40-tortaHolandesa.jpeg",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/40-tortaHolandesa.jpeg"
+            ],
+            "sizes": {
+              "100g": 18
+            },
+            "flavors": null,
+            "options": null
+          }
+        }
+      }
+    }
+  },
+  "easter": {
+    "title": "Cardápio de Páscoa",
+    "description1": "Até o dia 06 de abril, você poderá escolher sua casca: blend, ao leite, meio amargo, branca ou branca crocante de biscoito.",
+    "description2": "Retiradas das encomendas na loja entre os dias 14/03 a 08/04, de terça a sábado. Agende sua data no ato da encomenda. Os horários para retirada serão no período das 16h as 18h.",
+    "products": {
+      "0eggs": {
+        "title": "Ovos de Colher",
+        "description": "Os ovos contém 1 banda e são feitos com casca de chocolate nobre e recheios de alta qualidade. Todos os ovos são embalados e entregues em sacolas para presentear. Peso aproximado do ovo com casca de 250g: 350g a 450g. Peso aproximado do ovo com casca de 350g: 450g a 500g.",
+        "products": {
+          "e1": {
+            "type": "Ovo de Colher",
+            "id": "e1",
+            "name": "Ninho com Nutella",
+            "description": "Casca de chocolate Blend, recheio cremoso de leite ninho e nutella pura, decorado com brigadeiros de ninho c/ nutella por cima.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoNinhoNutella-1.jpg?alt=media&token=e1898d19-9350-4811-8ce9-b81bf1fc4b4f",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoNinhoNutella-2.jpg?alt=media&token=159ec1b1-c6d9-467e-8cb6-62ab5b184498"
+            ],
+            "sizes": {
+              "400g": 95,
+              "500g": 105
+            },
+            "flavors": null,
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
+          },
+          "e2": {
+            "type": "Ovo de Colher",
+            "id": "e2",
+            "name": "Delícia Crocante",
+            "description": "Casca de chocolate branco crocante de biscoito oreo, recheio trufado com biscoito e nutella pura com ovomaltine, decorado com biscoito oreo e pedaços de laka oreo.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDeliciaCrocante-1.jpg?alt=media&token=e858d55a-5464-4541-a6be-1f39519d7d6b",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDeliciaCrocante-2.jpg?alt=media&token=740f01e6-d179-4edd-b617-c45ec4a12809"
+            ],
+            "sizes": {
+              "400g": 90,
+              "500g": 100
+            },
+            "flavors": null,
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
+          },
+          "e3": {
+            "type": "Ovo de Colher",
+            "id": "e3",
+            "name": "Bombom de Morango",
+            "description": "Casca de chocolate blend, recheio 4 leites e recheio de chocolate ao leite com morangos, decorado com brigadeiros enrolados em confeito belga e morangos.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoBombomMorango-1.jpg?alt=media&token=59678cce-2386-4192-a0c6-1570fa06bc28",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoBombomMorango-2.jpg?alt=media&token=a6d9f2ea-111a-4569-9b94-d27d9634c974"
+            ],
+            "sizes": {
+              "400g": 90,
+              "500g": 100
+            },
+            "flavors": null,
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
+          },
+          "e4": {
+            "type": "Ovo de Colher",
+            "id": "e4",
+            "name": "Explosão Kinder",
+            "description": "Casca de chocolate blend, recheio cremoso de chocolate branco e chocolate ao leite, decorado com kinder Bueno.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoExplosaoKinder-1.jpg?alt=media&token=d88b3e5c-1054-434e-9694-9a251a0af024",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoExplosaoKinder-2.jpg?alt=media&token=47b95b05-7f86-4912-ae05-bc3530086947"
+            ],
+            "sizes": {
+              "400g": 90,
+              "500g": 100
+            },
+            "flavors": null,
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
+          },
+          "e5": {
+            "type": "Ovo de Colher",
+            "id": "e5",
+            "name": "Delírio de Pudim",
+            "description": "Casca de chocolate branca, recheio cremoso brûlée, mousse de ninho e 1 mini pudim por cima.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDelirioPudim-1.jpg?alt=media&token=6b5d8ff8-be75-4ebb-a21c-30c21e25b27c",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoDelirioPudim-2.jpg?alt=media&token=eb35bb33-311f-4708-8ed4-ccfb3237bed1"
+            ],
+            "sizes": {
+              "400g": 90,
+              "500g": 100
+            },
+            "flavors": null,
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
+          },
+          "e6": {
+            "type": "Ovo de Colher",
+            "id": "e6",
+            "name": "Ferrero Rocher",
+            "description": "Casca de chocolate blend, recheio de brigadeiro goumert, castanhas, nutella, brownie, mousse chocolate, decorado com brigadeiro goumert, nutella, amendoim torrado e ferrero Rocher.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoFerreroRocher-1.jpg?alt=media&token=ea9e8301-dad0-468f-a27d-2c01c7000496",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Feggs%2FovoFerreroRocher-2.jpg?alt=media&token=941cfb7d-de21-480f-9337-b871aac28c23"
+            ],
+            "sizes": {
+              "400g": 90,
+              "500g": 100
+            },
+            "flavors": null,
+            "options": {
+              "Preto Blend": 0,
+              "Preto ao Leite": 0,
+              "Preto Meio Amargo": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
+          }
+        }
+      },
+      "1truffles": {
+        "title": "Cascas Trufadas",
+        "description": "Duas bandas feitas com chocolate nobre recheados com cremes de alta qualidade. Peso médio aproximado das 2 cascas de 250g a 400g.",
+        "products": {
+          "t1": {
+            "type": "Casca Trufada",
+            "id": "t1",
+            "name": "Lá Petra",
+            "description": "Cascas de chocolate blend com biscoito, recheadas com caramelo.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLaPetra-1.jpg?alt=media&token=1bbb5dcf-0ffc-4809-b792-0a078f69e5ab",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLaPetra-2.jpg?alt=media&token=db52ecca-0cf7-4222-a574-f939530bfee7"
+            ],
+            "sizes": {
+              "400g": 90
+            },
+            "flavors": null,
+            "options": null
+          },
+          "t2": {
+            "type": "Casca Trufada",
+            "id": "t2",
+            "name": "Pistache",
+            "description": "Cascas de chocolate branca e blend, recheadas com creme de pistache.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaPistache-1.jpg?alt=media&token=a0409447-6085-4b71-aa56-810cfab9ad7f",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaPistache-2.jpg?alt=media&token=90576c61-2b08-4594-8316-2e31539ef9e9"
+            ],
+            "sizes": {
+              "400g": 100
+            },
+            "flavors": null,
+            "options": {
+              "Preto Blend": 0,
+              "Branco": 3
+            }
+          },
+          "t3": {
+            "type": "Casca Trufada",
+            "id": "t3",
+            "name": "Torta de Limão Siciliano",
+            "description": "Cascas de chocolate branca com biscoito, recheadas com um delicioso creme trufado de limão siciliano.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLimao-1.jpg?alt=media&token=5574cc24-0321-4d13-b8ad-b2d002f327cf",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaLimao-2.jpg?alt=media&token=ec3d9eb4-3a03-4adb-a85f-7f405970b84e"
+            ],
+            "sizes": {
+              "400g": 100
+            },
+            "flavors": null,
+            "options": null
+          },
+          "t4": {
+            "type": "Casca Trufada",
+            "id": "t4",
+            "name": "Maracujá",
+            "description": "Cascas chocolate blend , recheada com delicioso creme de maracujá.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaMaracuja-1.jpg?alt=media&token=d2526276-a0fa-4c58-bc95-34ad05261783",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaMaracuja-2.jpg?alt=media&token=9d8904e6-0451-4229-a5b1-f8eed5462606"
+            ],
+            "sizes": {
+              "400g": 85
+            },
+            "flavors": null,
+            "options": null
+          },
+          "t5": {
+            "type": "Casca Trufada",
+            "id": "t5",
+            "name": "Crocante Nutella",
+            "description": "Cascas de chocolate branco com biscoito, recheadas com nutella pura.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCrocanteNutella-1.jpg?alt=media&token=b0b01d9c-7150-4148-8345-f908a97856cc",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCrocanteNutella-2.jpg?alt=media&token=7e87d49b-bf86-40eb-9c48-3fa59b355c55"
+            ],
+            "sizes": {
+              "400g": 100
+            },
+            "flavors": null,
+            "options": null
+          },
+          "t6": {
+            "type": "Casca Trufada",
+            "id": "t6",
+            "name": "Coco",
+            "description": "Cascas de chocolate blend, recheadas com creme de coco.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCoco-1.jpg?alt=media&token=d60a426a-c4c4-49a8-bdf7-f60fd5df81bd",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Ftruffle%2FtrufaCoco-2.jpg?alt=media&token=6c9278d7-d125-4546-b00b-609c298f112c"
+            ],
+            "sizes": {
+              "400g": 85
+            },
+            "flavors": null,
+            "options": null
+          }
+        }
+      },
+      "2kids": {
+        "title": "Linha Kids",
+        "description": "Ovos feitos com chocolate nobre e recheios de alta qualidade.",
+        "products": {
+          "k1": {
+            "type": "Linha Kids",
+            "id": "k1",
+            "name": "Criança Feliz",
+            "description": "Casca de chocolate blend, recheio cremoso de ninho e brigadeiro ao leite, decorado com balas fini, confetes, chiclets, marshmallow e tortuguita.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsOvo-1.jpg?alt=media&token=cd668417-675c-4d61-8e83-e321abb3d451",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsOvo-2.jpg?alt=media&token=a07d9c8d-7385-435a-8500-c1fdb4f57633"
+            ],
+            "sizes": {
+              "230g": 50,
+              "400g": 80
+            },
+            "flavors": null,
+            "options": null
+          },
+          "k2": {
+            "type": "Linha Kids",
+            "id": "k2",
+            "name": "Surpresa",
+            "description": "Composto por 2 cascas chocolate branco colorido, por dentro contém marshmallow e dentaduras fini.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsSurpresa-1.jpg?alt=media&token=1c6e9bae-7b0b-4638-9a51-68656bc12e78",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsSurpresa-2.jpg?alt=media&token=5da72fa1-7f81-482d-bedc-c35bb5b6526b"
+            ],
+            "sizes": {
+              "100g": 60
+            },
+            "flavors": null,
+            "options": null
+          },
+          "k3": {
+            "type": "Linha Kids",
+            "id": "k3",
+            "name": "Kit Mini Confeiteiro",
+            "description": "Composto por 1 casca de chocolate blend, 1 bisnaga de brigadeiro branco, 1 tubete de confetes, 1 tubete de granulados coloridos e 1 tortuguita.",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsKitMini-1.jpg?alt=media&token=4411c14c-2bb3-49d8-858d-7a3b523f9250",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fkids%2FkidsKitMini-2.jpg?alt=media&token=3352542f-0392-4fc6-a187-87798544d2a7"
+            ],
+            "sizes": {
+              "100g": 55
+            },
+            "flavors": null,
+            "options": null
+          }
+        }
+      },
+      "3others": {
+        "title": "Para Presentear",
+        "description": "Produtos feitos com chocolate nobre e recheios de alta qualidade.",
+        "products": {
+          "o1": {
+            "type": "",
+            "id": "o1",
+            "name": "Barra Recheada",
+            "description": "Escolha uma opção de recheio:",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FbarraRecheada-1.jpg?alt=media&token=98a360b6-3053-45e7-9852-b8736fbaf1c6",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FbarraRecheada-2.jpg?alt=media&token=80927fb4-7b13-4864-b1ca-121429bc474f"
+            ],
+            "sizes": {
+              "250g": 54.5
+            },
+            "flavors": {
+              "Creme moça com geléia morango": 0,
+              "Brigadeiro goumert": 0,
+              "Ninho": 0,
+              "Duo (brigadeiro branco e ao leite)": 0
+            },
+            "options": {
+              "Preto Blend Dourado": 0,
+              "Preto Blend Confete": 0,
+              "Branco": 3,
+              "Branco Crocante": 3
+            }
+          },
+          "o2": {
+            "type": "",
+            "id": "o2",
+            "name": "Ovo no Pote",
+            "description": "Potes de vidro, recheados com deliciosos cremes para comer de colher, intercalados com pedaços de chocolate meio amargo. O pote é embalado em sacolinha Kraft e fita La Petra",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FpoteOvo-1.jpg?alt=media&token=199473db-1557-46a9-971c-35d8fe8145db",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FpoteOvo-2.jpg?alt=media&token=41f2ef4a-4d3c-43d8-bd73-b2e9f01fb8b3"
+            ],
+            "sizes": {
+              "250g": 38
+            },
+            "flavors": {
+              "Cookies (creme brulle com pedaços de cookies)": 0,
+              "Duo (Brigadeiro ao leite com brigadeiro branco)": 0,
+              "Morango com creme moça e nutella": 0
+            },
+            "options": null
+          },
+          "o3": {
+            "type": "Ovo de Colher",
+            "id": "o3",
+            "name": "Trio de Ovos",
+            "description": "Composto por 3 ovos de colher com as seguintes combinações de sabores:",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FtrioOvos-1.jpg?alt=media&token=bc9e1a30-2a62-4b85-9dc5-36aed627a5d4",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/easter%2Fothers%2FtrioOvos-2.jpg?alt=media&token=0c277111-fe1f-47dc-b33b-2e3f0e242c2d"
+            ],
+            "sizes": {
+              "550g": 130
+            },
+            "flavors": {
+              "Ninho com nutella,   Explosão de kinder,  Laka com geléia de morango": 0,
+              "Ferrero Rocher,  Delicia Crocante,  Ninho com nutella": 0,
+              "Explosão de kinder,  Laka com geléia de morango,  Ferrero Rocher": 0,
+              "Delicia Crocante,  Ninho com nutella,  Explosão de kinder": 0,
+              "Laka com geléia de morango,  Ferrero Rocher,  Delicia Crocante": 0
+            },
+            "options": null
+          }
+        }
+      },
+      "4notes": {
+        "title": "Armazenamento e Durabilidade",
+        "description": "Nossos ovos são feitos artesanalmente com chocolate nobre, eles devem ser mantidos sob-refrigeração e consumidos em até 4 dias, com exceção dos ovos que contém morangos frescos, que devem ser consumidos em até 2 dias. Não vamos nos responsabilizar pelo armazenamento, caso o cliente não venha buscar na data e horário combinado. Para uma maior cremosidade, recomendamos que retire seu ovo da geladeira cerca de 40 minutos antes de consumir.",
+        "products": null
+      }
+    }
+  },
   "products": [
     {
       "id": 1,
@@ -263,398 +1110,685 @@
       "image": "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/main/src/assets/products/71-cookiesCream.jpeg"
     }
   ],
-  "eggs": {
-    "e1": {
-      "type": "Ovo de Colher",
-      "id": "e1",
-      "name": "Ninho com Nutella",
-      "description": "Casca de chocolate Blend, recheio cremoso de leite ninho e nutella pura, decorado com brigadeiros de ninho c/ nutella por cima.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoNinhoNutella-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoNinhoNutella-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 95
+  "cakes": {
+    "title": "Bolos",
+    "description1": "Produtos feitos sob encomenda",
+    "description2": null,
+    "products": {
+      "chantininho": {
+        "title": "Bolo de Chantininho",
+        "description": "Bolo recheado e coberto com Chantilly sabor Leite Ninho",
+        "products":{
+          "cake01": {
+            "type": "Bolo",
+            "id": "cake01",
+            "name": "Chantininho 1 Recheio",
+            "description": "Bolo rechado com uma escolha de recheio e coberto com Chantininho",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fchantininho%2FboloChant1R-1.jpeg?alt=media&token=307acf7d-dfef-4d33-ad9c-2965b6a430b7",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fchantininho%2FboloChant1R-2.jpeg?alt=media&token=77abdfe5-0ed6-4755-b769-30f1fbc8e1d8"
+            ],
+            "sizes": {
+              "08 Fatias,": 95,
+              "12 Fatias,": 110,
+              "22 Fatias*": 135,
+              "35 Fatias*": 175
+            },
+            "flavors": {
+              "Ninho": 0,
+              "Brigadeiro Gourmet": 0,
+              "Prestígio(coco)": 0,
+              "Laka": 0,
+              "Oreo": 0,
+              "Abacaxi": 0
+            },
+            "options": {
+              "Granulado": 0,
+              "Glitter": 0,
+              "Colorido Branco": 0,
+              "Colorido Vermelho": 20
+            },
+            "additionals": {
+              "group1": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 8,
+                "Geleia frutas vermelhas": 12,
+                "Sonho de valsa": 5,
+                "Ouro branco": 5,
+                "Nutella": 20,
+                "Nozes": 15
+              },
+              "group2": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 15,
+                "Geleia frutas vermelhas": 20,
+                "Sonho de valsa": 12,
+                "Ouro branco": 12,
+                "Nutella": 40,
+                "Nozes": 25
+              }
+            }
+          },
+          "cake02": {
+            "type": "Bolo",
+            "id": "cake02",
+            "name": "Chantininho 2 Recheios",
+            "description": "Bolo rechado com duas escolha de recheio e coberto com Chantininho",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fchantininho%2FboloChant2R-1.jpeg?alt=media&token=a5243553-ed7c-452a-80ef-3eb13cbbf5ad",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fchantininho%2FboloChant2R-2.jpeg?alt=media&token=5c2338ae-5965-441b-a32d-ae0d19cf60b5",
+              "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.1/src/assets/products/53-bolo.jpeg"
+            ],
+            "sizes": {
+              "12 a 15 Fatias,": 140,
+              "18 a 20 Fatias,": 170,
+              "25 a 30 Fatias*": 190,
+              "35 a 40 Fatias*": 245,
+              "50 a 60 Fatias*": 270,
+              "70 a 80 Fatias*": 350
+            },
+            "flavors": {
+              "Ninho - Brigadeiro": 0,
+              "Ninho - Prestígio(coco)": 0,
+              "Ninho - Laka": 0,
+              "Ninho - Oreo": 0,
+              "Ninho - Abacaxi": 0,
+              "Brigadeiro - Prestígio(coco)": 0,
+              "Brigadeiro - Laka": 0,
+              "Brigadeiro - Oreo": 0,
+              "Brigadeiro - Abacaxi": 0,
+              "Prestígio(coco) - Laka": 0,
+              "Prestígio(coco) - Oreo": 0,
+              "Prestígio(coco) - Abacaxi": 0,
+              "Laka - Oreo": 0,
+              "Laka - Abacaxi": 0,
+              "Oreo - Abacaxi": 0
+            },
+            "options": {
+              "Granulado": 0,
+              "Glitter": 0,
+              "Colorido Branco": 0,
+              "Colorido Vermelho": 20
+            },
+            "additionals": {
+              "group1": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 8,
+                "Geleia frutas vermelhas": 12,
+                "Sonho de valsa": 5,
+                "Ouro branco": 5,
+                "Nutella": 20,
+                "Nozes": 15
+              },
+              "group2": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 15,
+                "Geleia frutas vermelhas": 20,
+                "Sonho de valsa": 12,
+                "Ouro branco": 12,
+                "Nutella": 40,
+                "Nozes": 25
+              }
+            }
+          }
+        }
       },
-      "sizelg": {
-        "weight": 500,
-        "price": 105
-      },
-      "flavors": null,
-      "options": [
-        "Preto Blend",
-        "Preto ao Leite",
-        "Preto Meio Amargo",
-        "Branco",
-        "Branco Crocante"
-      ]
-    },
-    "e2": {
-      "type": "Ovo de Colher",
-      "id": "e2",
-      "name": "Delícia Crocante",
-      "description": "Casca de chocolate branco crocante de biscoito oreo, recheio trufado com biscoito e nutella pura com ovomaltine, decorado com biscoito oreo e pedaços de laka oreo.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 90
-      },
-      "sizelg": {
-        "weight": 500,
-        "price": 100
-      },
-      "flavors": null,
-      "options": [
-        "Preto Blend",
-        "Preto ao Leite",
-        "Preto Meio Amargo",
-        "Branco.",
-        "Branco Crocante."
-      ]
-    },
-    "e3": {
-      "type": "Ovo de Colher",
-      "id": "e3",
-      "name": "Bombom de Morango",
-      "description": "Casca de chocolate blend, recheio 4 leites e recheio de chocolate ao leite com morangos, decorado com brigadeiros enrolados em confeito belga e morangos.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoBombomMorango-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoBombomMorango-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 90
-      },
-      "sizelg": {
-        "weight": 500,
-        "price": 100
-      },
-      "flavors": null,
-      "options": [
-        "Preto Blend",
-        "Preto ao Leite",
-        "Preto Meio Amargo",
-        "Branco",
-        "Branco Crocante"
-      ]
-    },
-    "e4": {
-      "type": "Ovo de Colher",
-      "id": "e4",
-      "name": "Explosão Kinder",
-      "description": "Casca de chocolate blend, recheio cremoso de chocolate branco e chocolate ao leite, decorado com kinder Bueno.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoExplosaoKinder-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoExplosaoKinder-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 90
-      },
-      "sizelg": {
-        "weight": 500,
-        "price": 100
-      },
-      "flavors": null,
-      "options": [
-        "Preto Blend",
-        "Preto ao Leite",
-        "Preto Meio Amargo",
-        "Branco",
-        "Branco Crocante"
-      ]
-    },
-    "e5": {
-      "type": "Ovo de Colher",
-      "id": "e5",
-      "name": "Delírio de Pudim",
-      "description": "Casca de chocolate branca, recheio cremoso brûlée, mousse de ninho e 1 mini pudim por cima.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDelirioPudim-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDelirioPudim-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 90
-      },
-      "sizelg": {
-        "weight": 500,
-        "price": 100
-      },
-      "flavors": null,
-      "options": [
-        "Preto Blend",
-        "Preto ao Leite",
-        "Preto Meio Amargo",
-        "Branco.",
-        "Branco Crocante."
-      ]
-    },
-    "e6": {
-      "type": "Ovo de Colher",
-      "id": "e6",
-      "name": "Ferrero Rocher",
-      "description": "Casca de chocolate blend, recheio de brigadeiro goumert, castanhas, nutella, brownie, mousse chocolate, decorado com brigadeiro goumert, nutella, amendoim torrado e ferrero Rocher.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoFerreroRocher-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoFerreroRocher-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 90
-      },
-      "sizelg": {
-        "weight": 500,
-        "price": 100
-      },
-      "flavors": null,
-      "options": [
-        "Preto Blend",
-        "Preto ao Leite",
-        "Preto Meio Amargo",
-        "Branco",
-        "Branco Crocante"
-      ]
+      "nakedcake": {
+        "title": "Naked Cakes",
+        "description": "Bolos recheados e decorados com morangos",
+        "products":{
+          "cake01": {
+            "type": "Bolo",
+            "id": "cake01",
+            "name": "Naked Cake 1 Recheio",
+            "description": "Bolo rechado com uma escolha de recheio e decorado com morangos",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-1.jpeg?alt=media&token=892bb089-b533-48c9-901f-2925da7b2fb2",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-2.jpeg?alt=media&token=b59d857f-15ec-4504-81c5-30c728524d53",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-3.jpeg?alt=media&token=c0a9af7d-b46d-4736-b244-490ffb2bdc94",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-4.jpeg?alt=media&token=8536fe93-61c0-49f8-80a2-d9bdb0068108",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-5.jpeg?alt=media&token=c7fe074e-6a85-4c80-acb7-01112a22ad2f",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked1R-6.jpeg?alt=media&token=047ae3b5-f2b0-47d3-ad6b-4f60ef37be3d"
+            ],
+            "sizes": {
+              "08 Fatias,": 100,
+              "12 Fatias,": 115,
+              "22 Fatias*": 140,
+              "35 Fatias*": 180
+            },
+            "flavors": {
+              "Ninho": 0,
+              "Brigadeiro Gourmet": 0,
+              "Prestígio(coco)": 0,
+              "Laka": 0,
+              "Oreo": 0,
+              "Abacaxi": 0
+            },
+            "options": {
+              "Granulado": 0,
+              "Glitter": 0,
+              "Colorido Branco": 0,
+              "Colorido Vermelho": 20
+            },
+            "additionals": {
+              "group1": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 8,
+                "Geleia frutas vermelhas": 12,
+                "Sonho de valsa": 5,
+                "Ouro branco": 5,
+                "Nutella": 20,
+                "Nozes": 15
+              },
+              "group2": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 15,
+                "Geleia frutas vermelhas": 20,
+                "Sonho de valsa": 12,
+                "Ouro branco": 12,
+                "Nutella": 40,
+                "Nozes": 25
+              }
+            }
+          },
+          "cake02": {
+            "type": "Bolo",
+            "id": "cake02",
+            "name": "Naked Cake 2 Recheios",
+            "description": "Bolo rechado com duas escolha de recheio e decorado com morangos",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked2R-1.jpeg?alt=media&token=efbdad08-785d-4f81-943e-2092303ce3a0",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked2R-2.jpeg?alt=media&token=e1b4baad-6a5c-4b13-866e-d111b344db6a",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/cakes%2Fnaked%2FboloNaked2R-3.jpeg?alt=media&token=68249fff-5cf1-40e8-895b-9870482ae2ff"
+            ],
+            "sizes": {
+              "12 a 15 Fatias,": 145,
+              "18 a 20 Fatias,": 180,
+              "25 a 30 Fatias*": 200,
+              "35 a 40 Fatias*": 260,
+              "50 a 60 Fatias*": 300,
+              "70 a 80 Fatias*": 390
+            },
+            "flavors": {
+              "Ninho - Brigadeiro": 0,
+              "Ninho - Prestígio(coco)": 0,
+              "Ninho - Laka": 0,
+              "Ninho - Oreo": 0,
+              "Ninho - Abacaxi": 0,
+              "Brigadeiro - Prestígio(coco)": 0,
+              "Brigadeiro - Laka": 0,
+              "Brigadeiro - Oreo": 0,
+              "Brigadeiro - Abacaxi": 0,
+              "Prestígio(coco) - Laka": 0,
+              "Prestígio(coco) - Oreo": 0,
+              "Prestígio(coco) - Abacaxi": 0,
+              "Laka - Oreo": 0,
+              "Laka - Abacaxi": 0,
+              "Oreo - Abacaxi": 0
+            },
+            "options": {
+              "Granulado": 0,
+              "Glitter": 0,
+              "Colorido Branco": 0,
+              "Colorido Vermelho": 20
+            },
+            "additionals": {
+              "group1": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 8,
+                "Geleia frutas vermelhas": 12,
+                "Sonho de valsa": 5,
+                "Ouro branco": 5,
+                "Nutella": 20,
+                "Nozes": 15
+              },
+              "group2": {
+                "(nenhum)": 0,
+                "Morango(fruta)": 15,
+                "Geleia frutas vermelhas": 20,
+                "Sonho de valsa": 12,
+                "Ouro branco": 12,
+                "Nutella": 40,
+                "Nozes": 25
+              }
+            }
+          }
+        }
+      }
     }
   },
-  "truffles": {
-    "t1": {
-      "type": "Casca Trufada",
-      "id": "t1",
-      "name": "Lá Petra",
-      "description": "Cascas de chocolate blend com biscoito, recheadas com caramelo.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaLaPetra-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaLaPetra-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 90
+  "sweeties": {
+    "title": "Docinhos",
+    "description1": "Doces feitos com ingredientes nobres e decorados com confeitos variádos. O pedido mínimo é de 25 unidades para cada sabor.",
+    "description2": null,
+    "products": {
+      "tradicionais": {
+        "title": "Docinhos Tradicionais",
+        "description": "Cada mordida é uma lembrança da infância",
+        "products":{
+          "trad01": {
+            "type": "Docinho Tradicional",
+            "id": "trad01",
+            "name": "Beijinho de Coco",
+            "description": "Massa feita de leitinho e coco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBeijinho-1.jpeg?alt=media&token=0bf366c1-050a-47d3-b070-23c464d3f31fg",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBeijinho-2.jpeg?alt=media&token=9e2a57fd-d1a9-4234-b063-b0e74076f87a"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad02": {
+            "type": "Docinho Tradicional",
+            "id": "trad02",
+            "name": "Maçãnzinha",
+            "description": "Massa feita de leitinho e coco, decorado com açúcar vermelho",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradMacanzinha-1.jpeg?alt=media&token=3f500b46-4986-4157-9ca2-227e4223fd09",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradMacanzinha-2.jpeg?alt=media&token=b9e480d3-c265-4103-bf22-c6b6bb525b27",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradMacanzinha-3.jpeg?alt=media&token=c8533db1-8e5e-4219-b93d-c849850fbbcb"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad03": {
+            "type": "Docinho Tradicional",
+            "id": "trad03",
+            "name": "Brigadeiro Preto",
+            "description": "Brigadeiro tradicional feito com chocolate preto ao leite",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-1.jpeg?alt=media&token=84316745-25cd-4a8a-976f-04b841698b19",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-2.jpeg?alt=media&token=661dd594-4222-477c-84ec-76ad0eca230a",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-3.jpeg?alt=media&token=5d45ddd3-6f3e-4599-8692-341828c15545",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-4.jpeg?alt=media&token=aa78ec60-dbdb-41ac-be8a-9dadbb2dc738",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaPreto-5.jpeg?alt=media&token=7fdb1568-4f08-4331-b424-e3e0c5d83795"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad04": {
+            "type": "Docinho Tradicional",
+            "id": "trad04",
+            "name": "Brigadeiro Branco",
+            "description": "Massa feita de chocolate branco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-1.jpeg?alt=media&token=ea587fc3-0b6a-4102-b28f-c51dbe59abd7",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-2.jpeg?alt=media&token=61d4bc86-f0af-45d5-b469-4193f2681141",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-3.jpeg?alt=media&token=590d097a-0f53-47c6-aa20-6ca787b16da8",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-4.jpeg?alt=media&token=c5218204-71c8-4e9a-ae08-98d92a981145",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-5.jpeg?alt=media&token=02cb57fa-00c0-4e0c-afee-c64590ba575f",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradBrigaBranco-6.jpeg?alt=media&token=41a577c9-2dac-4622-b9bd-4b72d89a1730"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad05": {
+            "type": "Docinho Tradicional",
+            "id": "trad05",
+            "name": "Casadinho",
+            "description": "Docinho feito com metade em massa de chocolate branco e metade em massa de chocolate preto",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCasadinho-1.jpeg?alt=media&token=346a3192-9e93-4667-9851-979ce093a04c",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCasadinho-2.jpeg?alt=media&token=5dd7dbd7-2b12-446b-960b-a106bc7a9451",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCasadinho-3.jpeg?alt=media&token=b41a7346-1b7a-4f0e-8dd2-d4a09cc4c66d",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCasadinho-4.jpeg?alt=media&token=2b2104f3-e80f-436c-90c4-2ac59d16eb94"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad06": {
+            "type": "Docinho Tradicional",
+            "id": "trad06",
+            "name": "Olho de Sogra",
+            "description": "Docinho tradicional",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradOlhoSogra-1.jpeg?alt=media&token=2bdab745-eac2-4afa-b679-1104c754aa2e",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradOlhoSogra-2.jpeg?alt=media&token=b8167d71-a82b-4bb8-a4cf-4f38fbded2b0",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradOlhoSogra-3.jpeg?alt=media&token=5369f18c-69f8-4c21-b4d3-25fb83c8ad9e"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad07": {
+            "type": "Docinho Tradicional",
+            "id": "trad07",
+            "name": "Ninho",
+            "description": "Massa feita com leite ninho",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradNinho-1.jpeg?alt=media&token=da8e5b24-b9c6-4f38-8b6e-aca80a2d3c9a",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradNinho-2.jpeg?alt=media&token=32f38a3a-a7f4-4d82-b027-5ed7b045dadf"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "trad08": {
+            "type": "Docinho Tradicional",
+            "id": "trad08",
+            "name": "Cajuzinho",
+            "description": "Docinho tradicional",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-1.jpeg?alt=media&token=0e53e8f4-f6cb-415f-a089-3a6eff5ddc87",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-2.jpeg?alt=media&token=1760917f-2782-4d8a-b1b0-bef91487f856",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-3.jpeg?alt=media&token=8d9c583c-227f-425a-ad4a-8e6b73ef9e8a",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-4.jpeg?alt=media&token=e21a19f2-a2fe-4cfe-b042-aedb9ef792bf",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Ftradicionais%2FtradCajuzinho-5.jpeg?alt=media&token=2def9916-3e08-421c-a31d-3b44fc9fdcc0"
+            ],
+            "sizes": {
+              "unidade": 1.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          }
+        }
       },
-      "sizelg": null,
-      "flavors": null,
-      "options": null
-    },
-    "t2": {
-      "type": "Casca Trufada",
-      "id": "t2",
-      "name": "Pistache",
-      "description": "Cascas de chocolate branca e blend, recheadas com creme de pistache.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaPistache-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaPistache-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 100
+      "especiais": {
+        "title": "Docinhos Especiais",
+        "description": "Docinho feitos com técnicas mais sofisticadas",
+        "products":{
+          "esp01": {
+            "type": "Docinho Especial",
+            "id": "esp01",
+            "name": "Brigadeiro de Damasco",
+            "description": "Brigadeiro branco, decorado com damasco banhado em chocolate preto",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespDamasco-1.jpeg?alt=media&token=d7f263cc-a227-4ab3-a51d-d6999076fb2b",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespDamasco-2.jpeg?alt=media&token=c32d0d60-5b4a-494c-84cc-c22320c170a2",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespDamasco-3.jpeg?alt=media&token=b83a1b17-f422-4d7c-afb7-620dea91f71a"
+            ],
+            "sizes": {
+              "unidade": 3.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp02": {
+            "type": "Docinho Especial",
+            "id": "esp02",
+            "name": "Ninho com Nutella",
+            "description": "Massa de ninho recheada e enfeitada com Nutella",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespNinhoNutella-1.jpeg?alt=media&token=efd3169e-7be5-4926-8d67-234f582e3336",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespNinhoNutella-2.jpeg?alt=media&token=9c8ea32b-2273-47ec-904e-a900926b8f2d",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespNinhoNutella-3.jpeg?alt=media&token=32a53a53-1ce8-4e52-80c0-8197e1d7a914",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespNinhoNutella-4.jpeg?alt=media&token=f5eab083-3e68-49c2-960e-f959fac74ad4"
+            ],
+            "sizes": {
+              "unidade": 2.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp03": {
+            "type": "Docinho Especial",
+            "id": "esp03",
+            "name": "Brigadeiro Gourmet",
+            "description": "Brigadeiro feito com chocolate nobre, envolto no chocolate granule callebaut",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrigaGourmet-1.jpeg?alt=media&token=c9b4485d-5077-48fa-949f-392c22e08507",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrigaGourmet-2.jpeg?alt=media&token=74d0eae2-37c1-45f0-afbb-15eb28fa6a26",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrigaGourmet-3.jpeg?alt=media&token=e4d1432a-288d-415d-b810-0d71b6b67fcc"
+            ],
+            "sizes": {
+              "unidade": 2.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp04": {
+            "type": "Docinho Especial",
+            "id": "esp04",
+            "name": "Brigadeiro Churros",
+            "description": "Brigadeiro branco rechado com doce de leite",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespChurros-1.jpeg?alt=media&token=5e020e40-5a0b-4de1-851f-ea0a16d2f645",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespChurros-2.jpeg?alt=media&token=4aa72c56-e333-4f83-81ef-490aae631c75"
+            ],
+            "sizes": {
+              "unidade": 2.2
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp05": {
+            "type": "Docinho Especial",
+            "id": "esp05",
+            "name": "Mini-Brownie",
+            "description": "Brownie decorado com brigadeiro preto ou branco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrownie-1.jpeg?alt=media&token=92027cae-1a60-419c-b539-fc89ab58bfa9",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrownie-2.jpeg?alt=media&token=255ca038-56c8-4cb3-977d-80d4e9b9cc1e",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespBrownie-3.jpeg?alt=media&token=63f1a36d-a025-4b89-8da3-e7e2117507c2"
+            ],
+            "sizes": {
+              "unidade": 3
+            },
+            "flavors": {
+              "Brigadeiro Preto": 0,
+              "Brigadeiro Branco": 0
+            },
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "esp06": {
+            "type": "Docinho Especial",
+            "id": "esp06",
+            "name": "Mini-Cookie com Nutella",
+            "description": "Cookie recheado com Nutella",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespCookie-1.jpeg?alt=media&token=f13d554b-782d-4871-8bc8-829a587637da",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespCookie-2.jpeg?alt=media&token=f4d80d5d-47f5-4ec0-9f26-1eba2d0132fc",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fespeciais%2FespCookie-3.jpeg?alt=media&token=bde70eed-378e-49f6-8d5a-e284ce515a8f"
+            ],
+            "sizes": {
+              "unidade": 2.5
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          }
+        }
       },
-      "sizelg": null,
-      "flavors": null,
-      "options": [
-        "Preto Blend",
-        "Branco."
-      ]
-    },
-    "t3": {
-      "type": "Casca Trufada",
-      "id": "t3",
-      "name": "Torta de Limão Siciliano",
-      "description": "Cascas de chocolate branca com biscoito, recheadas com um delicioso creme trufado de limão siciliano.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaLimao-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaLimao-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 100
-      },
-      "sizelg": null,
-      "flavors": null,
-      "options": null
-    },
-    "t4": {
-      "type": "Casca Trufada",
-      "id": "t4",
-      "name": "Maracujá",
-      "description": "Cascas chocolate blend , recheada com delicioso creme de maracujá.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaMaracuja-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaMaracuja-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 85
-      },
-      "sizelg": null,
-      "flavors": null,
-      "options": null
-    },
-    "t5": {
-      "type": "Casca Trufada",
-      "id": "t5",
-      "name": "Crocante Nutella",
-      "description": "Cascas de chocolate branco com biscoito, recheadas com nutella pura.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaCrocanteNutella-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaCrocanteNutella-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 100
-      },
-      "sizelg": null,
-      "flavors": null,
-      "options": null
-    },
-    "t6": {
-      "type": "Casca Trufada",
-      "id": "t6",
-      "name": "Coco",
-      "description": "Cascas de chocolate blend, recheadas com creme de coco.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaCoco-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trufaCoco-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 400,
-        "price": 85
-      },
-      "sizelg": null,
-      "flavors": null,
-      "options": null
-    }
-  },
-  "kids": {
-    "k1": {
-      "type": "Linha Kids",
-      "id": "k1",
-      "name": "Criança Feliz",
-      "description": "Casca de chocolate blend, recheio cremoso de ninho e brigadeiro ao leite, decorado com balas fini, confetes, chiclets, marshmallow e tortuguita.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsOvo-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsOvo-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 230,
-        "price": 50
-      },
-      "sizelg": {
-        "weight": 400,
-        "price": 80
-      },
-      "flavors": null,
-      "options": null
-    },
-    "k2": {
-      "type": "Linha Kids",
-      "id": "k2",
-      "name": "Surpresa",
-      "description": "Composto por 2 cascas chocolate branco colorido, por dentro contém marshmallow e dentaduras fini.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsSurpresa-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsSurpresa-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 100,
-        "price": 60
-      },
-      "sizelg": null,
-      "flavors": null,
-      "options": null
-    },
-    "k3": {
-      "type": "Linha Kids",
-      "id": "k3",
-      "name": "Kit Mini Confeiteiro",
-      "description": "Composto por 1 casca de chocolate blend, 1 bisnaga de brigadeiro branco, 1 tubete de confetes, 1 tubete de granulados coloridos e 1 tortuguita.",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsKitMini-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/kidsKitMini-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 100,
-        "price": 55
-      },
-      "sizelg": null,
-      "flavors": null,
-      "options": null
-    }
-  },
-  "others": {
-    "o1": {
-      "type": "",
-      "id": "o1",
-      "name": "Barra Recheada",
-      "description": "Escolha uma opção de recheio:",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/barraRecheada-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/barraRecheada-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 250,
-        "price": 54.5
-      },
-      "sizelg": null,
-      "flavors": [
-        "Creme moça com geléia morango",
-        "Brigadeiro goumert",
-        "Ninho",
-        "Duo (brigadeiro branco e ao leite)"
-      ],
-      "options": [
-        "Preto Blend Dourado",
-        "Preto Blend Confete",
-        "Branco",
-        "Branco Crocante"
-      ]
-    },
-    "o2": {
-      "type": "",
-      "id": "o2",
-      "name": "Ovo no Pote",
-      "description": "Potes de vidro, recheados com deliciosos cremes para comer de colher, intercalados com pedaços de chocolate meio amargo. O pote é embalado em sacolinha Kraft e fita La Petra",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/poteOvo-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/poteOvo-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 250,
-        "price": 38
-      },
-      "sizelg": null,
-      "flavors": [
-        "Cookies (creme brulle com pedaços de cookies)",
-        "Duo (Brigadeiro ao leite com brigadeiro branco)",
-        "Morango com creme moça e nutella"
-      ],
-      "options": null
-    },
-    "o3": {
-      "type": "Ovo de Colher",
-      "id": "o3",
-      "name": "Trio de Ovos",
-      "description": "Composto por 3 ovos de colher com as seguintes combinações de sabores:",
-      "image": [
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trioOvos-1.jpg",
-        "https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/trioOvos-2.jpg"
-      ],
-      "sizesm": {
-        "weight": 550,
-        "price": 130
-      },
-      "sizelg": null,
-      "flavors": [
-        "Ninho com nutella,   Explosão de kinder,  Laka com geléia de morango",
-        "Ferrero Rocher,  Delicia Crocante,  Ninho com nutella",
-        "Explosão de kinder,  Laka com geléia de morango,  Ferrero Rocher",
-        "Delicia Crocante,  Ninho com nutella,  Explosão de kinder",
-        "Laka com geléia de morango,  Ferrero Rocher,  Delicia Crocante"
-      ],
-      "options": null
+      "banhados": {
+        "title": "Bombons Banhados",
+        "description": "Bombons banhados com chocolate nobre",
+        "products":{
+          "ban01": {
+            "type": "Banhado",
+            "id": "ban01",
+            "name": "Coco",
+            "description": "Bombom de coco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanCoco-1.jpeg?alt=media&token=6cd8a473-f9b0-483e-9792-974aad580193",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanCoco-2.jpeg?alt=media&token=15690756-7b35-486e-bb97-17de36f9fbe7"
+            ],
+            "sizes": {
+              "unidade": 2.4
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "ban02": {
+            "type": "Banhado",
+            "id": "ban02",
+            "name": "Brigadeiro Preto ou Branco",
+            "description": "Bombom de brigadeiro branco",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanBrigadeiro-1.jpeg?alt=media&token=8ac2689f-ce7c-474d-9c6a-96043470fdb3",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanBrigadeiro-2.jpeg?alt=media&token=5d517c49-9052-4811-92a3-8dcd2d84ff6d"
+            ],
+            "sizes": {
+              "unidade": 2.4
+            },
+            "flavors": {
+              "Brigadeiro Preto": 0,
+              "Brigadeiro Branco": 0
+            },
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "ban03": {
+            "type": "Banhado",
+            "id": "ban03",
+            "name": "Uva",
+            "description": "Bombom de uva",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanUva-1.jpeg?alt=media&token=a61376e7-055b-4774-9c17-76edcb5678e4",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanUva-2.jpeg?alt=media&token=3a044b61-7bee-4b95-b97b-f6fc0b977bef"
+            ],
+            "sizes": {
+              "unidade": 2.8
+            },
+            "flavors": {
+              "Brigadeiro Preto": 0,
+              "Brigadeiro Branco": 0
+            },
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "ban04": {
+            "type": "Banhado",
+            "id": "ban04",
+            "name": "Nozes",
+            "description": "Bombom de nozes",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanNozes-1.jpeg?alt=media&token=931dad6a-aaa5-4b23-9cb4-9f97836b5ea2",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanNozes-2.jpeg?alt=media&token=d5ff372c-265e-405e-adf6-127782703471"
+            ],
+            "sizes": {
+              "unidade": 2.8
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          },
+          "ban05": {
+            "type": "Banhado",
+            "id": "ban05",
+            "name": "Morango",
+            "description": "Bombom de morango",
+            "image": [
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanMorango-1.jpeg?alt=media&token=7bc0e8d6-4df4-42fb-a7a8-f4bd4f32a3c3",
+              "https://firebasestorage.googleapis.com/v0/b/db-la-petra.appspot.com/o/sweeties%2Fbanhados%2FbanMorango-2.jpeg?alt=media&token=357784e4-e795-44e3-9c92-44fc9cd22c08"
+            ],
+            "sizes": {
+              "unidade": 4
+            },
+            "flavors": null,
+            "options": {
+              "Forminha comum": 0,
+              "Forminha dobrável": 0.1
+            },
+            "additionals": null,
+            "minQuantity": 25
+          }
+        }
+      }
     }
   }
 }

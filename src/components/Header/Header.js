@@ -8,43 +8,38 @@ import {ReactComponent as Bag} from '../../assets/icons/bag.svg';
 import { BagContext } from '../../contexts/BagContext';
 
 const Header = () => {
-  const [bag] = React.useContext(BagContext);
+  const [bag, , category] = React.useContext(BagContext);
 
-  // const {pathname} = useLocation();
-  // const navigate = useNavigate();
+  const {pathname} = useLocation();
+  const navigate = useNavigate();
   
-  // function handleNavigateHome() {
-  //   if(pathname==="/") {
-  //     navigate("/sobre")
-  //   } else {
-  //     navigate("/")
-  //   }
-  // }
+  function handleNavigateHome() {
+    if(pathname==="/") {
+      navigate("/sobre")
+    } else {
+      navigate("/")
+    }
+  }
   
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
-        <NavLink className={styles.navLink} activeClassName={styles.activePage} to="/produtos">
+      <nav className={styles.container}>
+        <NavLink className={styles.navLink} activeClassName={styles.activePage} to={category==='delivery' ? 'produtos' : category}>
           <Cake className={styles.icon}/>
           Produtos
         </NavLink>
 
-        {/* <div className={styles.logo} onClick={handleNavigateHome}>
+        <div className={styles.logo} onClick={handleNavigateHome}>
           <div className={styles.shadow}></div>
-          <img src={Logotipo} height="80px" alt="Logotipo"/>
-        </div> */}
-
-        <div className={styles.logo}>
-          <div className={styles.shadow}></div>
-          <img src={Logotipo} height="80px" alt="Logotipo"/>
+          <img src={Logotipo} height="50px" alt="Logotipo"/>
         </div>
 
         <NavLink className={styles.navLink} activeClassName={styles.activePage} to='order'>
           {Object.keys(bag).length!==0 && <span className={styles.bagCount}>{Object.keys(bag).length}</span>}
           <Bag className={styles.icon}/>
-          Comprar
+          Sacola<span style={{opacity: 0}}>..</span>
         </NavLink>
-      </div>
+      </nav>
     </header>
   )
 }

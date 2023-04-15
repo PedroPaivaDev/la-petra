@@ -7,6 +7,7 @@
   border: 2px solid var(--darkBrown);
   border-radius: 10px;
   width: 90%;
+  max-width: 1000px;
   height: 90%;
   padding: 10px;
   gap: 10px;
@@ -37,12 +38,63 @@
   align-items: center;
   width: 50%;
   height: 100%;
-  /* padding: 10px 10px 0px 10px; */
   gap: 5px;
 }
 
 .description .image {
   width: 100%;
+}
+
+.description h3 {
+  text-shadow: 1px 1px 5px white;
+  color: var(--darkPink);
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.description p, .description label {
+  font-size: 0.875rem;
+  text-align: justify;
+}
+
+.sizes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container .price {
+  text-shadow: 1px 1px 5px white;
+  color: var(--darkCyan);
+}
+
+.options select, .options option, .options input {
+  width: auto;
+  max-width: 210px;
+}
+
+.options * {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  line-height: 16px;
+}
+
+.quantityWrapper {
+  margin-bottom: 20px;
+}
+
+.quantityWrapper input {
+  width: 100px;
 }
 
 @media (max-width: 58rem) {
@@ -52,59 +104,6 @@
   .description {
     height: auto;
   }
-}
-
-.container * {
-  text-shadow: 1px 1px 5px white;
-}
-
-.description span {
-  color: var(--darkPink);
-  font-size: 1rem;
-  text-align: center;
-}
-
-.description p, .description label {
-  font-size: 0.75rem;
-  text-align: justify;
-  text-shadow: none;
-  color: var(--darkBrown);
-}
-
-.size {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.container .price {
-  color: var(--darkCyan);
-}
-
-.container .prices {
-  display: flex;
-  gap: 20px;
-}
-
-.options {
-  display: flex;
-  gap: 5px;
-}
-
-.select select, .select option {
-  width: auto;
-  max-width: 210px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.75rem;
-  line-height: 16px;
-}
-
-.container h6 {
-  font-size: 0.625rem;
-  font-family: Arial, Helvetica, sans-serif;
-  color: var(--darkBrown);
-  text-shadow: none;
 }
 
 @media (max-width: 42rem) {
@@ -123,49 +122,29 @@
     width: 100%;
     gap: 5px;
   }
-  .description span {
-    font-size: 1.2rem;
-  }
-  .options {
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 @media (max-height: 27rem) {
   .container {
     flex-direction: row;
   }
-  .description span {
-    font-size: 1rem;
-  }
-  .description p, .description label {
+}
+
+@media (max-width: 58rem) {
+  .description p, .description label, .options * {
     font-size: 0.75rem;
   }
 }
 
-@media (max-width: 42rem), (max-height: 20rem) {
-  .description span {
-    font-size: 1rem;
-  }
-  .description p, .description label {
-    font-size: 0.75rem;
-  }
-}
-
-@media (max-width: 20rem) {
-  .description p, .description label, .options select, .options option {
-    font-size: 0.625rem;
-  }
-}
-
-@media (max-height: 20rem) {
+@media (max-width: 21rem), (max-height: 21rem) {
   .description {
     gap: 0;
   }
-  .description span {
+  .description h3, span {    
+    line-height: 1.5rem;
     font-size: 0.75rem;
   }
-  .description p, .description label, .options select, .options option {
+  .description p, .description label, .options * {
     font-size: 0.625rem;
   }
 }

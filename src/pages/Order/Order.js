@@ -12,7 +12,7 @@ import Select from '../../components/Forms/Select';
 import useLocalStorage from '../../hooks/useLocalStorage';
 
 import Grid from '../../components/Grid/Grid';
-import EasterProduct from '../../components/Easter/EasterProduct';
+import Product from '../../components/Products/Product';
 import Checkbox from '../../components/Forms/Checkbox';
 
 const Order = () => {
@@ -53,11 +53,13 @@ const Order = () => {
       const type = product.type ? `${product.type}: ` : "";
       const name = `*${product.name}*%0a`;
       const size = `Tamanho: *${product.size}*%0a`;
-      const option = product.options ? `Casca: *${product.options}*%0a` : "";
+      const option = product.options ? `Opção: *${product.options}*%0a` : "";
       const flavor = product.flavors ? `Sabor: *${product.flavors}*%0a` : "";
+      const additional = product.additional ? `Adicional: *${product.additional}*%0a` : "";
+      const quantity = product.quantity ? `Quantidade: *${product.quantity}*%0a` : "";
       const price = `Preço Unitário: *R$${product.price.toFixed(2)}*%0a----------%0a`;
 
-      products = products + type + name + size + option + flavor + price
+      products = products + type + name + size + option + flavor + additional + quantity + price
     })
     return products;
   }
@@ -110,101 +112,103 @@ const Order = () => {
   },[submitError])
 
   return (
-    <div className={`${styles.container} animeLeft`}>
-      <div className={styles.row}>
-        <h2>Finalizar Pedido</h2>
+    <div className={`page animeLeft`}>
+      <div className={`container`}>
+        <div className={`envelope`}>
+          <h1>Finalizar Pedido</h1>
 
-        <div className={styles.products}>
-          {bag.length!==0 ? bag.map(product => 
-            <Grid key={product.id} xs={12} sm={6} md={4} lg={4} xl={3}>
-              <EasterProduct product={product}/>
-            </Grid>) : 
-            <p style={{color: '#f31'}}>Sua sacola ainda está vazia. Escolha pelo menos um produto.</p>
-          }
-        </div>
-        
-        <div className={styles.order}>
-          <form className={styles.form}>
-            <Input label="Nome:" type="text" name="client"
-              placeholder={"Digite seu nome"} {...client}
-            />
-            <Input label="Contato:" type="text" name="contact"
-              placeholder={"(37) 9 9999-9999"} {...contact}
-            />
-            <DatePickerInput
-              label="Retirada:"
-              placeholder="Selecione a data"
-              selectedDate={withdrawalDate}
-              setSelectedDate={setWithdrawalDate}
-            />
-            <Select
-              label={"Hora:"}
-              initial="Selecione a hora"
-              options={['16:00h','17:00h','18:00h']}
-              selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
-            />
-            <Select
-              label={"Pagamento:"}
-              initial="Escolha a forma"
-              options={["Transferência", "Pix", "Cartão de Débito", "Dinheiro", "Cartão de Crédito (parcelado)"]}
-              selectedOption={payment} setSelectedOption={setPayment}
-            />
-            {payment==="Cartão de Crédito (parcelado)" &&
-              <Select
-                label={"Parcelas:"}
-                initial="Selecione aqui"
-                options={["2x", "3x", "4x", "5x"]}
-                value={Object.keys(installmentCardPayment)}
-                selectedOption={installmentCard} setSelectedOption={setInstallmentCard}
-              />
-            }
-          </form>
-          <div className={styles.payment}>
-            <Checkbox
-              option={true}
-              state={delivery}
-              setState={setDelivery}
-              name="delivery"
-              label={"Pagar pela entrega (+R$5,00)"}
-            />
-            {delivery && <div className={styles.deliveryAddress}>
-              <Input label="Rua/Av:" type="text" name="street"
-                placeholder={"Informe a rua"} {...street}
-              />
-              <Input label="Nº:" type="text" name="number"
-                placeholder={"Informe o número"} {...number}
-              />
-              <Input label="Bairro:" type="text" name="neighborhood"
-                placeholder={"Informe o bairro"} {...neighborhood}
-              />
-              <Input label="Ref.:" type="text" name="reference"
-                placeholder={"Ponto de referência"} {...reference}
-              />
-            </div>}
-            {(installmentCard!=="" && payment==="Cartão de Crédito (parcelado)") ?
-              <h3 className={styles.price}>{installmentCardPayment[installmentCard]} Parcelas de <span>
-                R${(totalPrice/installmentCardPayment[installmentCard]).toFixed(2)}
-              </span></h3> :
-              <h3 className={styles.price}>Preço Total: <span>R${totalPrice.toFixed(2)}</span></h3>
+          <div className={styles.products}>
+            {bag.length!==0 ? bag.map(product => 
+              <Grid key={product.id} xs={12} sm={6} md={4} lg={4} xl={3}>
+                <Product product={product}/>
+              </Grid>) :
+              <p style={{color: '#f31'}}>Sua sacola ainda está vazia. Escolha pelo menos um produto.</p>
             }
           </div>
-        </div>
-
-        <div className={styles.notes}>
-          {payment==="Cartão de Crédito (parcelado)" ?
-            <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. Para confirmar o seu pedido, você deverá <b>ir até a loja</b> para efetuar o parcelamento no cartão <b>ou</b> solicitar que a máquina de cartão da loja seja levada até você.</p> :
-            <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
-          }
-          {!delivery ?
-            <p><b>Não faremos a entrega</b>, então o cliente deve fazer a retirada na loja, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}, pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p> :
-            <div>
-              <p>O pedido <b>será entregue no endereço</b> informado acima, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}. Caso o cliente não esteja no local, sob o dia e data definidos anteriormente, o pedido será retornado para a loja e o cliente deverá fazer a retirada na loja pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
-              <p style={{color: '#f31'}}><b style={{color: '#f31'}}>ATENÇÃO!!!</b> Não nos responsabilizamos pela integridade dos produtos durante o percurso da entrega, pois ela é feita usando uma moto.</p>
+          
+          <div className={styles.order}>
+            <form className={styles.form}>
+              <Input label="Nome:" type="text" name="client"
+                placeholder={"Digite seu nome"} {...client}
+              />
+              <Input label="Contato:" type="text" name="contact"
+                placeholder={"(37) 9 9999-9999"} {...contact}
+              />
+              <DatePickerInput
+                label="Retirada:"
+                placeholder="Selecione a data"
+                selectedDate={withdrawalDate}
+                setSelectedDate={setWithdrawalDate}
+              />
+              <Select
+                label={"Hora:"}
+                initial="Selecione a hora"
+                options={['16:00h','17:00h','18:00h']}
+                selectedOption={withdrawalHour} setSelectedOption={setWithdrawalHour}
+              />
+              <Select
+                label={"Pagamento:"}
+                initial="Escolha a forma"
+                options={["Transferência", "Pix", "Cartão de Débito", "Dinheiro", "Cartão de Crédito (parcelado)"]}
+                selectedOption={payment} setSelectedOption={setPayment}
+              />
+              {payment==="Cartão de Crédito (parcelado)" &&
+                <Select
+                  label={"Parcelas:"}
+                  initial="Selecione aqui"
+                  options={["2x", "3x", "4x", "5x"]}
+                  value={Object.keys(installmentCardPayment)}
+                  selectedOption={installmentCard} setSelectedOption={setInstallmentCard}
+                />
+              }
+            </form>
+            <div className={styles.payment}>
+              <Checkbox
+                option={true}
+                state={delivery}
+                setState={setDelivery}
+                name="delivery"
+                label={"Pagar pela entrega (+R$5,00)"}
+              />
+              {delivery && <div className={styles.deliveryAddress}>
+                <Input label="Rua/Av:" type="text" name="street"
+                  placeholder={"Informe a rua"} {...street}
+                />
+                <Input label="Nº:" type="text" name="number"
+                  placeholder={"Informe o número"} {...number}
+                />
+                <Input label="Bairro:" type="text" name="neighborhood"
+                  placeholder={"Informe o bairro"} {...neighborhood}
+                />
+                <Input label="Ref.:" type="text" name="reference"
+                  placeholder={"Ponto de referência"} {...reference}
+                />
+              </div>}
+              {(installmentCard!=="" && payment==="Cartão de Crédito (parcelado)") ?
+                <h1 className={styles.price}>{installmentCardPayment[installmentCard]} Parcelas de <span>
+                  R${(totalPrice/installmentCardPayment[installmentCard]).toFixed(2)}
+                </span></h1> :
+                <h1 className={styles.price}>Preço Total: <span>R${totalPrice.toFixed(2)}</span></h1>
+              }
             </div>
-          }          
-          <p>Não vamos nos responsabilizar pelo armazenamento, caso o cliente não venha buscar na data e horário combinado.</p>
+          </div>
+
+          <div className='wrapper'>
+            {payment==="Cartão de Crédito (parcelado)" ?
+              <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. Para confirmar o seu pedido, você deverá <b>ir até a loja</b> para efetuar o parcelamento no cartão <b>ou</b> solicitar que a máquina de cartão da loja seja levada até você.</p> :
+              <p>Após clicar no botão de envio abaixo, você será direcionado para o whatsapp da loja. A confirmação do seu pedido será feita após o envio do comprovante de pagamento de <b>50% do valor adiantado</b>.</p>
+            }
+            {!delivery ?
+              <p><b>Não faremos a entrega</b>, então o cliente deve fazer a retirada na loja, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}, pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p> :
+              <div>
+                <p>O pedido <b>será entregue no endereço</b> informado acima, no dia {formatDateFn(withdrawalDate)} as {withdrawalHour}. Caso o cliente não esteja no local, sob o dia e data definidos anteriormente, o pedido será retornado para a loja e o cliente deverá fazer a retirada na loja pessoalmente ou informar com antecedência o nome do terceiro autorizado para retirada.</p>
+                <p style={{color: '#f31'}}><b style={{color: '#f31'}}>ATENÇÃO!!!</b> Dependendo do tipo, não nos responsabilizamos pela integridade dos produtos durante o percurso da entrega, pois ela é feita usando uma moto.</p>
+              </div>
+            }          
+            <p>Não vamos nos responsabilizar pelo armazenamento, caso o cliente não venha buscar na data e horário combinado.</p>
+          </div>
+          <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
         </div>
-        <Button onClick={handleSubmit} submitError={submitError}>Enviar Pedido</Button>
       </div>
     </div>
   )

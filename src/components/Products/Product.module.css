@@ -19,20 +19,6 @@
     border-radius: 10px;
 }
 
-.name {
-    color: white;
-    font-size: 1rem;
-    line-height: 2rem;
-    text-shadow: 1px 1px 5px #333;
-    transition: 0.3s;
-}
-
-.name:hover {
-    color: var(--darkPink);
-    text-shadow: 1px 1px 5px white;
-    cursor: pointer;
-}
-
 .delete {
     position: absolute;
     right: 10px;
@@ -51,9 +37,4 @@
 
 .description p {
     font-size: 0.75rem;
-}
-.description h4 {
-    color: var(--darkCyan);
-    text-shadow: 1px 1px 5px white;
-    margin-bottom: 5px;
 }

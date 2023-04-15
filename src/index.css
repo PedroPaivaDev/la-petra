@@ -21,10 +21,11 @@
 }
 
 body {
-  --mainHeightWeb: calc(100vh);
-  --mainHeightMobile: calc(100vh);
-  /* --mainHeightMobile: calc(100vh - 75px - 85px); */
-  --mainWidthWeb: 100vw;
+  --mainHeight: calc(100vh);
+  --mainWidth: 100vw;
+  --HeaderHeigth: 60px;
+  --FooterHeigth: 15px;
+  --paddingIPhone: 85px;
 
   --darkBrown: rgba(86,63,57);
   --lightBrown: rgba(127,105,91);
@@ -52,6 +53,8 @@ a {
 
 p, label, option {
   font-family: Arial, Helvetica, sans-serif;
+  text-shadow: none;
+  color: var(--darkBrown);
 }
 
 label {
@@ -100,24 +103,109 @@ main {
   background: url('/src/assets/backgrounds/bg-dots-opacity.png') no-repeat;
   background-position: center right;
   background-size: cover;
-  height: var(--mainHeightWeb);
-  width: var(--mainWidthWeb);
+  height: var(--mainHeight);
+  width: var(--mainWidth);
   overflow: hidden;
   z-index: 0;
 }
 
-main > div {
-  padding: 60px 0px 15px 0px;
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: var(--HeaderHeigth) 0px var(--FooterHeigth) 0px;
 }
 
-@media (max-width: 58rem) {
-  main {height: var(--mainHeightMobile);}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: calc(var(--HeaderHeigth) + var(--FooterHeigth) + var(--paddingIPhone));
+}
+
+.envelope {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 0px 10px;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.wrapper p {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  text-align: center;
 }
 
 h2 {
-  font-size: 1.4rem;
-  margin: 10px 0px 5px 0px;
+  font-size: 1.2rem;
+  margin-top: 10px;
   text-align: center;
+}
+
+h3 {
+    color: white;
+    /* font-size: 1rem;
+    line-height: 2rem; */
+    text-shadow: 1px 1px 5px #333;
+    transition: 0.3s;
+}
+
+h3:hover {
+    color: var(--darkPink);
+    text-shadow: 1px 1px 5px white;
+    cursor: pointer;
+}
+
+h4 {
+  color: var(--darkCyan);
+  text-shadow: 1px 1px 5px white;
+}
+
+h5 {
+  font-size: 0.625rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--darkBrown);
+  text-shadow: none;
 }
 
 .animeLeft {
@@ -164,4 +252,27 @@ h2 {
 
 .react-datepicker__time-list-item--disabled {
   display: none;
+}
+
+@media (min-width: 40rem) {
+  .container::-webkit-scrollbar {
+      background: transparent;
+      width: 10px;
+  }
+
+  .container::-webkit-scrollbar-track {
+      background: rgba(127,105,91,0.2);
+      border-radius: 10px;
+      padding: 5px;
+  }
+
+  .container::-webkit-scrollbar-thumb {
+      background-color: rgba(127,105,91,0.4);
+      border-radius: 10px;
+  }
+}
+
+@media (max-width: 21rem), (max-height: 21rem) {
+  p, label, input, select, option, span, b {font-size: 0.75rem;}
+  h1, h2, h3, h4 {font-size: 1rem;}
 }

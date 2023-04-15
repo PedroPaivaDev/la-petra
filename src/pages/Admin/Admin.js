@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Admin.module.css';
-import { registerProductsOrder, createNewProduct, getProducts, removeProduct, changeProductPrice, ordainByName } from '../../services/firebase';
+import { registerProductsOrder, createNewProduct, getProducts, removeProduct, changeProductPrice, ordainByName, urlEasterImages } from '../../services/firebase';
 
 import Button from '../../components/Forms/Button';
 import useForm from '../../hooks/useForm';
@@ -9,11 +9,11 @@ import Input from '../../components/Forms/Input';
 const Admin = () => {
   const [products, setProducts] = React.useState();
   const [submitError, setSubmitError] = React.useState();
-  const id = useForm();
-  const name = useForm();
-  const description = useForm();
-  const price = useForm();
-  const image = useForm("https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-1.jpg");
+  const id = useForm('adminId','');
+  const name = useForm('adminName','');
+  const description = useForm('adminDescription','');
+  const price = useForm('adminPrice','');
+  const image = useForm('adminImage',"https://raw.githubusercontent.com/PedroPaivaDev/la-petra/v0.2/src/assets/easter/ovoDeliciaCrocante-1.jpg");
 
   function handleSubmit() {    
     if(id.value.length<=0 || name.value.length<=0 || description.value.length<=0 || price.value.length<=0 || image.value.length<=0) {
@@ -24,6 +24,8 @@ const Admin = () => {
       return false;
     }
   }
+
+  console.log(urlEasterImages())
   
   function create() {
     if(handleSubmit()) return;

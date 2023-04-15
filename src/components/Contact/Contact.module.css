@@ -1,0 +1,42 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: rgb(218,185,191,0.6);
+  border: 2px solid var(--lightBrown);
+  border-radius: 10px;
+  padding: 0px 20px 5px 20px;
+  margin: 10px 0 0 0;
+}
+
+.contact a {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 5px 0;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  color: var(--lightPink);
+  text-shadow: 1px 1px 5px #333;
+  background: var(--darkCyan);
+  box-shadow: 0 0 10px 10px var(--darkCyan);
+  border-radius: 20px;
+}
+
+.contact img {
+  width: 20px;
+  margin-bottom: 3px;
+  border-radius: 6px;
+  animation: twist 0.7s infinite;
+}
+
+@keyframes twist {
+  0% {transform: rotateZ(0deg);}
+  50% {transform: rotateZ(15deg);}
+  100% {transform: rotateZ(0deg);}
+}
