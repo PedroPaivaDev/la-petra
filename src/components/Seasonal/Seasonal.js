@@ -11,7 +11,7 @@ const Seasonal = ({season, setSeason, setModalProduct}) => {
 
   return (
     <>
-      {new Date() > new Date("2023-04-16T03:00:00.000Z") ?
+      {new Date() > new Date("2024-03-25T03:00:00.000Z") ?
         <p style={{margin: '30px', textAlign:'justify', maxWidth:'700px'}}>O prazo para encomendar produtos de páscoa já passou, mas não fique triste, temos deliciosos doces a pronta entrega, para você deliciar-se ou dar de presente.</p> :
         <Products category={season} setModalProduct={setModalProduct}/>
       }

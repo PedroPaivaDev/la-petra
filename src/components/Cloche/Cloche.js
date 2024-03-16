@@ -21,11 +21,8 @@ const Cloche = () => {
           <div className={styles.shadow}></div>
           <img src={Logotipo} height="150px" alt="Logotipo"/>
         </div> */}
-        <div className={styles.button} onClick={() => navigate("produtos/bolos")}>
-          Bolos
-        </div>
-        <div className={styles.button} onClick={() => navigate("produtos/delivery")}>
-          Doces e Fatias
+        <div className={styles.button} onClick={() => navigate("produtos/sazonal")}>
+          Cardápio de Páscoa
         </div>
         {/* <Layer bg={strawberry} position={0}>produtos</Layer> */}
       </div>

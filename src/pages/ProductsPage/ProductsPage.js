@@ -38,9 +38,9 @@ const ProductsPage = () => {
         }
         <nav className={styles.subNavbar}>
           <div className={styles.navLinks}>
-            <NavLink to="delivery" activeClassName={styles.activeProducts}>Delivery</NavLink>
+            {/* <NavLink to="delivery" activeClassName={styles.activeProducts}>Delivery</NavLink>
             <NavLink to="bolos" activeClassName={styles.activeProducts}>Bolos</NavLink>
-            <NavLink to="docinhos" activeClassName={styles.activeProducts}>Docinhos</NavLink>
+            <NavLink to="docinhos" activeClassName={styles.activeProducts}>Docinhos</NavLink> */}
             <NavLink to="sazonal" activeClassName={styles.activeProducts}>Sazonal</NavLink>
           </div>
         </nav>
